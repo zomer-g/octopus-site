@@ -51,7 +51,8 @@ export async function safeFetch(url, { timeoutMs = 120000, headers = {} } = {}) 
       if (size > MAX_BYTES) throw new Error("file too large");
       chunks.push(chunk);
     }
-    return { buffer: Buffer.concat(chunks), contentType: r.headers.get("content-type") || undefined };
+    // fetch decompresses gzip/br bodies, so Content-Length then describes the compressed size
+    return { buffer: Buffer.concat(chunks), contentType: r.headers.get("content-type") || undefined, encoded: !!r.headers.get("content-encoding") };
   }
   throw new Error("too many redirects");
 }

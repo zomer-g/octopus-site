@@ -94,10 +94,13 @@ app.use((req, res, next) => {
 // WordPress resized copy like name-300x200.jpg that we never stored) the original
 // files that a browser could run as a page (svg, html…) are served sandboxed,
 // so an uploaded or imported file can never act with an editor's session
+// full-site export/backup files that ended up in the old uploads folder: kept in
+// storage as part of the copy, never served (they hold unpublished data and e-mails)
+const PRIVATE_UPLOADS = /(^|\/)(wordpress\.\d{4}-\d{2}-\d{2}[^/]*\.xml[^/]*|[^/]*\.wordpress\.com-\d{4}-\d{2}-\d{2}[^/]*)$/i;
 const ACTIVE_TYPES = /\.(svg|svgz|html?|xhtml|xml|xsl)$/i;
 app.get("/wp-content/uploads/{*file}", async (req, res, next) => {
   const file = [].concat(req.params.file).join("/");
-  if (!isSafeUploadPath(file)) return next();
+  if (!isSafeUploadPath(file) || PRIVATE_UPLOADS.test(file)) return next();
   if (ACTIVE_TYPES.test(file)) res.setHeader("Content-Security-Policy", "default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; sandbox");
   const send = async (f) => {
     const local = localMediaPath(f);

@@ -84,11 +84,14 @@ export async function mirrorUploads(sourceBase, { log = console.log, manifest: l
     for (let f = queue.shift(); f; f = queue.shift()) {
       try {
         const key = storageKey(f.path);
-        if (localMediaPath(f.path) || (stored.has(key) && (f.size == null || stored.get(key) === f.size))) mirror.present++;
+        // the manifest size comes from a HEAD request; for text files the old server
+        // compresses, it is the compressed size (or 0), so only a positive size of an
+        // uncompressed transfer is compared
+        if (localMediaPath(f.path) || (stored.has(key) && (!f.size || stored.get(key) === f.size || /\.(css|js|txt|svg|eot|ttf|json|xml|html?)$/i.test(f.path)))) mirror.present++;
         else {
           const url = `${base}/wp-content/uploads/${f.path.split("/").map(encodeURIComponent).join("/")}`;
           const r = await safeFetch(url, { headers: { "user-agent": "Mozilla/5.0 (octopus uploads mirror)" }, timeoutMs: 300000 });
-          if (f.size != null && r.buffer.length !== f.size) throw new Error(`size ${r.buffer.length} != ${f.size}`);
+          if (f.size && !r.encoded && r.buffer.length !== f.size) throw new Error(`size ${r.buffer.length} != ${f.size}`);
           await putFile(key, r.buffer, r.contentType);
           mirror.copied++;
           mirror.bytes += r.buffer.length;

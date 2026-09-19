@@ -10,7 +10,7 @@ import { db } from "./db.js";
 import { currentUser, isEditor, loginUrl } from "./auth.js";
 import { initBuilder, currentDir, isBuilding, onSwap, requestBuild, siteOptions } from "./builder.js";
 import { initStorage, putFile, getFile, deleteFile } from "./storage.js";
-import { initMedia, localMediaPath, storageKey, syncMedia, mediaSyncState } from "./media.js";
+import { initMedia, localMediaPath, storageKey, syncMedia, mediaSyncState, mirrorUploads, mirrorState, loadManifest } from "./media.js";
 import { parseWxr, serializeWxr } from "./wxr.js";
 import { decode, indexSite, metaValue, wpSlug, attachmentFile, isReserved, isSafeUploadPath } from "./generate.js";
 import { buildMenuTree, saveMenuTree } from "./menu.js";
@@ -341,7 +341,7 @@ api.get("/status", wrap(async (req, res) => {
     [last?.started_at ?? null],
   );
   const builds = await db.all("SELECT id, started_at, finished_at, status, requested_by FROM builds ORDER BY id DESC LIMIT 5");
-  res.json({ building: isBuilding(), pending: Number(pending.n), builds, media: mediaSyncState() });
+  res.json({ building: isBuilding(), pending: Number(pending.n), builds, media: mediaSyncState(), mirror: mirrorState() });
 }));
 
 api.get("/build-log", wrap(async (req, res) => res.json(await db.one("SELECT id, status, log FROM builds ORDER BY id DESC LIMIT 1"))));
@@ -597,6 +597,12 @@ api.get("/backup", wrap(async (req, res) => {
 }));
 
 api.get("/media-sync", (req, res) => res.json(mediaSyncState()));
+// copy every file of the old site's uploads folder (see archive/uploads-manifest.json)
+api.get("/uploads-mirror", wrap(async (req, res) => res.json({ ...mirrorState(), last: await db.getSetting("upload_mirror"), source: MIRROR_SOURCE })));
+api.post("/uploads-mirror", (req, res) => {
+  mirrorUploads(MIRROR_SOURCE).catch((e) => console.error("uploads mirror", e));
+  res.json({ ok: true });
+});
 api.post("/media-sync", (req, res) => {
   syncMedia([req.headers.host]).catch((e) => console.error("media sync", e));
   res.json({ ok: true });
@@ -635,9 +641,25 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, "0.0.0.0", () => console.log(`listening on ${PORT}`));
 
+// the old WordPress server the uploads folder is copied from (while it is still up)
+const MIRROR_SOURCE = process.env.UPLOADS_MIRROR_SOURCE || "https://octopus.org.il";
+
 // the image holds the archived baseline; bring the served site up to date with the database
 requestBuild("startup");
 if (await db.getSetting("needs_media_sync")) {
   await db.setSetting("needs_media_sync", false);
   syncMedia([]).catch((e) => console.error("media sync", e));
+}
+
+// copy the old uploads folder once per manifest (runs in the background, resumable:
+// files already stored are skipped, so a restart simply continues)
+{
+  const manifest = loadManifest();
+  const version = `${manifest.length}:${manifest.reduce((n, f) => n + (f.size || 0), 0)}`;
+  const last = await db.getSetting("upload_mirror");
+  if (manifest.length && (last?.version !== version || last?.failed?.length)) {
+    mirrorUploads(MIRROR_SOURCE)
+      .then((m) => db.setSetting("upload_mirror", { ...m, failed: m.failed.slice(0, 200), version }))
+      .catch((e) => console.error("uploads mirror", e));
+  }
 }

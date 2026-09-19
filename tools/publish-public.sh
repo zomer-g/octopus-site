@@ -8,7 +8,7 @@ REMOTE="${PUBLIC_REMOTE:-https://github.com/zomer-g/octopus-site.git}"
 OUT=".public-repo"
 # never published: the full WordPress export (drafts, private posts, contact-form
 # entries, e-mail addresses, IPs). The public export is used in its place.
-PRIVATE=("archive/wxr/octopus-2026-09-19.xml")
+PRIVATE=("archive/wxr/octopus-2026-09-19.xml" "archive/uploads-manifest.json")
 
 if [ -n "$(git status --porcelain)" ]; then echo "commit your changes first" >&2; exit 1; fi
 if [ ! -d "$OUT/.git" ]; then

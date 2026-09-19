@@ -81,9 +81,10 @@ async function refreshStatus() {
     else if (s.pending) el.textContent = `${s.pending} שינויים שעוד לא פורסמו`;
     else el.textContent = last ? `✓ האתר מעודכן (${fmtDate(last.finished_at)})` : "";
     if (s.media?.running) el.textContent += ` · מוריד קבצים ${s.media.done}/${s.media.total}`;
+    if (s.mirror?.running) el.textContent += ` · מעתיק מהשרת הישן ${s.mirror.done}/${s.mirror.total}`;
     $("#show-log")?.addEventListener("click", showLog);
     clearTimeout(pollTimer);
-    pollTimer = setTimeout(refreshStatus, s.building || s.media?.running ? 3000 : 30000);
+    pollTimer = setTimeout(refreshStatus, s.building || s.media?.running || s.mirror?.running ? 3000 : 30000);
     return s;
   } catch (e) {
     console.error(e);
@@ -787,8 +788,9 @@ const countsText = (obj) =>
     .join(" · ") || "אין";
 
 async function transferView() {
-  const [backups, status] = await Promise.all([api("/backups"), api("/status")]);
+  const [backups, status, mir] = await Promise.all([api("/backups"), api("/status"), api("/uploads-mirror")]);
   const m = status.media;
+  const last = mir.running ? mir : mir.last;
   view.innerHTML = `
     <h1>ייבוא וייצוא (וורדפרס)</h1>
     <div class="panel">
@@ -814,6 +816,18 @@ async function transferView() {
       <div class="actions"><button id="media-sync">בדיקה והורדת קבצים חסרים</button>${m?.failed?.length ? `<button id="media-failed">הצגת כשלונות</button>` : ""}</div>
     </div>
     <div class="panel">
+      <h3>העתקת תיקיית הקבצים מהשרת הישן</h3>
+      <p>כל הקבצים שהיו בתיקיית ההעלאות של וורדפרס (<span dir="ltr">${esc(mir.source)}/wp-content/uploads/</span>), כולל הגדלים שוורדפרס יצר לכל תמונה, מועתקים לאחסון של האתר הזה.</p>
+      <p id="mirror-state">${
+        mir.running
+          ? `מעתיק… ${mir.done}/${mir.total} (הועתקו ${mir.copied}, ${(mir.bytes / 1e6).toFixed(0)}MB)`
+          : last?.finishedAt
+            ? `הושלם ${new Date(last.finishedAt).toLocaleString("he-IL")}: ${last.total} קבצים – ${last.present + last.copied} נמצאים באחסון, ${last.failed?.length ?? 0} נכשלו`
+            : "עוד לא הופעל."
+      }</p>
+      <div class="actions"><button id="mirror-run" ${mir.running ? "disabled" : ""}>העתקה / השלמת קבצים חסרים</button>${last?.failed?.length ? `<button id="mirror-failed">הצגת כשלונות</button>` : ""}</div>
+    </div>
+    <div class="panel">
       <h3>גיבויים אוטומטיים</h3>
       ${backups.length ? `<ul>${backups.map((b) => `<li><a href="/api/backup?key=${encodeURIComponent(b.key)}">${esc(b.key.split("/").pop())}</a> <span class="muted">(${new Date(b.at).toLocaleString("he-IL")}, ${esc(b.by)})</span></li>`).join("")}</ul>` : `<p class="muted">עוד אין. גיבוי נשמר לפני כל ייבוא מסוג החלפה.</p>`}
     </div>`;
@@ -824,6 +838,15 @@ async function transferView() {
     refreshStatus();
     setTimeout(transferView, 1500);
   });
+  $("#mirror-run").addEventListener("click", async () => {
+    await api("/uploads-mirror", { method: "POST" });
+    toast("ההעתקה התחילה");
+    refreshStatus();
+    setTimeout(transferView, 1500);
+  });
+  $("#mirror-failed")?.addEventListener("click", () =>
+    openDialog(`<h3>קבצים שלא הועתקו</h3><pre class="log">${esc(last.failed.map((f) => `${f.file}  –  ${f.error}`).join("\n"))}</pre><div class="actions"><button data-close>סגירה</button></div>`),
+  );
   $("#media-failed")?.addEventListener("click", () =>
     openDialog(`<h3>קבצים שלא הורדו</h3><pre class="log">${esc(m.failed.map((f) => `${f.file}  –  ${f.error}`).join("\n"))}</pre><div class="actions"><button data-close>סגירה</button></div>`),
   );

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>ניהול התמנון</title>
+  <link rel="icon" href="/wp-content/uploads/2021/01/cropped-cropped-zomerlogo-1-5.png" />
+  <link rel="stylesheet" href="/admin/admin.css" />
+  <script src="/admin/vendor/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><img src="/wp-content/uploads/2020/07/cropped-octopus-4.png" alt="" /> ניהול התמנון</a>
+    <nav>
+      <a href="#/" data-nav="posts">פוסטים</a>
+      <a href="#/pages" data-nav="pages">עמודים</a>
+      <a href="#/media" data-nav="media">קבצים</a>
+      <a href="#/categories" data-nav="categories">קטגוריות</a>
+      <a href="#/menu" data-nav="menu">תפריט</a>
+      <a href="#/transfer" data-nav="transfer">ייבוא וייצוא</a>
+      <a href="#/users" data-nav="users">עורכים</a>
+    </nav>
+    <div class="publish">
+      <span id="publish-status" class="muted"></span>
+      <button id="publish-btn" class="primary">פרסום לאתר</button>
+    </div>
+    <div class="me"><span id="me"></span> · <a href="/" target="_blank">לאתר ↗</a> · <a href="/xhost-auth/logout?return_to=/">התנתקות</a></div>
+  </header>
+  <main id="view"><p class="muted">טוען…</p></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog"><div id="dialog-body"></div></dialog>
+  <script type="module" src="/admin/admin.js"></script>
+</body>
+</html>

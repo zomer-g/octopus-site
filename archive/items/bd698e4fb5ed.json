@@ -1,0 +1,71 @@
+{
+ "id": 3264,
+ "type": "post",
+ "url": "https://octopus.org.il/2020/07/06/omilab/",
+ "path": "/2020/07/06/omilab/",
+ "title": "המידע הזה הוא שלנו",
+ "date": "2020-07-06T00:51:00+03:00",
+ "modified": "2021-11-23T19:35:07+02:00",
+ "description": "המעבדה הפתוחה למדיה ומידע מארחת הרצאות בנושא: \"המידע הזה הוא שלנו\" בהשתתפות מייסדי עמותת התמנון – מידע ציבורי לכל (ע\"ר) מדריך לאקטיביזם – גיא זומר",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/11/106121765_185054392968320_5455841018983879108_n.jpg?fit=907%2C887&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/11/106121765_185054392968320_5455841018983879108_n.jpg",
+ "categories": [
+  {
+   "name": "אירועים",
+   "slug": "events"
+  },
+  {
+   "name": "אקדמיה",
+   "slug": "academy"
+  },
+  {
+   "name": "חופש מידע",
+   "slug": "חופש-מידע"
+  },
+  {
+   "name": "מדיניות וקשרי ממשל",
+   "slug": "מדיניות-וקשרי-ממשל"
+  },
+  {
+   "name": "עדכונים במרחב",
+   "slug": "עדכונים-במרחב"
+  },
+  {
+   "name": "שותפים לדרך",
+   "slug": "שותפים-לדרך"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "tags": [
+  {
+   "name": "אנדי וורמס",
+   "slug": "אנדי-וורמס"
+  },
+  {
+   "name": "גיא זומר",
+   "slug": "גיא-זומר"
+  },
+  {
+   "name": "האוניברסיטה הפתוחה",
+   "slug": "האוניברסיטה-הפתוחה"
+  },
+  {
+   "name": "המעבדה הפתוחה למדיה ומידע",
+   "slug": "המעבדה-הפתוחה-למדיה-ומידע"
+  },
+  {
+   "name": "ורד זילבר-ורוד",
+   "slug": "ורד-זילבר-ורוד"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">המעבדה הפתוחה למדיה ומידע מארחת הרצאות בנושא: \"המידע הזה הוא שלנו\" בהשתתפות מייסדי עמותת התמנון – מידע ציבורי לכל (ע\"ר) </p>\n<p class=\"wp-block-paragraph\">מדריך לאקטיביזם – גיא זומר </p>\n<p class=\"wp-block-paragraph\">\"תולעת המשפט\" – אנדי וורמס </p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\">את האירוע יזמה וניהלה ד\"ר ורד זילבר-ורוד</p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"360\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/hdhOgmCaNzE?start=2137&amp;feature=oembed\" title=\"המעבדה הפתוחה למדיה ומידע מארחת, 6.7.2020\" width=\"640\"></iframe>\n</div></figure>\n",
+ "content_missing": false,
+ "key": "bd698e4fb5ed"
+}

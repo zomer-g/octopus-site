@@ -1,0 +1,79 @@
+{
+ "id": 4822,
+ "type": "post",
+ "url": "https://octopus.org.il/2017/09/15/odata_new/",
+ "path": "/2017/09/15/odata_new/",
+ "title": "השקת מידע לעם",
+ "date": "2017-09-15T11:29:00+03:00",
+ "modified": "2022-03-14T11:35:02+02:00",
+ "description": "אייטם בערוץ 22 על השקת מיזם מידע לעם בשנת 2017",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2017/09/Screenshot-2022-03-14-113356.png?fit=1269%2C644&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2017/09/Screenshot-2022-03-14-113356.png",
+ "categories": [
+  {
+   "name": "בקשת מידע",
+   "slug": "חופש-מידע/בקשת-מידע"
+  },
+  {
+   "name": "הצלחת התמנון",
+   "slug": "htl"
+  },
+  {
+   "name": "חדשות",
+   "slug": "news"
+  },
+  {
+   "name": "חופש מידע",
+   "slug": "חופש-מידע"
+  },
+  {
+   "name": "מדיניות וקשרי ממשל",
+   "slug": "מדיניות-וקשרי-ממשל"
+  },
+  {
+   "name": "מידע שנמסר",
+   "slug": "מידע-שנמסר"
+  },
+  {
+   "name": "על העמותה",
+   "slug": "על-העמותה"
+  },
+  {
+   "name": "שותפים לדרך",
+   "slug": "שותפים-לדרך"
+  }
+ ],
+ "tags": [
+  {
+   "name": "הסדנא לידע ציבורי",
+   "slug": "הסדנא-לידע-ציבורי"
+  },
+  {
+   "name": "התנועה לחופש המידע",
+   "slug": "התנועה-לחופש-המידע"
+  },
+  {
+   "name": "חדשות 12",
+   "slug": "חדשות-12"
+  },
+  {
+   "name": "מידע לעם",
+   "slug": "מידע-לעם"
+  },
+  {
+   "name": "עמותת הצלחה",
+   "slug": "עמותת-הצלחה"
+  },
+  {
+   "name": "שקוף",
+   "slug": "שקוף"
+  },
+  {
+   "name": "תומר אביטל",
+   "slug": "תומר-אביטל"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">אייטם בערוץ 22 על השקת מיזם מידע לעם בשנת 2017</p>\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"360\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/a3ywGFN_1ao?feature=oembed\" title=\"מידע לעם - על האתר שהקימו ארגוני החברה האזרחית\" width=\"640\"></iframe>\n</div></figure>\n",
+ "content_missing": false,
+ "key": "ad134b4c8c20"
+}

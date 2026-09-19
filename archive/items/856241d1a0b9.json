@@ -1,0 +1,59 @@
+{
+ "id": 9,
+ "type": "post",
+ "url": "https://octopus.org.il/2020/06/12/example-post-3/",
+ "path": "/2020/06/12/example-post-3/",
+ "title": "בעקבות עתירת התמנון – נחשף תמצית הדוח השנתי של משרד רה\"מ מזה עשור",
+ "date": "2020-06-12T06:45:00+03:00",
+ "modified": "2021-02-06T11:47:50+02:00",
+ "description": "בעקבות עתירת גיא זומר, מייסד עמותת התמנון , נחשף תמצית הדוח השנתי של משרד רה\"מ, דוח שלא פורסם בניגוד לחוק למעלה מ-10 שנים. מהדוח עולה",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/d7aad795d79bd79f-d79bd79cd79bd79cd799d7a1d798-3.png?fit=565%2C325&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/07/d7aad795d79bd79f-d79bd79cd79bd79cd799d7a1d798-3.png",
+ "categories": [
+  {
+   "name": "חדשות",
+   "slug": "news"
+  },
+  {
+   "name": "חופש מידע",
+   "slug": "חופש-מידע"
+  },
+  {
+   "name": "מידע שנמסר",
+   "slug": "מידע-שנמסר"
+  },
+  {
+   "name": "ממשל ומנהל תקין",
+   "slug": "cabinet/purity"
+  }
+ ],
+ "tags": [
+  {
+   "name": "דוח שנתי",
+   "slug": "דוח-שנתי"
+  },
+  {
+   "name": "דורון ברויטמן",
+   "slug": "דורון-ברויטמן"
+  },
+  {
+   "name": "כלכליסט",
+   "slug": "כלכליסט"
+  },
+  {
+   "name": "משרד ראש הממשלה",
+   "slug": "משרד-ראש-הממשלה"
+  },
+  {
+   "name": "עתירת חופש מידע",
+   "slug": "עתירת-חופש-מידע"
+  },
+  {
+   "name": "תמיכות",
+   "slug": "תמיכות"
+  }
+ ],
+ "content_html": "\n<p class=\"has-text-align-justify wp-block-paragraph\"><em>בעקבות עתירת גיא זומר, מייסד עמותת התמנון , נחשף תמצית הדוח השנתי של משרד רה\"מ, דוח שלא פורסם בניגוד לחוק למעלה מ-10 שנים. </em></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"has-text-align-justify wp-block-paragraph\">מהדוח עולה בין היתר כי משרד ראש הממשלה חילק ב-2018 מעל 50 מיליון שקל למוסדות ציבור המנציחים את זכרם של אישים ופעילויות במורשת הישראלית. בין היתר הוקצבו 10 מיליון שקל להנצחת דוד בן גוריון, 800 אלף שקל – לזאב ז'בוטינסקי ו-30 אלף שקל – לרחבעם זאבי</p>\n<figure class=\"wp-block-image size-large\"><img alt=\"כותרת מתוך כלכליסט\" class=\"wp-image-68\" decoding=\"async\" height=\"378\" sizes=\"(max-width: 526px) 100vw, 526px\" src=\"/wp-content/uploads/2020/07/d79bd795d7aad7a8d7aa-d79bd79cd79bd79cd799d7a1d798-3.png?w=526\" srcset=\"https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/d79bd795d7aad7a8d7aa-d79bd79cd79bd79cd799d7a1d798-3.png?w=526&amp;ssl=1 526w, https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/d79bd795d7aad7a8d7aa-d79bd79cd79bd79cd799d7a1d798-3.png?resize=300%2C216&amp;ssl=1 300w\" width=\"526\"/></figure>\n<figure class=\"wp-block-image size-large\"><img alt=\"גרף החלוקה בין התמיכות השונות\" class=\"wp-image-69\" decoding=\"async\" height=\"325\" sizes=\"(max-width: 565px) 100vw, 565px\" src=\"/wp-content/uploads/2020/07/d7aad795d79bd79f-d79bd79cd79bd79cd799d7a1d798-3.png?w=565\" srcset=\"https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/d7aad795d79bd79f-d79bd79cd79bd79cd799d7a1d798-3.png?w=565&amp;ssl=1 565w, https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/d7aad795d79bd79f-d79bd79cd79bd79cd799d7a1d798-3.png?resize=300%2C173&amp;ssl=1 300w\" width=\"565\"/></figure>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"has-text-align-right wp-block-paragraph\"><a href=\"https://www.calcalist.co.il/local/articles/0,7340,L-3832710,00.html\" rel=\"noreferrer noopener\" target=\"_blank\">לפרסום בכלכליסט</a></p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "856241d1a0b9"
+}

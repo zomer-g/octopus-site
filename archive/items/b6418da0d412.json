@@ -1,0 +1,27 @@
+{
+ "id": 3644,
+ "type": "post",
+ "url": "https://octopus.org.il/2019/09/23/themarker/",
+ "path": "/2019/09/23/themarker/",
+ "title": "דה מרקר",
+ "date": "2019-09-23T09:35:00+03:00",
+ "modified": "2021-11-23T09:55:04+02:00",
+ "description": "TheMarker (דה מרקר) הוא עיתון יומי כלכלי ישראלי ואתר חדשות כלכלי מבית עיתון \"הארץ\". הוקם בידי גיא רולניק ואיתן אבריאל. לאתר דה מרקר",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2019/09/1920px-TheMarker_Logo.svg_.png?fit=1920%2C401&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2019/09/1920px-TheMarker_Logo.svg_.png",
+ "categories": [
+  {
+   "name": "גופי תקשורת",
+   "slug": "גופי-תקשורת"
+  }
+ ],
+ "tags": [
+  {
+   "name": "דה מרקר",
+   "slug": "דה-מרקר"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">TheMarker (דה מרקר) הוא עיתון יומי כלכלי ישראלי ואתר חדשות כלכלי מבית עיתון \"הארץ\". הוקם בידי גיא רולניק ואיתן אבריאל.</p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.themarker.com/\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר דה מרקר</a></p>\n",
+ "content_missing": false,
+ "key": "b6418da0d412"
+}

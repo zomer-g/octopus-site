@@ -1,0 +1,59 @@
+{
+ "id": 5278,
+ "type": "post",
+ "url": "https://octopus.org.il/2022/07/14/court_technology_department/",
+ "path": "/2022/07/14/court_technology_department/",
+ "title": "ארכיון הסרת תכנים מאגף מערכות מידע בהנהלת בתי המשפט",
+ "date": "2022-07-14T09:12:00+03:00",
+ "modified": "2022-07-18T11:29:29+03:00",
+ "description": "ארכיון פניות שהתקבלו מאגף מערכות מידע בהנהלת בתי המשפט, וככל הנראה הופצו לשלל יעדים ומאגרים. ארכיון זה מופעל בצורה אוטומטית ומשקף את פעילות אגף מערכות",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2022/07/Screenshot-2022-07-15-091052.png?fit=505%2C298&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2022/07/Screenshot-2022-07-15-091052.png",
+ "categories": [
+  {
+   "name": "החלטת חיסוי",
+   "slug": "hotdog"
+  },
+  {
+   "name": "מדיניות וקשרי ממשל",
+   "slug": "מדיניות-וקשרי-ממשל"
+  },
+  {
+   "name": "מכתבי איום והתראה",
+   "slug": "תולעת-המשפט/מכתבי-איום-והתראה"
+  },
+  {
+   "name": "מכתבים למערכת",
+   "slug": "מכתבים-למערכת"
+  },
+  {
+   "name": "על העמותה",
+   "slug": "על-העמותה"
+  }
+ ],
+ "tags": [
+  {
+   "name": "אגף מערכות מידע",
+   "slug": "אגף-מערכות-מידע"
+  },
+  {
+   "name": "הנהלת בתי המשפט",
+   "slug": "הנהלת-בתי-המשפט"
+  },
+  {
+   "name": "הסרה",
+   "slug": "הסרה"
+  },
+  {
+   "name": "פניות הסרה",
+   "slug": "פניות-הסרה"
+  },
+  {
+   "name": "תיקים חסויים",
+   "slug": "תיקים-חסויים"
+  }
+ ],
+ "content_html": "\n<h1 class=\"wp-block-heading\"></h1>\n<p class=\"wp-block-paragraph\">ארכיון פניות שהתקבלו מאגף מערכות מידע בהנהלת בתי המשפט, וככל הנראה הופצו לשלל יעדים ומאגרים. ארכיון זה מופעל בצורה אוטומטית ומשקף את פעילות אגף מערכות מידע ואין בו להעיד על מצב התיקים או על נכונות הדברים. נציין כי אנו פועלים בהתאם למדיניות סדורה של <a class=\"broken_link\" href=\"https://xn----8hcborozt8bdd.xn--9dbq2a/%D7%90%D7%99%20%D7%94%D7%A1%D7%A8%D7%AA%20%D7%9E%D7%99%D7%93%D7%A2\" rel=\"noreferrer noopener\" target=\"_blank\">הצגה והסרת תכנים</a>, ואין כל משמעות לזהות הפונה ובכלל זה עובדי אגף מערכות מידע בהנהלת בתי המשפט.</p>\n<p class=\"wp-block-paragraph\">אם נתקלתם בתיק שידוע לכם כי טענות האגף בהתייחס אליו שקריות, נודה על קבלת עדכון. ככל שיש בידכם החלטת בית משפט המאששת את טענות האגף, נודה על קבלת העתק ההחלטה על מנת שנוכל לפעול בהתאם לה.</p>\n<p class=\"wp-block-paragraph\">הארכיון נבנה על גבי פלטפורמת <a href=\"https://app.simplerstory.com\" rel=\"noreferrer noopener\" target=\"_blank\">simplerstory.com</a> ואתם מוזמנים להיכנס ולהתרשם.</p>\n<p><iframe frameborder=\"0\" height=\"560\" onload=\"var el = this; window.addEventListener('message',function(e){if (e.data.height) {el.style.setProperty('height',e.data.height+'px','important');}})\" src=\"https://app.simplerstory.com/story/CIK7k032z?embed=1\" style=\"overflow-y: hidden !important; transition: .5s !important;\" width=\"100%\"></iframe></p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "34baec99b85d"
+}

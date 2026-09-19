@@ -1,0 +1,31 @@
+{
+ "id": 4101,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/12/01/1-12-21/",
+ "path": "/2021/12/01/1-12-21/",
+ "title": "תקלה בנט 1/12/21",
+ "date": "2021-12-01T16:01:06+02:00",
+ "modified": "2021-12-01T16:05:40+02:00",
+ "description": "בטח התגעגעתם לנט המשפט, אז גם היום בערב הנט יושבת כרגיל לצורך הורדת גרסה. https://t.co/Uwhar96QTb#תקלה — ????התמנון (@Octopus_RA) December 1, 2021",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-01-155910.png?fit=278%2C200&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-01-155910.png",
+ "categories": [
+  {
+   "name": "תקלות בנט המשפט",
+   "slug": "פרויקטים/net_bugs"
+  }
+ ],
+ "tags": [
+  {
+   "name": "נט המשפט",
+   "slug": "נט-המשפט"
+  },
+  {
+   "name": "תקלות",
+   "slug": "תקלות"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\"></p>\n<blockquote class=\"twitter-tweet\">\n<p dir=\"rtl\" lang=\"iw\">בטח התגעגעתם לנט המשפט, אז גם היום בערב הנט יושבת כרגיל לצורך הורדת גרסה. <a href=\"https://t.co/Uwhar96QTb\">https://t.co/Uwhar96QTb</a><a href=\"https://twitter.com/hashtag/%D7%AA%D7%A7%D7%9C%D7%94?src=hash&amp;ref_src=twsrc%5Etfw\">#תקלה</a></p>\n<p>— ????התמנון (@Octopus_RA) <a href=\"https://twitter.com/Octopus_RA/status/1466045179748667393?ref_src=twsrc%5Etfw\">December 1, 2021</a></p></blockquote>\n<p> <script async=\"\" charset=\"utf-8\" src=\"https://platform.twitter.com/widgets.js\"></script></p> ",
+ "content_missing": false,
+ "key": "f6ccf3b57b9d"
+}

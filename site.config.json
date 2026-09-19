@@ -1,0 +1,10 @@
+{
+  "baseline": ["archive/wxr/octopus-2026-09-19.xml", "archive/wxr/octopus-public.xml"],
+  "siteUrl": "https://octopus.org.il",
+  "frontPageId": 234,
+  "primaryMenu": null,
+  "extraRedirects": {
+    "/blog-2/": "/posts/",
+    "/news/page/2/": "/category/news/"
+  }
+}

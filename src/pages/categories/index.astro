@@ -1,0 +1,45 @@
+---
+import Base from "../../layouts/Base.astro";
+import { allPosts, childCategories, categoryUrl, tags, tagUrl, inCategory, type Category } from "../../lib/site";
+const posts = await allPosts();
+const count = (slug: string) => posts.filter((p) => inCategory(p, slug)).length;
+const tagCount = new Map<string, number>();
+for (const p of posts) for (const t of p.data.tags) tagCount.set(t, (tagCount.get(t) ?? 0) + 1);
+const popular = tags
+  .filter((t) => (tagCount.get(t.slug) ?? 0) >= 3)
+  .sort((a, b) => tagCount.get(b.slug)! - tagCount.get(a.slug)!);
+const kids = (c: Category) => childCategories(c.slug).filter((x) => count(x.slug) > 0);
+const roots = childCategories(null).filter((c) => count(c.slug) > 0 && c.slug !== "uncategorized");
+---
+<Base title="נושאים ותגיות">
+  <div class="page-head"><h1>נושאים ותגיות</h1></div>
+  <article class="article wide">
+    <h2 style="margin-top:0">נושאים</h2>
+    <div class="cat-tree">
+      <ul>
+        {roots.map((c) => (
+          <li>
+            <a href={categoryUrl(c.slug)}>{c.name}</a> <small>({count(c.slug)})</small>
+            {kids(c).length > 0 && (
+              <ul>
+                {kids(c).map((s) => (
+                  <li>
+                    <a href={categoryUrl(s.slug)}>{s.name}</a> <small>({count(s.slug)})</small>
+                    {kids(s).length > 0 && (
+                      <ul>{kids(s).map((x) => <li><a href={categoryUrl(x.slug)}>{x.name}</a> <small>({count(x.slug)})</small></li>)}</ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+    <h2 id="tags">תגיות נפוצות</h2>
+    <ul class="tag-cloud">
+      {popular.map((t) => <li><a href={tagUrl(t.slug)}>{t.name}</a> <small>{tagCount.get(t.slug)}</small></li>)}
+    </ul>
+    <p><small>ועוד {tags.length - popular.length} תגיות, שמופיעות בתחתית כל פוסט.</small></p>
+  </article>
+</Base>

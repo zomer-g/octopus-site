@@ -1,0 +1,27 @@
+{
+ "id": 4402,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/05/21/search-console-gdpr2/",
+ "path": "/2021/05/21/search-console-gdpr2/",
+ "title": "Search Console – GDPR2#",
+ "date": "2021-05-21T20:52:00+03:00",
+ "modified": "2021-12-31T20:56:43+02:00",
+ "description": "Notice of European data protection law removal from Google Search To: Webmaster of https://תולעת-המשפט.קום/, Due to a request under the data protection law in Europe, Google can no longer show one",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-31-185103.png?fit=668%2C393&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-31-185103.png",
+ "categories": [
+  {
+   "name": "Search Console",
+   "slug": "ספריית-התמנון/search-console"
+  }
+ ],
+ "tags": [
+  {
+   "name": "GDPR",
+   "slug": "gdpr"
+  }
+ ],
+ "content_html": "\n<p class=\"has-text-align-left wp-block-paragraph\">Notice of European data protection law removal from Google Search</p>\n<p class=\"has-text-align-left wp-block-paragraph\">To: Webmaster of <a>https://תולעת-המשפט.קום/</a>,</p>\n<p class=\"has-text-align-left wp-block-paragraph\">Due to a request under the data protection law in Europe, Google can no longer show one or more pages from your site in Google Search results. This only affects responses to some search queries for names or other personal identifiers that might appear on your pages. Only results on versions of Google’s search results for countries applying European data protection law are affected. No action is required from you.</p>\n<h2 class=\"has-text-align-left wp-block-heading\">What you should know:</h2>\n<figure class=\"wp-block-table\"><table><tbody><tr><td>1</td><td class=\"has-text-align-left\" data-align=\"left\">These pages haven’t been blocked entirely from our search results.They’ve only been blocked on certain searches for names on versions of Google’s search results for countries applying European data protection law. These pages will continue to appear for other searches.</td></tr><tr><td>2</td><td class=\"has-text-align-left\" data-align=\"left\">We aren’t disclosing which queries have been affected.</td></tr><tr><td>3</td><td class=\"has-text-align-left\" data-align=\"left\">In many cases, affected queries don’t relate to the name of any person mentioned prominently on the page.For example, the name might only appear in a comment section.</td></tr><tr><td>4</td><td class=\"has-text-align-left\" data-align=\"left\">You can notify us of concerns.If you have additional information regarding the content of a page that you believe warrants a reversal, you can notify Google. Please note that while we read all requests, we do not always respond. Only the registered site owner can access this form.</td><td></td></tr></tbody></table></figure>\n<h3 class=\"has-text-align-left wp-block-heading\">Here are the affected URL(s):</h3>\n<p class=\"has-text-align-left wp-block-paragraph\"><a class=\"broken_link\" href=\"https://xn----8hcborozt8bdd.xn--9dbq2a/%D7%AA%D7%99%D7%A7/52521-10-17\">https://xn—-8hcborozt8bdd.xn--9dbq2a/%D7%A6%D7%93-%D7%9C%D7%94%D7%9C%D7%99%D7%9A/%D7%A9%D7%99%20%D7%9E%D7%92%D7%95%D7%96</a></p>\n<p class=\"wp-block-paragraph\"></p>\n<figure class=\"wp-block-pullquote\"><blockquote><p>הערת מערכת</p><cite>נציין כי מדובר בתיק שהוסר מגוגל בהתאם לתקנות GDPR ואינו חל על ישראל</cite></blockquote></figure>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "87473cc087fa"
+}

@@ -1,0 +1,27 @@
+{
+ "id": 3643,
+ "type": "post",
+ "url": "https://octopus.org.il/2019/09/23/haaretz/",
+ "path": "/2019/09/23/haaretz/",
+ "title": "הארץ",
+ "date": "2019-09-23T09:57:00+03:00",
+ "modified": "2021-11-23T09:58:43+02:00",
+ "description": "הארץ הוא היומון הוותיק ביותר הפועל בישראל. נוסד בשנת 1918 על ידי יצחק לייב גולדברג ונקרא בשם הנוכחי החל משנת 1919. לאתר הארץ",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/11/Haaretz.svg_.png?fit=220%2C66&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/11/Haaretz.svg_.png",
+ "categories": [
+  {
+   "name": "גופי תקשורת",
+   "slug": "גופי-תקשורת"
+  }
+ ],
+ "tags": [
+  {
+   "name": "הארץ",
+   "slug": "הארץ"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">הארץ הוא היומון הוותיק ביותר הפועל בישראל. נוסד בשנת 1918 על ידי יצחק לייב גולדברג ונקרא בשם הנוכחי החל משנת 1919.</p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.haaretz.co.il/\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר הארץ</a></p>\n",
+ "content_missing": false,
+ "key": "1b8e8088d869"
+}

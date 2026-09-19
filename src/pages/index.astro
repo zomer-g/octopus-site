@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+import { allPosts, postsForSpec, postCardsHtml, SITE } from "../lib/site";
+import menu from "../data/menu.json";
+
+const arms = (await postsForSpec("זרועות-התמנון")).posts;
+const latest = (await allPosts()).slice(0, 6);
+// the old homepage carousel linked to these section pages
+const tiles = [
+  ...menu.find((m) => m.href === "/news/")!.children!,
+  ...menu.find((m) => m.href === "/projects/")!.children!,
+  ...menu.find((m) => m.href === "/the_archive/")!.children!.filter((c) => c.href !== "/posts/"),
+];
+---
+<Base>
+  <section class="hero">
+    <img src={SITE.logo} alt="לוגו עמותת התמנון" width="180" height="173" />
+    <div>
+      <h1>{SITE.fullName}</h1>
+      <p>עמותת התמנון נוסדה כדי לקדם את הנגשת המידע הציבורי בכלל והמשפטי בפרט, בין היתר תוך שימוש בכלים מתקדמים.</p>
+      <p class="hero-links"><a class="button" href="/posts/">לכל הפרסומים</a> <a href="/about/">על העמותה</a></p>
+    </div>
+  </section>
+
+  <h2 class="section-title">זרועות התמנון</h2>
+  <Fragment set:html={postCardsHtml(arms)} />
+
+  <h2 class="section-title">פרויקטים בתמנון</h2>
+  <ul class="tiles">
+    {tiles.map((t) => <li><a href={t.href}>{t.label}</a></li>)}
+  </ul>
+
+  <h2 class="section-title">תמצית הדברים שהיו לאחרונה</h2>
+  <Fragment set:html={postCardsHtml(latest, { limit: 6, moreUrl: "/posts/" })} />
+  <p class="more"><a class="button" href="/posts/">לכל הפרסומים ←</a></p>
+</Base>

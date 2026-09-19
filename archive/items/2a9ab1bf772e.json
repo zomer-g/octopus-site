@@ -1,0 +1,43 @@
+{
+ "id": 672,
+ "type": "post",
+ "url": "https://octopus.org.il/2020/08/04/moked1/",
+ "path": "/2020/08/04/moked1/",
+ "title": "אימות זהות מגדרי",
+ "date": "2020-08-04T21:23:05+03:00",
+ "modified": "2021-11-02T11:25:15+02:00",
+ "description": "במסגרת מאמצי עמותת התמנון, בין היתר באמצעות פרויקט תולעת המשפט, להסדיר את ההגנה על המידע והאיזונים הנדרשים, נחשפות פרקטיקות מטרידות של הגנה על המידע בהנהלת",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/08/capture-6-2.png?fit=799%2C455&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/08/capture-6-2.png",
+ "categories": [
+  {
+   "name": "אבטחת מידע",
+   "slug": "אבטחת-מידע"
+  }
+ ],
+ "tags": [
+  {
+   "name": "אבטחת מידע",
+   "slug": "אבטחת-מידע"
+  },
+  {
+   "name": "אימות זהות",
+   "slug": "אימות-זהות"
+  },
+  {
+   "name": "הנהלת בתי המשפט",
+   "slug": "הנהלת-בתי-המשפט"
+  },
+  {
+   "name": "מגדר",
+   "slug": "מגדר"
+  },
+  {
+   "name": "מוקד המידע",
+   "slug": "מוקד-המידע"
+  }
+ ],
+ "content_html": "\n<p class=\"has-text-align-justify wp-block-paragraph\">במסגרת מאמצי עמותת התמנון, בין היתר באמצעות פרויקט תולעת המשפט, להסדיר את ההגנה על המידע והאיזונים הנדרשים, נחשפות פרקטיקות מטרידות של הגנה על המידע בהנהלת בתי המשפט. מפאת רגישות הדברים, ומכיוון שלעת עתה, הנהלת בתי המשפט מסרבת לתקן את הליקויים, לא ניתן לחשוף באופן מפורט את הליקויים. </p>\n<p class=\"has-text-align-justify wp-block-paragraph\">עם זאת, בשעה שכדרך קבע וכחלק מנהלי המוקד, נמסר מידע אישי ורגיש לצדדים שלישיים ללא כל בקרה או פיקוח, מסתבר שהתפתחה פרקטיקה חדשה להגבלת גישה למידע. במסגרת פרקטיקה זו, מקשיבים נציגי המוקד לגוון הקול של הפונה ומצליבים אותו למינוח המגדרי של פרטי הפונה במסגרת כתבי טענות. כך, אם לתחושת נציג המוקד הפונה בעל קול גברי ובכתב הטענות נטען שמדובר בתובעת, הרי שהם יסרבו למסור את המידע המבוקש. </p>\n<p class=\"has-text-align-justify wp-block-paragraph\">השיחה מבוצעת מול מנהלת בכירה (מנהלת של מנהלת אחרת) וחושפת באופן מפורש כי הם מונעים את מסירת המידע על בסיס הערכה כי אין התאמה בין גוון הקול לבין הזהות המגדרית כפי שהיא מוצגת בכתבי הטענות. </p>\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-rich wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"360\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/R_2k5QF33_s?feature=oembed\" title=\"מוקד הנהלת בתי המשפט - אימות זהות מגדרי\" width=\"640\"></iframe>\n</div></figure>\n",
+ "content_missing": false,
+ "key": "2a9ab1bf772e"
+}

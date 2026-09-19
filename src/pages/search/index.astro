@@ -1,0 +1,31 @@
+---
+import Base from "../../layouts/Base.astro";
+---
+<Base title="חיפוש">
+  <div class="page-head"><h1>חיפוש בארכיון</h1></div>
+  <article class="article wide">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <div id="search"></div>
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+    <script is:inline>
+      window.addEventListener("DOMContentLoaded", function () {
+        var ui = new PagefindUI({
+          element: "#search",
+          showSubResults: true,
+          showImages: false,
+          translations: {
+            placeholder: "מה לחפש?",
+            zero_results: "לא נמצאו תוצאות עבור [SEARCH_TERM]",
+            clear_search: "נקה",
+            load_more: "עוד תוצאות",
+            filters_label: "סינון",
+            many_results: "[COUNT] תוצאות עבור [SEARCH_TERM]",
+            one_result: "תוצאה אחת עבור [SEARCH_TERM]"
+          }
+        });
+        var q = new URLSearchParams(location.search).get("q");
+        if (q) ui.triggerSearch(q);
+      });
+    </script>
+  </article>
+</Base>

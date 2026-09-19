@@ -1,0 +1,22 @@
+{
+ "id": 4359,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/09/12/search-console-20839660-1/",
+ "path": "/2021/09/12/search-console-20839660-1/",
+ "title": "Search Console 20839660 #1",
+ "date": "2021-09-12T18:49:00+03:00",
+ "modified": "2022-01-01T14:23:22+02:00",
+ "description": "Notice of court order-related removal from Google Search To: Webmaster of https://תולעת-המשפט.קום/, Google has received a legal complaint involving a court order, and we’re in the process of blocking certain",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-31-185103.png?fit=668%2C393&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-31-185103.png",
+ "categories": [
+  {
+   "name": "Search Console",
+   "slug": "ספריית-התמנון/search-console"
+  }
+ ],
+ "tags": [],
+ "content_html": "\n<p class=\"has-text-align-left wp-block-paragraph\">Notice of court order-related removal from Google Search</p>\n<p class=\"has-text-align-left wp-block-paragraph\">To: Webmaster of <a>https://תולעת-המשפט.קום/</a>,</p>\n<p class=\"has-text-align-left wp-block-paragraph\">Google has received a legal complaint involving a court order, and we’re in the process of blocking certain URLs from your website from appearing in our Google Search results on the following country-level services:</p>\n<figure class=\"wp-block-embed\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.google.co.il\n</div></figure>\n<p class=\"has-text-align-left wp-block-paragraph\">The notice that we received, with any personally identifying information removed, may be found on the website of Lumen, a third-party aggregator of legal complaint notices, at: <a href=\"https://notifications.google.com/g/p/AD-FnEykCSEHbGQP6IboGZ33hoXTz4qMLDw0v_Dh_IevwRiVthQ_sAII6DCGevSmoo_xEKDWwmKwvQeudvJbbRhpjGj8QTSNqsyGoiBeDPowemdRpOlRoL9V9NH1cVGPYvWKYFXfFA\" rel=\"noreferrer noopener\" target=\"_blank\">https://lumendatabase.org/notices/20839660</a>.</p>\n<p class=\"has-text-align-left wp-block-paragraph\">Please note that it may take several weeks for the notice to be posted on the above page.</p>\n<h2 class=\"has-text-align-left wp-block-heading\">What you can do next:</h2>\n<figure class=\"wp-block-table\"><table><tbody><tr><td>Speak to a lawyerIf you have legal questions about this notification, you may wish to speak to your own lawyer.</td></tr></tbody></table></figure>\n<h3 class=\"has-text-align-left wp-block-heading\">Here are the affected URL(s):</h3>\n<p class=\"wp-block-paragraph\"></p>\n<figure class=\"wp-block-pullquote\"><blockquote><p>הערת מערכת</p><cite>נציין כי מדובר ב-3 תיקים, כאשר התקבלה באחד התיקים החלטה על איסור פרסום, ובתיק נוסף החלטה שלא לחשוף מידע במסמכים. עם זאת, גוגל חסמו את תצוגת 3 התיקים במנוע החיפוש, אף שכל מה שהוצג באתר התולעת, הוצג כדין. מבלי להודות בדבר, הוחלט שלא לפרסם את הקישורים עצמם.</cite></blockquote></figure>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "f1c1438edb26"
+}

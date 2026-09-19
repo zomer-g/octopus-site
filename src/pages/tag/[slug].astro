@@ -1,0 +1,20 @@
+---
+import Base from "../../layouts/Base.astro";
+import { allPosts, tags, postCardsHtml } from "../../lib/site";
+
+export async function getStaticPaths() {
+  const posts = await allPosts();
+  return tags
+    .map((t) => ({ params: { slug: t.slug }, props: { tag: t, posts: posts.filter((p) => p.data.tags.includes(t.slug)) } }))
+    .filter((x) => x.props.posts.length > 0);
+}
+const { tag, posts } = Astro.props;
+---
+<Base title={`תגית: ${tag.name}`}>
+  <div class="page-head">
+    <div class="breadcrumbs"><a href="/categories/#tags">תגיות</a></div>
+    <h1># {tag.name}</h1>
+    <p>{posts.length} פרסומים</p>
+  </div>
+  <Fragment set:html={postCardsHtml(posts)} />
+</Base>

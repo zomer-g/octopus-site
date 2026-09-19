@@ -1,0 +1,31 @@
+{
+ "id": 5352,
+ "type": "post",
+ "url": "https://octopus.org.il/2022/07/11/%d7%aa%d7%a7%d7%9c%d7%94-%d7%91%d7%a0%d7%98-11-7-22/",
+ "path": "/2022/07/11/תקלה-בנט-11-7-22/",
+ "title": "תקלה בנט 11/7/22",
+ "date": "2022-07-11T08:53:00+03:00",
+ "modified": "2022-08-01T08:57:39+03:00",
+ "description": "אחרי התקלה הקודמת שנמשכה כמעט שבועיים, שוב תקלה בפרסום המסמכים באתר.",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2022/08/FXeZ3VuX0AEKzMG.png?fit=270%2C120&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2022/08/FXeZ3VuX0AEKzMG.png",
+ "categories": [
+  {
+   "name": "תקלות בנט המשפט",
+   "slug": "פרויקטים/net_bugs"
+  }
+ ],
+ "tags": [
+  {
+   "name": "נט המשפט",
+   "slug": "נט-המשפט"
+  },
+  {
+   "name": "תקלות",
+   "slug": "תקלות"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">אחרי התקלה הקודמת שנמשכה כמעט שבועיים, שוב תקלה בפרסום המסמכים באתר. </p>\n",
+ "content_missing": false,
+ "key": "62bbd13c01f3"
+}

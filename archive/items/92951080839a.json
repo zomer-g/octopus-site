@@ -1,0 +1,55 @@
+{
+ "id": 204,
+ "type": "post",
+ "url": "https://octopus.org.il/2019/09/02/tiktak/",
+ "path": "/2019/09/02/tiktak/",
+ "title": "שמות התיקים החסויים שדלפו",
+ "date": "2019-09-02T12:03:00+03:00",
+ "modified": "2021-12-08T23:37:09+02:00",
+ "description": "במסגרת פעילות תולעת המשפט אנו נחשפים לשלל ליקויים, עליהם אנו מדווחים לגורמים הרלוונטיים במטרה להבטיח פעילות תקינה ובטוחה כמו גם הגנה על המידע של צדדים",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/d790d7a4d79cd799d7a7d7a6d799d799d7aa-d7aad799d7a7-d7aad7a7-4.png?fit=851%2C461&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/07/d790d7a4d79cd799d7a7d7a6d799d799d7aa-d7aad799d7a7-d7aad7a7-4.png",
+ "categories": [
+  {
+   "name": "אבטחת מידע",
+   "slug": "אבטחת-מידע"
+  },
+  {
+   "name": "חדשות",
+   "slug": "news"
+  },
+  {
+   "name": "ממשל ומנהל תקין",
+   "slug": "cabinet/purity"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "tags": [
+  {
+   "name": "אבטחת מידע",
+   "slug": "אבטחת-מידע"
+  },
+  {
+   "name": "אפליקציית תיק טק",
+   "slug": "אפליקציית-תיק-טק"
+  },
+  {
+   "name": "הארץ",
+   "slug": "הארץ"
+  },
+  {
+   "name": "הנהלת בתי המשפט",
+   "slug": "הנהלת-בתי-המשפט"
+  },
+  {
+   "name": "רן בר זיק",
+   "slug": "רן-בר-זיק"
+  }
+ ],
+ "content_html": "\n<p class=\"has-text-align-justify wp-block-paragraph\">במסגרת פעילות תולעת המשפט אנו נחשפים לשלל ליקויים, עליהם אנו מדווחים לגורמים הרלוונטיים במטרה להבטיח פעילות תקינה ובטוחה כמו גם הגנה על המידע של צדדים ובעלי עניין בהליכים המשפטיים בישראל. </p>\n<p class=\"has-text-align-justify wp-block-paragraph\">במסגרת השקת אפליקציית תיק – טק של הנהלת בתי המשפט, שנועדה להנגיש את המידע על ההליכים המשפטיים של הצדדים השונים, נחשף כי כל שמות התיקים החסויים במערכת המשפט, היו פתוחים ונגישים לכל משתמש ללא כל צורך בהזדהות או תיעוד של גישות שבוצעו לתיקים אלה. דיווח הועבר באופן מייד להנהלת בתי המשפט, ולאחר מכן גם לרשות הסייבר ולרשות להגנת הפרטיות. </p>\n<p class=\"wp-block-paragraph\">לאייטם <a href=\"https://www.haaretz.co.il/captain/software/.premium-1.7738659\" rel=\"noreferrer noopener\" target=\"_blank\">בהארץ</a></p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "92951080839a"
+}

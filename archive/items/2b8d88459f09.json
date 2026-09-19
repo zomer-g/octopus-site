@@ -1,0 +1,35 @@
+{
+ "id": 3064,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/09/19/rss-2/",
+ "path": "/2021/09/19/rss-2/",
+ "title": "רסס RSS",
+ "date": "2021-09-19T00:06:39+03:00",
+ "modified": "2022-03-12T19:46:20+02:00",
+ "description": "להסבר על הרשמה לרסס תולעת המשפט מה זה RSS (רסס) רסס (RSS ראשי תיבות של Really Simple Syndication או Rich Site Summary), הוא פרוטוקול קריא",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/09/Screenshot-2021-09-18-234130.png?fit=447%2C178&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/09/Screenshot-2021-09-18-234130.png",
+ "categories": [
+  {
+   "name": "על העמותה",
+   "slug": "על-העמותה"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "tags": [
+  {
+   "name": "RSS",
+   "slug": "rss"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\"><a href=\"https://octopus.org.il/?p=4794\">להסבר על הרשמה לרסס תולעת המשפט</a></p>\n<h2 class=\"wp-block-heading\">מה זה RSS (רסס)</h2>\n<p class=\"wp-block-paragraph\">רסס (RSS ראשי תיבות של Really Simple Syndication או Rich Site Summary), הוא פרוטוקול קריא מכונה (כלומר במבנה קבוע שמחשב מסוגל לקרוא ולהבין) לעדכון תוכן. בפועל דומה הפרוטוקול לרשימה של תכנים (פוסטים בבלוג, אייטמים באתר תקשורת) לפי סדר כרונולוגי ומקבץ רכיבי מידע עליהם (כמו כותרת, כותרת משנה, תמונת נושא, שם הכותב ועוד) . בנוסף מאפשרת טכנולוגיה זו לרכז ולשלוט בכמות גדולה של תכנים המגיעים ממספר אתרים באמצעות ממשקים לקריאת RSS. </p>\n<p class=\"wp-block-paragraph\">ניתן לדמות פיד רסס למעקב אחרי עמוד או חשבון ברשת החברתית, וכמובן שניתן לעקוב אחרי מספר חשבונות או עמודים במקביל. </p>\n<p class=\"wp-block-paragraph\"></p>\n<h2 class=\"wp-block-heading\">אז איך משתמשים בזה?</h2>\n<p class=\"wp-block-paragraph\">בצד של האתר אותו נרצה לצרוך, יש לחפש את פיד ה-רסס שלו. לרוב יהיה לוגו או רשימה לפי תחומים או נושאים באתר אותו נרצה לצרוך. פיד ה-רסס נראה ככתובת אתר אינטרנט. כאן לדוגמה רשימת RSS של אתר <a href=\"http://www.haaretz.co.il/misc/rss\" rel=\"noreferrer noopener\" target=\"_blank\">הארץ</a> וכאן של אתר <a href=\"https://www.globes.co.il/news/article.aspx?did=851969&amp;fid=3038\" rel=\"noreferrer noopener\" target=\"_blank\">גלובס</a>. הפיד הוא למעשה כתובת אתר (URL) שאותו נדרש <strong>להעתיק</strong>. </p>\n<div class=\"wp-block-image is-style-default\"><figure class=\"aligncenter is-resized\"><img alt=\"\" decoding=\"async\" height=\"128\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/1024px-Feed-icon.svg.png\" width=\"128\"/><figcaption>לוגו RSS מתוך ויקיפדיה <br/>מאת unnamed (Mozilla Foundation) – feedicons.com, MPL 1.1, https://commons.wikimedia.org/w/index.php?curid=654420</figcaption></figure></div>\n<p class=\"wp-block-paragraph\">במקביל נצטרך לפתוח חשבון בממשק RSS מתאים כמו <a href=\"https://www.inoreader.com\">Inoreader</a> או <a href=\"https://feedly.com\">Feedly</a>. בתוך הממשק, תמיד תהיה שורת חיפוש או הוספה של פיד RSS, וכאן נוכל <strong>להדביק</strong> את הכתובת שהעתקנו. עתה נראה את העדכונים האחרונים ב-RSS אליו הצטרפנו, נוכל לסמן שקראנו אותם ומכאן ואילך כל פריט חדש, יתקבל. באותו אופן ניתן לצרוך אתרים, בלוגים ושירותים רבים במקביל.</p>\n<p class=\"wp-block-paragraph\"></p>\n<h2 class=\"wp-block-heading\">לא רוצים להירשם לשירות רסס? </h2>\n<p class=\"wp-block-paragraph\">אין בעיה, במקום הרשמה לשירות, תוכלו להעזר בשירותי צד שלישי שמאפשרים קבלת התראות בדואר אלקטורני במקום. אפשרות זו מתאימה במיוחד למי שמבקש להרשם למעט מאד עדכונים אחרת האפשרות הזאת עשויה לייצר עומס ורעש בתיבת הדוא\"ל שלכם. שירותים אלה מאפשרים לכם לספק להם את כתובת הרסס שאחריה תרצו לעקוב ואת כתובת הדואר האלקטרוני שלכם, ומעתה תקבלו את ההתראות ישר לתיבת הדואר האלקטרוני. </p>\n<p class=\"wp-block-paragraph\"><a href=\"https://blogtrottr.com/\" rel=\"noreferrer noopener\" target=\"_blank\">שירות לדוגמה</a></p>\n<p class=\"wp-block-paragraph\"></p>\n<h2 class=\"wp-block-heading\">מה עוד אפשר לעשות עם רסס?</h2>\n<p class=\"wp-block-paragraph\">רסס הוא למעשה פרוטוקול מאד נפוץ לקבלת עדכוני תוכן ולכן יש המון שירותים שניתן ליישם על גבי הפרוטוקול. שירותי </p>\n<p class=\"wp-block-paragraph\">שלל שירותי אוטומציה (If This Then That – IFTTT) כמו <a href=\"https://ifttt.com/explore\" rel=\"noreferrer noopener\" target=\"_blank\">IFTTT</a> או <a href=\"https://zapier.com/\" rel=\"noreferrer noopener\" target=\"_blank\">Zapier</a> יאפשרו לכם לשלוח הודעות, לצייץ, לפרסם פוסטים ודברים דומים באופן אוטומטי וללא צורך בידע מוקדם או הבנה בפיתוח או תכנות. </p>\n<p class=\"wp-block-paragraph\">חברת גוגל באמצעות Google Sheet (המקבילה של אקסל) תאפשר לכם לקרוא את פיד הרסס ישירות בגיליון נתונים באמצעות נוסחה פשוטה בה תדרשו להעתיק את כתובת הרסס. <a href=\"https://support.google.com/docs/answer/3093337?hl=en\" rel=\"noreferrer noopener\" target=\"_blank\">להסבר ראו כאן</a>.</p>\n",
+ "content_missing": false,
+ "key": "2b8d88459f09"
+}

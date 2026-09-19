@@ -1,0 +1,32 @@
+{
+  "name": "octopus",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "astro dev",
+    "gen": "node server/generate-cli.js",
+    "build": "node server/generate-cli.js && astro build && pagefind --site dist && node -e \"require('fs').copyFileSync('src/data/routes.json','dist/_routes.json')\"",
+    "preview": "astro preview",
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1136.0",
+    "astro": "^7.3.3",
+    "express": "^5.2.1",
+    "fast-xml-parser": "^5.11.1",
+    "gray-matter": "^4.0.3",
+    "jose": "^6.2.12",
+    "multer": "^2.4.0",
+    "pagefind": "^1.5.2",
+    "pg": "^8.23.0",
+    "tinymce": "^8.9.1",
+    "tinymce-i18n": "^26.9.14"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  }
+}

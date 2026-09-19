@@ -1,0 +1,27 @@
+{
+ "id": 3592,
+ "type": "post",
+ "url": "https://octopus.org.il/2019/09/22/the7eye/",
+ "path": "/2019/09/22/the7eye/",
+ "title": "העין השביעית",
+ "date": "2019-09-22T20:03:00+03:00",
+ "modified": "2021-11-23T09:31:52+02:00",
+ "description": "מגזין אינטרנטי המוקדש לביקורת על התקשורת. לאתר העין",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/d794d7a2d799d79f-d794d7a9d791d799d7a2d799d7aa-3.png?fit=191%2C234&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/07/d794d7a2d799d79f-d794d7a9d791d799d7a2d799d7aa-3.png",
+ "categories": [
+  {
+   "name": "גופי תקשורת",
+   "slug": "גופי-תקשורת"
+  }
+ ],
+ "tags": [
+  {
+   "name": "העין השביעית",
+   "slug": "העין-השביעית"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">מגזין אינטרנטי המוקדש לביקורת על התקשורת.</p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.the7eye.org.il/\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר העין</a></p>\n",
+ "content_missing": false,
+ "key": "f5896a57f5b7"
+}

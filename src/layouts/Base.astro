@@ -1,0 +1,96 @@
+---
+import "../styles/global.css";
+import menu from "../data/menu.json";
+import { SITE } from "../lib/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: "website" | "article";
+}
+const { title, description = SITE.tagline, image = SITE.logo, type = "website" } = Astro.props;
+const fullTitle = title ? `${title} – ${SITE.name}` : SITE.fullName;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const current = decodeURI(Astro.url.pathname);
+---
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/wp-content/uploads/2021/01/cropped-cropped-zomerlogo-1-5.png" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content="he_IL" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title ?? SITE.fullName} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip" href="#main">דלג לתוכן</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/">
+          <img src={SITE.logo} alt="" width="52" height="50" />
+          <span><strong>{SITE.name}</strong><small>{SITE.tagline}</small></span>
+        </a>
+        <form class="search-form" action="/search/" role="search">
+          <input type="search" name="q" placeholder="חיפוש בארכיון…" aria-label="חיפוש" />
+        </form>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav">תפריט</button>
+      </div>
+      <nav id="nav" class="nav" aria-label="ניווט ראשי">
+        <ul class="wrap">
+          {menu.map((item) => (
+            <li class={item.children?.some((c) => c.href === current) || item.href === current ? "active" : ""}>
+              <a href={item.href}>{item.label}</a>
+              {item.children && (
+                <ul>
+                  {item.children.map((c) => (
+                    <li><a href={c.href} aria-current={c.href === current ? "page" : undefined}>{c.label}</a></li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div>
+          <strong>{SITE.fullName}</strong>
+          <p>עמותת התמנון נוסדה כדי לקדם את הנגשת המידע הציבורי בכלל והמשפטי בפרט, בין היתר תוך שימוש בכלים מתקדמים.</p>
+        </div>
+        <ul>
+          <li><a href="/posts/">כל הפרסומים</a></li>
+          <li><a href="/categories/">נושאים</a></li>
+          <li><a href="/about/">אודות</a></li>
+          <li><a href="/contact/">צור קשר</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const t = document.querySelector(".menu-toggle");
+      t?.addEventListener("click", () => {
+        const open = document.body.classList.toggle("nav-open");
+        t.setAttribute("aria-expanded", String(open));
+      });
+    </script>
+  </body>
+</html>

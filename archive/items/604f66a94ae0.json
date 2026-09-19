@@ -1,0 +1,59 @@
+{
+ "id": 169,
+ "type": "post",
+ "url": "https://octopus.org.il/2019/11/11/sidesleak/",
+ "path": "/2019/11/11/sidesleak/",
+ "title": "תולעת המשפט חושפת ליקויי אבטחה באתר נט המשפט",
+ "date": "2019-11-11T11:44:00+02:00",
+ "modified": "2021-12-08T23:36:34+02:00",
+ "description": "במסגרת הפעילות הטכנולוגית של תולעת המשפט נחשפו שורה של ליקויים שאפשרו להגיע למידע שלא נועד לחשיפה באתר נט המשפט. דיווח מסודר הועבר, ובזכות תולעת המשפט,",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/d79ed7aad79bd7a0d7aad799-d7a0d798-d794d79ed7a9d7a4d798-1-3.png?fit=855%2C465&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/07/d79ed7aad79bd7a0d7aad799-d7a0d798-d794d79ed7a9d7a4d798-1-3.png",
+ "categories": [
+  {
+   "name": "אבטחת מידע",
+   "slug": "אבטחת-מידע"
+  },
+  {
+   "name": "חדשות",
+   "slug": "news"
+  },
+  {
+   "name": "ממשל ומנהל תקין",
+   "slug": "cabinet/purity"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "tags": [
+  {
+   "name": "אבטחת מידע",
+   "slug": "אבטחת-מידע"
+  },
+  {
+   "name": "הארץ",
+   "slug": "הארץ"
+  },
+  {
+   "name": "הנהלת בתי המשפט",
+   "slug": "הנהלת-בתי-המשפט"
+  },
+  {
+   "name": "נט המשפט",
+   "slug": "נט-המשפט"
+  },
+  {
+   "name": "סייבר",
+   "slug": "סייבר"
+  },
+  {
+   "name": "רן בר זיק",
+   "slug": "רן-בר-זיק"
+  }
+ ],
+ "content_html": "\n<p class=\"has-text-align-justify wp-block-paragraph\"><strong>במסגרת הפעילות הטכנולוגית של תולעת המשפט נחשפו שורה של ליקויים שאפשרו להגיע למידע שלא נועד לחשיפה באתר נט המשפט. דיווח מסודר הועבר, ובזכות תולעת המשפט, תוקן הליקוי. </strong></p>\n<figure class=\"wp-block-image size-large is-style-default\"><img alt=\"\" class=\"wp-image-1667\" data-recalc-dims=\"1\" decoding=\"async\" height=\"348\" sizes=\"(max-width: 640px) 100vw, 640px\" src=\"https://i0.wp.com/52.59.9.205/wp-content/uploads/2019/11/d79ed7aad79bd7a0d7aad799-d7a0d798-d794d79ed7a9d7a4d798-4.png?resize=640%2C348\" srcset=\"https://i0.wp.com/octopus.org.il/wp-content/uploads/2019/11/d79ed7aad79bd7a0d7aad799-d7a0d798-d794d79ed7a9d7a4d798-4.png?w=855&amp;ssl=1 855w, https://i0.wp.com/octopus.org.il/wp-content/uploads/2019/11/d79ed7aad79bd7a0d7aad799-d7a0d798-d794d79ed7a9d7a4d798-4.png?resize=300%2C163&amp;ssl=1 300w, https://i0.wp.com/octopus.org.il/wp-content/uploads/2019/11/d79ed7aad79bd7a0d7aad799-d7a0d798-d794d79ed7a9d7a4d798-4.png?resize=768%2C418&amp;ssl=1 768w\" width=\"640\"/></figure>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"has-text-align-justify wp-block-paragraph\">תולעת המשפט פועלת להנגיש את המידע הפומבי שבאתר נט המשפט לצד הסדרה והגנה על המידע שאסור בחשיפה. פעילות זו מלווה בשלל כלים ואמצעים, לרבות באופן מובנה בקוד האתר ובהתאם למדיניות גלויה ופומבית. לצד זאת, המערכת הטכנולוגית של תולעת המשפט יכולה לזהות גם זליגה של מידע, קרי, מידע שלכאורה לא נועד להיות פומבי אך בפועל ניתן לגשת אליו. מקרים כאלה ללא יוצא מן הכלל, לא מועלים לאתר תולעת המשפט, אלה מדווחים לגורמים הרלוונטיים. </p>\n<p class=\"has-text-align-right wp-block-paragraph\"><a href=\"https://www.themarker.com/law/1.8989945\" rel=\"noreferrer noopener\" target=\"_blank\">לכתבה בהארץ</a></p>\n",
+ "content_missing": false,
+ "key": "604f66a94ae0"
+}

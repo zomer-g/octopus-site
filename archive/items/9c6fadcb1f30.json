@@ -1,0 +1,17 @@
+{
+ "id": 2829,
+ "type": "page",
+ "url": "https://octopus.org.il/projects/",
+ "path": "/projects/",
+ "title": "פרויקטים",
+ "date": null,
+ "modified": "2022-01-02T11:43:01+00:00",
+ "description": null,
+ "og_image": null,
+ "featured_image": null,
+ "categories": [],
+ "tags": [],
+ "content_html": "\n<p class=\"has-text-align-center wp-block-paragraph\"></p>\n<div aria-hidden=\"true\" class=\"wp-block-spacer\" style=\"height:20px\"></div>\n<div aria-hidden=\"true\" class=\"wp-block-spacer\" style=\"height:20px\"></div>\n<div aria-hidden=\"true\" class=\"wp-block-spacer\" style=\"height:20px\"></div>\n<div aria-hidden=\"true\" class=\"wp-block-spacer\" style=\"height:20px\"></div>\n<div aria-hidden=\"true\" class=\"wp-block-spacer\" style=\"height:84px\"></div>\n<p class=\"wp-block-paragraph\"></p>\n<div aria-hidden=\"true\" class=\"wp-block-spacer\" style=\"height:32px\"></div>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "9c6fadcb1f30"
+}

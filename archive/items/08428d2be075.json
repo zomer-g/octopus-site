@@ -1,0 +1,51 @@
+{
+ "id": 1720,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/01/31/class-action-dashboard/",
+ "path": "/2021/01/31/class-action-dashboard/",
+ "title": "לוח מחוונים – תובענות ייצוגיות",
+ "date": "2021-01-31T13:10:35+02:00",
+ "modified": "2022-02-17T01:49:53+02:00",
+ "description": "לוח המחוונים מבוסס על איסוף מידע מתמשך ועקבי על כלל ההליכים מסוג תובענה ייצוגית באתר נט המשפט, שנפתחו או נסגרו בשבועיים החולפים, באמצעות פרויקט תולעת",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/01/dashboard-e1614077128829.png?fit=456%2C386&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/01/dashboard-e1614077128829.png",
+ "categories": [
+  {
+   "name": "מדיניות וקשרי ממשל",
+   "slug": "מדיניות-וקשרי-ממשל"
+  },
+  {
+   "name": "תובענות ייצוגיות",
+   "slug": "פרויקטים/תובענות-ייצוגיות"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "tags": [
+  {
+   "name": "ירדן עידן",
+   "slug": "ירדן-עידן"
+  },
+  {
+   "name": "לוח מחוונים",
+   "slug": "לוח-מחוונים"
+  },
+  {
+   "name": "נט המשפט",
+   "slug": "נט-המשפט"
+  },
+  {
+   "name": "תובענות ייצוגיות",
+   "slug": "תובענות-ייצוגיות"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "content_html": "\n<p class=\"has-text-align-justify\">לוח המחוונים מבוסס על איסוף מידע מתמשך ועקבי על כלל ההליכים מסוג תובענה ייצוגית באתר נט המשפט, שנפתחו או נסגרו בשבועיים החולפים, באמצעות פרויקט <a class=\"broken_link\" href=\"tl8.me\">תולעת המשפט</a>.</p>\n<p><a href=\"https://octopus.org.il/class_action/\">לעמוד פרויקטור התובענות הייצוגיות של עמותת התמנון</a></p>\n<p><a href=\"https://octopus.org.il/2021/02/01/class-action2/\">לקול קורא של משרד המשפטים בנושא תיקון חוק התובענות הייצוגיות</a></p>\n<h2><strong>מה חדש?</strong></h2>\n<p>התיקים האחרונים שנפתחו בבתי המשפט בארץ</p>\n<p><iframe allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"950\" src=\"https://datastudio.google.com/embed/reporting/61734493-2c86-4d88-8730-44e194fe6c5e/page/WnxpB\" style=\"border: 0;\" width=\"800\"></iframe></p>\n<h2><strong>מה נסגר?</strong></h2>\n<p>התיקים האחרונים שנסגרו</p>\n<p><iframe allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"950\" src=\"https://datastudio.google.com/embed/reporting/61734493-2c86-4d88-8730-44e194fe6c5e/page/Z56oB\" style=\"border: 0;\" width=\"800\"></iframe></p>\n<h2><strong>מה יש ברקע</strong></h2>\n<p>מבט מאקרו על התובענות הייצוגות בישראל</p>\n<p><iframe allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"950\" loading=\"lazy\" src=\"https://datastudio.google.com/embed/reporting/61734493-2c86-4d88-8730-44e194fe6c5e/page/OZ6oB\" style=\"border: 0;\" width=\"800\"></iframe></p>\n<h2><strong>כמה זמן?</strong></h2>\n<p>סטטיסטיקות של התמשכות ההליכים לפי בית משפט או סוג עניין</p>\n<p><iframe allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"950\" loading=\"lazy\" src=\"https://datastudio.google.com/embed/reporting/61734493-2c86-4d88-8730-44e194fe6c5e/page/096oB\" style=\"border: 0;\" width=\"800\"></iframe></p>\n<p> </p>\n<h2><strong>שחקנים חוזרים</strong></h2>\n<p>מבט על התחומים והשחקנים החוזרים בהם</p>\n<p><iframe allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"950\" loading=\"lazy\" src=\"https://datastudio.google.com/embed/reporting/61734493-2c86-4d88-8730-44e194fe6c5e/page/5RsyB\" style=\"border: 0;\" width=\"800\"></iframe></p>\n<p dir=\"ltr\" style=\"text-align: right;\"> </p>\n<p class=\"has-text-align-justify wp-block-paragraph\">נציין כי בלחיצה על כפתור ימני בעכבר, ניתן להוריד מקומית כל טבלת נתונים עליה מבוסס כל אחד מהגרפים. בנוסף, בקרוב נפרסם טבלה מרוכזת ובה כל הנתונים הגולמיים, הן כאלה שנאספו בצורה ממוכנת באמצעות פרויקט תולעת המשפט והן באמצעות קטלוג ידני שמתבצע על תיקים שתם הדיון בהם.</p>\n<p class=\"has-text-align-justify wp-block-paragraph\">אנו מודים לירדן עידן, בוגרת תואר ראשון במשפטים במסלול האקדמי המכללה למינהל, אשר סייעה באיסוף הנתונים ותכלולם.</p>\n",
+ "content_missing": false,
+ "key": "08428d2be075"
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.deploy/
+.astro/
+*.log
+.build/
+.builds/
+.uploads/
+.pglite/
+.env.local
+.claude/
+__pycache__/
+
+# generated from the WordPress data (server/generate-cli.js or the server builder)
+src/content/
+src/data/
+.public-repo/

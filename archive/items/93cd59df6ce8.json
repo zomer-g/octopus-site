@@ -1,0 +1,67 @@
+{
+ "id": 4243,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/12/05/criminalguidelines/",
+ "path": "/2021/12/05/criminalguidelines/",
+ "title": "גירוד הנחיות בתחום המשפט הפלילי",
+ "date": "2021-12-05T11:26:00+02:00",
+ "modified": "2021-12-12T21:27:50+02:00",
+ "description": "בעקבות בקשה שהתקבלה גירדנו את כלל הנחיות המשטרה מאתר האינטרנט של המשטרה. בהמשך גירדנו גם את כל הנחיות שירות בתי הסוהר. לסיום הוספנו את הנחיות",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-12-113403.png?fit=1062%2C681&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-12-113403.png",
+ "categories": [
+  {
+   "name": "אכיפה וביטחון אישי",
+   "slug": "cabinet/public-security"
+  },
+  {
+   "name": "משפט",
+   "slug": "cabinet/law"
+  },
+  {
+   "name": "פרויקט החפרפרת",
+   "slug": "פרויקטים/פרויקט-החפרפרת"
+  },
+  {
+   "name": "פרויקטים",
+   "slug": "פרויקטים"
+  }
+ ],
+ "tags": [
+  {
+   "name": "האגודה לזכויות האזרח",
+   "slug": "האגודה-לזכויות-האזרח"
+  },
+  {
+   "name": "החלטת ממשלה 1933 מיום 30.08.2016",
+   "slug": "החלטת-ממשלה-1933-מיום-30-08-2016"
+  },
+  {
+   "name": "הליכים פליליים",
+   "slug": "הליכים-פליליים"
+  },
+  {
+   "name": "הנחיות",
+   "slug": "הנחיות"
+  },
+  {
+   "name": "משטרת ישראל",
+   "slug": "משטרת-ישראל"
+  },
+  {
+   "name": "פרסום הנחיות",
+   "slug": "פרסום-הנחיות"
+  },
+  {
+   "name": "קוד פתוח",
+   "slug": "קוד-פתוח"
+  },
+  {
+   "name": "שירות בתי הסוהר",
+   "slug": "שירות-בתי-הסוהר"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">בעקבות בקשה שהתקבלה גירדנו את כלל הנחיות המשטרה <a class=\"broken_link\" href=\"https://www.gov.il/he/Departments/DynamicCollectors/menifa\" rel=\"noreferrer noopener\" target=\"_blank\">מאתר האינטרנט</a> של המשטרה. בהמשך גירדנו גם את כל <a class=\"broken_link\" href=\"https://www.gov.il/he/departments/policies?OfficeId=c3f24c3b-9940-45c2-82a1-c4be2087bf99&amp;skip=0&amp;limit=10\" rel=\"noreferrer noopener\" target=\"_blank\">הנחיות שירות בתי הסוהר</a>. לסיום הוספנו את <a class=\"broken_link\" href=\"https://www.gov.il/he/Departments/DynamicCollectors/guidelines-state-attorney?skip=0\" rel=\"noreferrer noopener\" target=\"_blank\">הנחיות פרקליטות המדינה</a>.  </p>\n<p class=\"wp-block-paragraph\"><a href=\"https://drive.google.com/drive/folders/1bnwWWpup3-EwMxd66LmCOfu0az3oP2EZ?usp=sharing\" rel=\"noreferrer noopener\" target=\"_blank\">לכל הקבצים בתיקיית דרייב</a></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\">ראוי להזכיר כי לפי <a class=\"broken_link\" href=\"https://www.gov.il/he/departments/policies/government_decision_1933_moch\" rel=\"noreferrer noopener\" target=\"_blank\">החלטת ממשלה 1933</a> על המשטרה ושב\"ס לפעול לפרסום מאגרי המידע ובכלל זה מאגר ההנחיות בצורה מיטבית לרבות ממשק נתונים מתאים. כמו כן כי לפרסום הנחיות המשטרה קדמה עתירה של האגודה לזכויות האזרח (עת\"מ 65106-07-18 : האגודה לזכויות האזרח בישראל נ' משטרה) ובה חויבה המשטרה לפרסם נהלים אלה (<a href=\"https://tl8.me/u-1882\" rel=\"noreferrer noopener\" target=\"_blank\">לפס\"ד</a>).</p>\n<p class=\"wp-block-paragraph\">הגירוד בוצע בתחילת חודש דצמבר וכלל כ-1,100 הנחיות משטרה וכ-400 הנחיות שב\"ס.</p>\n<p class=\"wp-block-paragraph\"> <a class=\"broken_link\" href=\"https://github.com/andyil/---/blob/main/%D7%A4%D7%A7%D7%95%D7%93%D7%95%D7%AA-%D7%9E%D7%A9%D7%98%D7%A8%D7%94.py\" rel=\"noreferrer noopener\" target=\"_blank\"></a><a href=\"https://github.com/andyil/---/blob/main/%D7%94%D7%A1%D7%9B%D7%9E%D7%99%D7%9D-%D7%A7%D7%99%D7%91%D7%95%D7%A6%D7%99%D7%99%D7%9D.py\" rel=\"noreferrer noopener\" target=\"_blank\">לקוד הגירוד של הנחיות המשטרה</a></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://github.com/andyil/---/blob/main/%D7%A4%D7%A7%D7%95%D7%93%D7%95%D7%AA-%D7%A9%D7%91%22%D7%A1.py\" rel=\"noreferrer noopener\" target=\"_blank\">לקוד הגירוד של פקודות שב\"ס</a></p>\n<p class=\"wp-block-paragraph\"> <a href=\"https://github.com/andyil/---/blob/main/%D7%A4%D7%A7%D7%95%D7%93%D7%95%D7%AA-%D7%A9%D7%91%22%D7%A1.py\" rel=\"noreferrer noopener\" target=\"_blank\">לקוד הגירוד של הנחיות </a><a class=\"broken_link\" href=\"https://github.com/andyil/---/blob/main/%D7%94%D7%A0%D7%97%D7%99%D7%95%D7%AA-%D7%A4%D7%A8%D7%A7%D7%9C%D7%99%D7%98-%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94.py\" rel=\"noreferrer noopener\" target=\"_blank\">הפרקליטות</a></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "93cd59df6ce8"
+}

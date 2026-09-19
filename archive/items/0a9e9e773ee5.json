@@ -1,0 +1,17 @@
+{
+ "id": 2368,
+ "type": "page",
+ "url": "https://octopus.org.il/dashboard/",
+ "path": "/dashboard/",
+ "title": "פרויקט לוח המחוונים",
+ "date": null,
+ "modified": "2021-11-24T07:32:36+00:00",
+ "description": "לוחות מחוונים (dashboard) שיצרה העמותה לצורך הנגשת מידע בהקשרים משפטיים וחדשותיים שונים",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/11/Untitled-1-Recovered-3.png?fit=1000%2C920&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/11/Untitled-1-Recovered-3.png",
+ "categories": [],
+ "tags": [],
+ "content_html": "\n<p class=\"has-text-align-justify wp-block-paragraph\">הנגשת המידע הציבורי בכלל בין היתר תוך שימוש בכלים מתקדמים כוללת לעת עתה שתי פלטפורמות עצמאיות, האחת \"<a class=\"broken_link\" href=\"http://tl8.me\" rel=\"noreferrer noopener\" target=\"_blank\">תולעת המשפט</a>\" והשנייה \"<a href=\"http://odata.org.il\" rel=\"noreferrer noopener\" target=\"_blank\">מידע לעם</a>\". לצד פלטפורמות אלה, אנו עוסקים במידע כמותי רב, שפעמים רבות הדרך להנגיש אותו ולהפוך את הנתונים לידע ותובנות היא באמצעות בניית לוחות מחוונים (דשבורד Dashboard). לוחות המחוונים האלה מבוססים על טבלאות נתונים גדולות ומציגים שורה של גרפים וטבלאות אינטרקטיביות.  </p>\n<p class=\"has-text-align-justify wp-block-paragraph\">הכלי המרכזי איתו אנו עובדים נקרא <a href=\"https://datastudio.google.com/\" rel=\"noreferrer noopener\" target=\"_blank\">Data-Studio</a>. מדובר בכלי חינמי של חברת Google. שני כלים נוספים ומומלצים בתחום הם <a href=\"https://powerbi.microsoft.com/\" rel=\"noreferrer noopener\" target=\"_blank\">Power-BI</a> של חברת מיקרוסופט ו-<a class=\"broken_link\" href=\"https://www.tableau.com/\" rel=\"noreferrer noopener\" target=\"_blank\">Tableau</a>. </p>\n",
+ "content_missing": false,
+ "key": "0a9e9e773ee5"
+}

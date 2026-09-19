@@ -1,0 +1,16 @@
+---
+import Base from "../../layouts/Base.astro";
+import YearList from "../../components/YearList.astro";
+import { allPosts, postCardsHtml } from "../../lib/site";
+import menu from "../../data/menu.json";
+const posts = await allPosts();
+const sections = menu.find((m) => m.href === "/news/")!.children!;
+---
+<Base title="חדשות ועדכונים">
+  <div class="page-head">
+    <h1>חדשות ועדכונים</h1>
+    <ul class="pills">{sections.map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
+  </div>
+  <Fragment set:html={postCardsHtml(posts.slice(0, 12))} />
+  <YearList posts={posts} />
+</Base>

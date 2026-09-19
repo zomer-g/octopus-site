@@ -1,0 +1,64 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Entry from "../components/Entry.astro";
+import menu from "../data/menu.json";
+import { allPosts, categoryName, categoryUrl, formatDate, tagName, tagUrl, type Post } from "../lib/site";
+
+export async function getStaticPaths() {
+  const posts = await allPosts();
+  const pages = (await getCollection("pages")).filter((p) => p.data.permalink !== "/");
+  const slug = (permalink: string) => permalink.replace(/^\/|\/$/g, "");
+  return [
+    ...posts.map((entry, i) => ({
+      params: { slug: slug(entry.data.permalink) },
+      props: { entry, post: entry, newer: posts[i - 1], older: posts[i + 1] },
+    })),
+    ...pages.map((entry) => ({ params: { slug: slug(entry.data.permalink) }, props: { entry } })),
+  ];
+}
+
+const { entry, post, newer, older } = Astro.props as {
+  entry: any; post?: Post; newer?: Post; older?: Post;
+};
+const d = entry.data;
+// section pages (projects, archive…) list their sub-pages, like the old carousel did
+const subPages = post ? [] : (menu.find((m) => m.href === d.permalink)?.children ?? []);
+const showFeatured = post && d.image && !(entry.body ?? "").includes(d.image);
+---
+<Base title={d.title} description={d.description} image={d.image} type={post ? "article" : "website"}>
+  <article class={post ? "article" : "article wide"} data-pagefind-body>
+    {post && (
+      <div class="breadcrumbs" data-pagefind-ignore>
+        <a href="/">ראשי</a> / <a href={categoryUrl(post.data.categories[0])}>{categoryName(post.data.categories[0])}</a>
+      </div>
+    )}
+    <h1>{d.title}</h1>
+    {post && (
+      <div class="meta">
+        <time datetime={d.date.toISOString()} data-pagefind-meta="תאריך">{formatDate(d.date)}</time>
+        <ul class="pills" data-pagefind-ignore>
+          {post.data.categories.map((c) => <li><a href={categoryUrl(c)} data-pagefind-filter="נושא">{categoryName(c)}</a></li>)}
+        </ul>
+      </div>
+    )}
+    {showFeatured && <figure class="featured"><img src={d.image} alt="" /></figure>}
+    <Entry entry={entry} />
+    {subPages.length > 0 && (
+      <ul class="tiles" data-pagefind-ignore>{subPages.map((c) => <li><a href={c.href}>{c.label}</a></li>)}</ul>
+    )}
+    {post && post.data.tags.length > 0 && (
+      <footer class="post-footer" data-pagefind-ignore>
+        <ul class="pills tags">
+          {post.data.tags.map((t) => <li><a href={tagUrl(t)}># {tagName(t)}</a></li>)}
+        </ul>
+      </footer>
+    )}
+  </article>
+  {post && (
+    <nav class="post-nav" aria-label="פוסטים סמוכים" data-pagefind-ignore>
+      <div>{newer && <a href={newer.data.permalink}><small>→ הפוסט הבא</small>{newer.data.title}</a>}</div>
+      <div>{older && <a class="next" href={older.data.permalink}><small>הפוסט הקודם ←</small>{older.data.title}</a>}</div>
+    </nav>
+  )}
+</Base>

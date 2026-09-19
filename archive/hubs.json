@@ -1,0 +1,1009 @@
+{
+ "/": {
+  "snapshot": "20230204212104",
+  "sections": [
+   {
+    "heading": "זרועות התמנון",
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-landscape is-style-default has-text-align-left",
+    "posts": [
+     "/2023/01/01/סיום-הפעלת-אתר-תולעת-המשפט/",
+     "/2021/02/04/tl8/",
+     "/2019/09/01/legalactivity/"
+    ]
+   },
+   {
+    "heading": "תמצית הדברים שהיו לאחרונה",
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped show-caption is-style-default has-text-align-left has-more-button",
+    "posts": [
+     "/2022/08/24/cyber/",
+     "/2022/08/09/rented-apartment/",
+     "/2022/08/08/gkh/"
+    ]
+   }
+  ]
+ },
+ "/donations/": null,
+ "/partners/": {
+  "snapshot": "20230204213321",
+  "sections": [
+   {
+    "heading": "חדשות מגופים וארגונים אחרים, שעיקרם הנגשת מידע ציבורי",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-borders has-text-align-left has-more-button",
+    "posts": [
+     "/2022/08/21/yonatan-miller/",
+     "/2022/08/04/48hours/",
+     "/2022/08/03/הערות-בעקבות-ערעור-הנחיות-יעוץ-וחקיקה/",
+     "/2022/06/29/damages/",
+     "/2022/06/28/hefetz_filber/",
+     "/2022/05/26/26080-03-22/",
+     "/2022/04/18/linkedin-scraping/",
+     "/2022/04/17/courtrating/",
+     "/2022/04/04/russian-oligarchs-uk-gdpr/",
+     "/2022/03/30/lexisnexis/",
+     "/2022/03/21/ukraine-refugees/",
+     "/2022/03/03/36421-09-21/",
+     "/2022/02/16/15-אלף-שקל-הוצאות-משפט-נגד-משרד-החוץ-בעתי/",
+     "/2022/02/10/22730-11-21/",
+     "/2022/01/23/64277-05-18/"
+    ]
+   }
+  ]
+ },
+ "/class_action/": {
+  "snapshot": "20230127004252",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-5 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2021/11/09/mohamad_s/",
+     "/2021/02/25/super-class-action/",
+     "/2021/02/22/isoc-class-action/",
+     "/2021/02/09/class-action-behind/",
+     "/2021/02/01/class-action2/",
+     "/2021/01/31/class-action-dashboard/",
+     "/2020/11/30/class-action/"
+    ]
+   }
+  ]
+ },
+ "/state-comptroller/": {
+  "snapshot": "20230204230433",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2022/11/16/id-5/",
+     "/2022/08/30/resident-registration/",
+     "/2022/08/24/cyber/",
+     "/2022/08/08/gkh/",
+     "/2022/08/04/48hours/",
+     "/2022/06/29/damages/",
+     "/2022/05/10/safra-5-10-22/",
+     "/2022/01/26/zfat/",
+     "/2022/01/16/leizer/",
+     "/2022/01/05/ai_marzel/",
+     "/2022/01/04/live_court/",
+     "/2021/12/20/nevo_takdin/",
+     "/2021/12/20/appeals_unit/",
+     "/2021/12/07/alternative-truth1/",
+     "/2021/11/30/שייח-גארח-אינה-עונה-טייק-2/",
+     "/2021/11/15/sensitivedocuments/",
+     "/2021/11/14/munitrans/",
+     "/2021/11/05/foiguide/",
+     "/2021/10/26/gendelman-2/",
+     "/2021/07/27/research/",
+     "/2021/07/20/regulationsstateattorney2-2/",
+     "/2021/06/22/pm-report/",
+     "/2021/06/15/equality/",
+     "/2021/06/07/foi2021/",
+     "/2021/05/03/הצעת-חוק-כבילת-עצורים-ואסירים-שלא-כדין/",
+     "/2021/04/21/judges/",
+     "/2021/04/06/election/",
+     "/2021/03/04/prison-money/",
+     "/2021/01/28/shkifut/",
+     "/2021/01/22/shkifut1/",
+     "/2021/01/09/16697-09-19/",
+     "/2020/12/13/saker/",
+     "/2020/09/09/regulationsstateattorney2/",
+     "/2020/09/02/ppa/",
+     "/2020/08/26/foiu/",
+     "/2020/08/17/4698-20/",
+     "/2020/08/08/regulationsstateattorney/",
+     "/2020/08/02/drucker/",
+     "/2020/07/07/moj_disability_rights/",
+     "/2020/06/18/recommendations/",
+     "/2020/06/12/example-post-3/",
+     "/2020/06/04/14607-06-20/",
+     "/2019/11/11/sidesleak/",
+     "/2019/09/02/tiktak/",
+     "/2017/08/14/id/"
+    ]
+   }
+  ]
+ },
+ "/health/": {
+  "snapshot": "20230204230225",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2021/09/17/5000-06-21/",
+     "/2021/09/12/beenstock/",
+     "/2021/02/11/gamzo/",
+     "/2020/10/05/corona2/",
+     "/2020/08/18/coronadata1/",
+     "/2020/08/01/mortality2/",
+     "/2020/07/29/mortality/",
+     "/2020/07/23/corona1/"
+    ]
+   }
+  ]
+ },
+ "/law/": {
+  "snapshot": "20230204230644",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2022/08/28/25517-01-21/",
+     "/2022/08/25/56116-08-21/",
+     "/2022/08/04/48hours/",
+     "/2022/08/03/הערות-בעקבות-ערעור-הנחיות-יעוץ-וחקיקה/",
+     "/2022/07/10/26946-04-20/",
+     "/2022/06/28/hefetz_filber/",
+     "/2022/06/02/24707-11-21/",
+     "/2022/05/31/7626-06-21/",
+     "/2022/05/26/26080-03-22/",
+     "/2022/05/22/27583-03-22/",
+     "/2022/05/12/id-2/",
+     "/2022/03/27/37231-12-20/",
+     "/2022/03/03/36421-09-21/",
+     "/2022/02/16/15-אלף-שקל-הוצאות-משפט-נגד-משרד-החוץ-בעתי/",
+     "/2022/02/10/22730-11-21/",
+     "/2022/01/26/zfat/",
+     "/2022/01/23/64277-05-18/",
+     "/2022/01/20/36491-09-21/",
+     "/2021/12/16/footnote/",
+     "/2021/12/11/api-2/",
+     "/2021/12/05/criminalguidelines/",
+     "/2021/11/23/40647-05-21/",
+     "/2021/11/15/12936-09-20/",
+     "/2021/11/09/mohamad_s/",
+     "/2021/11/05/foiguide/",
+     "/2021/11/02/expenses/",
+     "/2021/10/30/birnhack/",
+     "/2021/10/19/7sec/",
+     "/2021/09/17/5000-06-21/",
+     "/2021/09/14/digitalrights/",
+     "/2021/08/29/shok_shaked_nachman/",
+     "/2021/08/02/50156-07-20/",
+     "/2021/07/27/research/",
+     "/2021/07/20/regulationsstateattorney2-2/",
+     "/2021/07/05/heres/",
+     "/2021/06/15/equality/",
+     "/2021/06/07/foi2021/",
+     "/2021/05/11/15104-06-19/",
+     "/2021/05/11/372-24/",
+     "/2021/05/09/44038-02-21/",
+     "/2021/03/18/release_order/",
+     "/2021/03/17/gendelman/",
+     "/2021/03/05/izkur2021/",
+     "/2021/02/22/isoc-class-action/",
+     "/2021/02/14/foi-dashborad/",
+     "/2021/02/09/class-action-behind/",
+     "/2021/02/03/47915-10-14/",
+     "/2021/02/01/class-action2/",
+     "/2021/01/28/36356-01-21/",
+     "/2021/01/26/53787-01-20/",
+     "/2021/01/13/mikud/",
+     "/2021/01/09/16697-09-19/",
+     "/2020/12/13/saker/",
+     "/2020/11/30/היתר-עיון-בתיקי-משפחה-בגץ-8001-19/",
+     "/2020/11/12/local_authorities/",
+     "/2020/11/08/17764-02-20/",
+     "/2020/11/01/13043-11-14/",
+     "/2020/10/26/17657-03-20/",
+     "/2020/09/22/single-defendant/",
+     "/2020/09/09/regulationsstateattorney2/",
+     "/2020/08/24/court-access/",
+     "/2020/08/21/court-discussion/",
+     "/2020/08/20/public-court/",
+     "/2020/08/08/regulationsstateattorney/",
+     "/2020/08/06/secretfiles/",
+     "/2020/08/02/drucker/",
+     "/2020/07/28/67104-01-20/",
+     "/2020/06/23/clinicfcsclp/",
+     "/2020/06/18/recommendations/",
+     "/2020/05/27/בדיקה-ככל-שהשופט-מנוסה-יותר-הסיכוי-ל/",
+     "/2020/03/09/37913-06-16/",
+     "/2020/02/05/1709-09-19/",
+     "/2019/08/21/example-post-2/",
+     "/2019/07/17/70064-05-18/",
+     "/2018/12/13/ניתוח-תיקי-בית-המשפט-העליון/",
+     "/2018/08/31/excessive-arrests/",
+     "/2017/02/16/example-post/",
+     "/2015/11/12/5870-14/",
+     "/2015/03/12/4550-02-15/"
+    ]
+   }
+  ]
+ },
+ "/library/": {
+  "snapshot": "20230127005547",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2021/11/05/foiguide/",
+     "/2021/03/16/request/",
+     "/2021/03/09/facebook/",
+     "/2021/03/07/publication/",
+     "/2021/03/03/digital-data/",
+     "/2021/03/02/partial/"
+    ]
+   },
+   {
+    "heading": "פסיקה שהוספנו לאחרונה",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull wpnbha is-grid columns-3 colgap-3 ts-2 has-text-align-left",
+    "posts": [
+     "/2022/08/21/yonatan-miller/",
+     "/2021/10/24/2781_17/",
+     "/2021/03/13/עתמ-68892-01-18-המרכז-הארצי-לסיוע-למתמחים-נ-עור/",
+     "/2021/03/13/עעמ-9811-16-העמותה-למען-מדע-מוסרי-נ-המועצה-לנ/",
+     "/2021/03/13/עעמ-414-18-התנועה-למשילות-ודמוקרטיה-נ-הממו/",
+     "/2021/03/13/עעמ-4349-14‏-האגודה-לזכויות-האזרח-בישראל-נ/",
+     "/2021/03/05/de-iuribus/",
+     "/2021/03/05/izkur2021/",
+     "/2021/01/21/2398-08/",
+     "/2021/01/20/66994-02-19/",
+     "/2021/01/20/עתמ-25946-06-12‏-‏-התנועה-למען-איכות-השלטון-ביש/",
+     "/2021/01/20/2926-09-11/",
+     "/2021/01/20/7024-03/"
+    ]
+   }
+  ]
+ },
+ "/checkout/": null,
+ "/public-security/": {
+  "snapshot": "20230204230809",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2021/12/05/criminalguidelines/",
+     "/2021/11/17/arabcrime/",
+     "/2021/08/05/itay_shufman/",
+     "/2021/07/05/heres/",
+     "/2021/05/03/הצעת-חוק-כבילת-עצורים-ואסירים-שלא-כדין/",
+     "/2021/03/08/security/",
+     "/2021/02/10/corona_r/",
+     "/2020/08/12/suicidesmda/",
+     "/2020/06/11/מהי-רמת-הפשיעה-בעיר-שלכם-הנתונים-נחשפי/",
+     "/2020/06/04/14607-06-20/",
+     "/2020/05/27/בדיקה-ככל-שהשופט-מנוסה-יותר-הסיכוי-ל/"
+    ]
+   }
+  ]
+ },
+ "/foreign-affairs/": {
+  "snapshot": "20230204212019",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2022/04/18/linkedin-scraping/",
+     "/2021/12/09/victims/",
+     "/2021/05/17/dropbox-link/",
+     "/2021/04/27/ydr/",
+     "/2021/04/19/guatemala_corona/",
+     "/2021/03/14/middleton/",
+     "/2021/03/09/facebook/",
+     "/2021/03/05/de-iuribus/",
+     "/2021/02/27/surgeon-court/",
+     "/2021/02/10/lawyer-cat-filter-zoom/",
+     "/2021/02/07/ico-1/",
+     "/2021/01/21/nso/",
+     "/2021/01/10/cisa/",
+     "/2018/12/13/ניתוח-תיקי-בית-המשפט-העליון/"
+    ]
+   }
+  ]
+ },
+ "/blog-2/": null,
+ "/brite/": null,
+ "/academy/": {
+  "snapshot": "20230204212146",
+  "sections": [
+   {
+    "heading": "אזכורים מהאקדמיה לפרויקטים של עמותת התמנון",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha show-image image-alignright ts-4 is-3 is-uncropped is-style-borders has-text-align-left",
+    "posts": [
+     "/2022/05/10/safra-5-10-22/",
+     "/2021/11/05/foiguide/",
+     "/2021/10/30/birnhack/",
+     "/2021/09/12/beenstock/",
+     "/2021/03/05/izkur2021/",
+     "/2021/02/08/academy/",
+     "/2020/07/06/omilab/",
+     "/2020/06/23/clinicfcsclp/",
+     "/2019/01/02/disinformetion/",
+     "/2018/12/13/ניתוח-תיקי-בית-המשפט-העליון/",
+     "/2018/08/31/excessive-arrests/"
+    ]
+   }
+  ]
+ },
+ "/legal/": {
+  "snapshot": "20230204213443",
+  "sections": [
+   {
+    "heading": "עתירות חופש מידע",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped show-caption is-style-borders has-text-align-left",
+    "posts": [
+     "/2021/06/22/pm-report/",
+     "/2021/02/11/gamzo/",
+     "/2021/01/28/shkifut/",
+     "/2021/01/13/mikud/",
+     "/2021/01/09/16697-09-19/",
+     "/2020/10/26/17657-03-20/",
+     "/2020/10/05/corona2/",
+     "/2020/09/09/regulationsstateattorney2/",
+     "/2020/08/06/secretfiles/",
+     "/2020/06/18/recommendations/"
+    ]
+   },
+   {
+    "heading": "בקשות עיון בתיקים",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped show-caption is-style-borders has-text-align-left",
+    "posts": [
+     "/2022/01/26/zfat/",
+     "/2021/11/30/20795-03-19/",
+     "/2021/02/03/47915-10-14/",
+     "/2020/12/23/28211-03-19/",
+     "/2020/11/30/היתר-עיון-בתיקי-משפחה-בגץ-8001-19/",
+     "/2020/07/28/67104-01-20/",
+     "/2020/07/05/palmor/"
+    ]
+   },
+   {
+    "heading": "בקשות לפתיחת דלתות",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped show-caption is-style-borders has-text-align-left",
+    "posts": [
+     "/2022/06/28/hefetz_filber/",
+     "/2020/03/09/37913-06-16/",
+     "/2020/01/16/2834-05-18/"
+    ]
+   }
+  ]
+ },
+ "/events/": {
+  "snapshot": "20221207074945",
+  "sections": [
+   {
+    "heading": "ליין המסיבות של עמותת התמנון או בקיצור כנסים ואירועים",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha show-image image-alignright ts-4 is-3 is-uncropped is-style-borders",
+    "posts": [
+     "/2022/05/10/safra-5-10-22/",
+     "/2021/12/09/itonaimalgo/",
+     "/2021/12/08/icx/",
+     "/2021/11/17/arabcrime/",
+     "/2021/06/07/foi2021/",
+     "/2020/07/06/omilab/",
+     "/2020/06/23/clinicfcsclp/",
+     "/2019/01/02/disinformetion/"
+    ]
+   }
+  ]
+ },
+ "/htl/": {
+  "snapshot": "20230204230212",
+  "sections": [
+   {
+    "heading": "הפרויקטים המשותפים של עמותת הצלחה – לקידום חברה הוגנת ועמותת התמנון – מידע ציבורי לכל",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha show-image image-alignright ts-4 is-3 is-uncropped is-style-borders has-text-align-left",
+    "posts": [
+     "/2022/08/24/cyber/",
+     "/2022/06/28/hefetz_filber/",
+     "/2021/12/18/kan_archive/",
+     "/2021/12/09/itonaimalgo/",
+     "/2021/11/05/foiguide/",
+     "/2021/10/24/fastlane/",
+     "/2021/10/05/regulation_p/",
+     "/2021/06/07/foi2021/",
+     "/2021/04/18/ocr/",
+     "/2021/02/10/corona_r/",
+     "/2021/01/21/nso/",
+     "/2019/09/22/htl/",
+     "/2017/09/15/odata_new/"
+    ]
+   }
+  ]
+ },
+ "/court-publicity/": {
+  "snapshot": "20230204220621",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2022/08/01/id-4/",
+     "/2022/07/07/id-3/",
+     "/2020/08/24/court-access/",
+     "/2020/08/21/court-discussion/",
+     "/2020/08/20/public-court/",
+     "/2015/11/12/5870-14/",
+     "/2014/08/14/nevo/"
+    ]
+   }
+  ]
+ },
+ "/papers/": {
+  "snapshot": "20230204230749",
+  "sections": [
+   {
+    "heading": "ניירות עמדה, מדיריכים ומכתבים בנושא שקיפות ומנהל תקין",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-borders has-text-align-left",
+    "posts": [
+     "/2023/01/01/סיום-הפעלת-אתר-תולעת-המשפט/",
+     "/2022/08/08/gkh/",
+     "/2022/08/03/הערות-בעקבות-ערעור-הנחיות-יעוץ-וחקיקה/",
+     "/2022/08/01/id-4/",
+     "/2022/07/14/court_technology_department/",
+     "/2022/07/07/id-3/",
+     "/2022/06/29/damages/",
+     "/2022/06/28/hefetz_filber/",
+     "/2022/05/12/id-2/",
+     "/2022/05/10/safra-5-10-22/",
+     "/2022/03/21/midrag/",
+     "/2022/02/05/trust/",
+     "/2022/01/16/leizer/",
+     "/2021/12/20/appeals_unit/",
+     "/2021/12/11/api-2/",
+     "/2021/12/08/icx/",
+     "/2021/11/30/שייח-גארח-אינה-עונה-טייק-2/",
+     "/2021/11/25/dovermail/",
+     "/2021/11/18/amutot-p/",
+     "/2021/11/17/arabcrime/",
+     "/2021/11/14/munitrans/",
+     "/2021/11/05/foiguide/",
+     "/2021/10/30/birnhack/",
+     "/2021/10/19/7sec/",
+     "/2021/10/05/regulation_p/",
+     "/2021/09/14/digitalrights/",
+     "/2021/09/12/beenstock/",
+     "/2021/09/01/map/",
+     "/2021/06/07/foi2021/",
+     "/2021/04/18/ocr/",
+     "/2021/04/06/election/",
+     "/2021/03/18/release_order/",
+     "/2021/03/17/gendelman/",
+     "/2021/03/15/amsalem/",
+     "/2021/03/05/izkur2021/",
+     "/2021/02/22/isoc-class-action/",
+     "/2021/02/14/foi-dashborad/",
+     "/2021/02/08/academy/",
+     "/2021/02/01/class-action2/",
+     "/2021/01/31/class-action-dashboard/",
+     "/2021/01/02/ad-co-il/",
+     "/2020/11/30/class-action/",
+     "/2020/11/02/zomer/",
+     "/2020/07/23/מדריך-איגוד-האינטרנט-בעניין-פרסום-הלי/",
+     "/2020/07/06/omilab/",
+     "/2020/06/23/clinicfcsclp/",
+     "/2020/06/15/נייר-עמדה-של-התנועה-לזכויות-דיגיטליות/",
+     "/2020/04/27/הקליניקה-לזכויות-אדם-במרחב-הסייבר-מעל/",
+     "/2019/01/02/disinformetion/",
+     "/2018/08/31/excessive-arrests/",
+     "/2017/09/15/odata_new/",
+     "/2014/08/14/nevo/"
+    ]
+   }
+  ]
+ },
+ "/dashboard/": {
+  "snapshot": "20230204205717",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2021/11/09/mohamad_s/",
+     "/2021/10/24/fastlane/",
+     "/2021/04/06/election/",
+     "/2021/02/14/foi-dashborad/",
+     "/2021/02/10/corona_r/",
+     "/2021/02/09/class-action-behind/",
+     "/2021/02/04/tl8/",
+     "/2021/01/31/class-action-dashboard/",
+     "/2020/09/22/single-defendant/",
+     "/2020/06/11/מהי-רמת-הפשיעה-בעיר-שלכם-הנתונים-נחשפי/"
+    ]
+   }
+  ]
+ },
+ "/octopusnews/": {
+  "snapshot": "20230204230446",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2022/08/09/rented-apartment/",
+     "/2022/08/08/gkh/",
+     "/2022/07/04/shufersal/",
+     "/2022/06/28/hefetz_filber/",
+     "/2022/06/23/rami_levi/",
+     "/2022/05/24/static/",
+     "/2022/05/23/barashi2/",
+     "/2022/02/09/to-be-forgotten/",
+     "/2022/02/05/trust/",
+     "/2022/01/26/zfat/",
+     "/2022/01/11/tahounia/",
+     "/2021/12/20/appeals_unit/",
+     "/2021/11/28/kabub/",
+     "/2021/11/27/barashi/",
+     "/2021/11/09/mohamad_s/",
+     "/2021/11/08/license/",
+     "/2021/10/24/fastlane/",
+     "/2021/10/19/7sec/",
+     "/2021/09/01/map/",
+     "/2021/08/05/trees/",
+     "/2021/08/05/itay_shufman/",
+     "/2021/07/20/regulationsstateattorney2-2/",
+     "/2021/06/22/pm-report/",
+     "/2021/06/15/equality/",
+     "/2021/06/07/foi2021/",
+     "/2021/02/10/corona_r/",
+     "/2021/01/28/shkifut/",
+     "/2021/01/21/nso/",
+     "/2021/01/09/16697-09-19/",
+     "/2020/12/13/saker/",
+     "/2020/11/02/zomer/",
+     "/2020/08/26/foiu/",
+     "/2020/08/18/coronadata1/",
+     "/2020/08/08/regulationsstateattorney/",
+     "/2020/08/01/mortality2/",
+     "/2020/07/29/mortality/",
+     "/2020/07/23/corona1/",
+     "/2020/07/09/היומן-של-ראשת-הרשות-להגנת-הפרטיות/",
+     "/2020/06/20/האיש-שנאבק-על-שקיפות-מערכת-המשפט-מבטיח/",
+     "/2020/06/18/recommendations/",
+     "/2020/06/12/example-post-3/",
+     "/2020/06/04/14607-06-20/",
+     "/2020/05/27/בדיקה-ככל-שהשופט-מנוסה-יותר-הסיכוי-ל/",
+     "/2020/03/09/37913-06-16/",
+     "/2019/11/11/sidesleak/",
+     "/2019/09/02/tiktak/",
+     "/2019/08/21/example-post-2/",
+     "/2018/12/13/ניתוח-תיקי-בית-המשפט-העליון/",
+     "/2017/09/15/odata_new/",
+     "/2017/08/14/id/",
+     "/2017/02/16/example-post/"
+    ]
+   }
+  ]
+ },
+ "/proceedingsexpenses/": {
+  "snapshot": "20230204212905",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-landscape is-style-default has-text-align-left",
+    "posts": [
+     "/2022/08/28/25517-01-21/",
+     "/2022/08/25/56116-08-21/",
+     "/2022/07/10/26946-04-20/",
+     "/2022/06/02/24707-11-21/",
+     "/2022/05/31/7626-06-21/",
+     "/2022/05/26/26080-03-22/",
+     "/2022/05/22/27583-03-22/",
+     "/2022/03/27/37231-12-20/",
+     "/2022/03/03/36421-09-21/",
+     "/2022/02/16/15-אלף-שקל-הוצאות-משפט-נגד-משרד-החוץ-בעתי/",
+     "/2022/02/10/22730-11-21/",
+     "/2022/01/23/64277-05-18/",
+     "/2022/01/20/36491-09-21/",
+     "/2021/11/23/40647-05-21/",
+     "/2021/11/15/12936-09-20/",
+     "/2021/11/02/expenses/",
+     "/2021/10/10/itzik-davidian/",
+     "/2021/09/17/5000-06-21/",
+     "/2021/08/02/50156-07-20/",
+     "/2021/05/11/15104-06-19/",
+     "/2021/05/09/44038-02-21/",
+     "/2021/01/24/payment/",
+     "/2020/11/08/17764-02-20/",
+     "/2020/10/26/17657-03-20/",
+     "/2020/02/05/1709-09-19/",
+     "/2019/07/17/70064-05-18/",
+     "/2015/03/12/4550-02-15/"
+    ]
+   }
+  ]
+ },
+ "/mole/": {
+  "snapshot": "20230204222615",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2021/12/18/kan_archive/",
+     "/2021/12/14/land_registration/",
+     "/2021/12/12/workagreements/",
+     "/2021/12/05/criminalguidelines/",
+     "/2021/01/13/mikud/",
+     "/2018/12/13/ניתוח-תיקי-בית-המשפט-העליון/"
+    ]
+   }
+  ]
+ },
+ "/search-console/": {
+  "snapshot": "20230204220933",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-landscape is-style-default has-text-align-left",
+    "posts": [
+     "/2021/11/30/search-console-gdpr5/",
+     "/2021/11/11/search-console-20839660-2/",
+     "/2021/11/10/search-console-court-order-5/",
+     "/2021/10/08/search-console-gdpr4/",
+     "/2021/09/30/search-console-court-order-4/",
+     "/2021/09/12/search-console-20839660-1/",
+     "/2021/08/31/search-console-gdpr3/",
+     "/2021/07/25/search-console-court-order-3/",
+     "/2021/07/04/search-console-court-order-2/",
+     "/2021/06/11/search-console-court-order-1/",
+     "/2021/05/21/search-console-gdpr2/",
+     "/2021/03/28/search-console-gdpr1/"
+    ]
+   }
+  ]
+ },
+ "/letters/": {
+  "snapshot": "20230204222250",
+  "sections": [
+   {
+    "heading": "דרישות להסרת תכנים מאתר תולעת המשפט",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-borders has-text-align-left",
+    "posts": [
+     "/2022/07/14/court_technology_department/",
+     "/2022/06/06/etiquette/",
+     "/2022/05/06/trademark/",
+     "/2022/02/28/liatyoussim/",
+     "/2022/01/16/leizer/",
+     "/2022/01/11/hadar_raz/",
+     "/2021/12/20/appeals_unit/",
+     "/2021/12/08/content-removallaw/",
+     "/2021/11/23/mishorlaw/",
+     "/2021/10/10/itzik-davidian/",
+     "/2021/08/30/dafnalang/",
+     "/2021/08/29/shok_shaked_nachman/",
+     "/2021/08/05/itay_shufman/",
+     "/2021/07/26/krispin/",
+     "/2021/03/21/karmin/",
+     "/2021/02/12/eladpeleg/",
+     "/2021/02/02/gdpr/",
+     "/2021/01/13/mikud/",
+     "/2020/12/13/shlomiweinberg/",
+     "/2020/11/04/sofer/",
+     "/2020/11/02/lobbying/",
+     "/2020/11/01/13043-11-14/",
+     "/2020/07/06/התראה-לפני-נקיטת-הליכים-משפטים-מעוד-יו/",
+     "/2020/03/12/התראה-לפני-נקיטת-הליכים-משפטים-מפעיל-ח/",
+     "/2020/03/03/דרישת-פיצוי-בסך-10-מיליון-שקל/",
+     "/2020/02/12/התראה-לפני-נקיטת-הליכים-משפטים-מעוד-רו-2/",
+     "/2020/02/04/התראה-לפני-נקיטת-הליכים-משפטים-מעוד-רו/"
+    ]
+   },
+   {
+    "heading": "מכתבים אחרים",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-borders has-text-align-left",
+    "posts": [
+     "/2022/08/24/cyber/",
+     "/2022/07/07/id-3/",
+     "/2022/03/21/midrag/",
+     "/2021/03/18/release_order/",
+     "/2021/02/03/47915-10-14/"
+    ]
+   }
+  ]
+ },
+ "/beta/": null,
+ "/the_archive/": {
+  "snapshot": "20230204230406",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": []
+   }
+  ]
+ },
+ "/projects/": {
+  "snapshot": "20230204230914",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": []
+   }
+  ]
+ },
+ "/podcast/": {
+  "snapshot": "20230127003811",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-landscape is-style-default has-text-align-left",
+    "posts": [
+     "/2021/12/16/footnote/",
+     "/2021/07/05/heres/",
+     "/2021/03/04/prison-money/"
+    ]
+   }
+  ]
+ },
+ "/recommendations/": {
+  "snapshot": "20230204210751",
+  "sections": [
+   {
+    "heading": "חברה אזרחית, בלוגים ואתרי תוכן",
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2021/12/12/acri/",
+     "/2021/12/09/https-www-lawgg-org/",
+     "/2019/09/23/itonaim/",
+     "/2019/09/22/rivkidvash/",
+     "/2019/09/22/netunim/",
+     "/2019/09/22/muni-index/",
+     "/2019/09/22/digital-rights-movement/",
+     "/2019/09/22/hasadna/",
+     "/2019/09/22/wikisource/",
+     "/2019/09/22/htl/",
+     "/2019/09/22/meida/"
+    ]
+   },
+   {
+    "heading": "גופי תקשורת",
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2020/01/07/kan/",
+     "/2019/09/23/ynet/",
+     "/2019/09/23/walla/",
+     "/2019/09/23/haaretz/",
+     "/2019/09/23/globes/",
+     "/2019/09/23/themarker/",
+     "/2019/09/23/calcalist/",
+     "/2019/09/22/hashomrim/",
+     "/2019/09/22/shkifut-2/",
+     "/2019/09/22/ha-makom/",
+     "/2019/09/22/the7eye/"
+    ]
+   }
+  ]
+ },
+ "/security/": {
+  "snapshot": "20230204213759",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2022/11/16/id-5/",
+     "/2022/08/30/resident-registration/",
+     "/2022/08/24/cyber/",
+     "/2022/07/07/id-3/",
+     "/2022/06/29/damages/",
+     "/2022/03/21/midrag/",
+     "/2022/01/05/black-archive/",
+     "/2021/12/21/3-15-21-12-21/",
+     "/2021/12/08/mail-protocol/",
+     "/2021/11/30/שייח-גארח-אינה-עונה-טייק-2/",
+     "/2021/11/25/dovermail/",
+     "/2021/11/15/sensitivedocuments/",
+     "/2021/09/23/raviv/",
+     "/2021/09/19/even_tzur/",
+     "/2021/08/10/15-10-8-21/",
+     "/2021/07/28/05-17-28-7-21/",
+     "/2021/05/17/dropbox-link/",
+     "/2021/04/21/judges/",
+     "/2021/03/17/gendelman/",
+     "/2021/03/15/amsalem/",
+     "/2021/03/08/security/",
+     "/2021/01/10/cisa/",
+     "/2020/09/02/ppa/",
+     "/2020/08/17/4698-20/",
+     "/2020/08/06/secretfiles/",
+     "/2020/08/04/moked1/",
+     "/2020/07/05/palmor/",
+     "/2019/11/11/sidesleak/",
+     "/2019/09/02/tiktak/",
+     "/2017/08/14/id/"
+    ]
+   }
+  ]
+ },
+ "/soul/": {
+  "snapshot": "20230204210930",
+  "sections": [
+   {
+    "heading": "במסגרת ניסיון לקרב את עולם הרוח לעולם צנרת הביוב של הזכות למידע המכונה התהליך הסזיפי לקבלת מידע לפי חוק חופש המידע בישראל, אנו משיקים את פרויקט רוח ונפש.",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-borders has-text-align-left",
+    "posts": [
+     "/2021/11/24/praklitut/",
+     "/2021/03/02/restraint/",
+     "/2021/02/28/pmo/",
+     "/2021/01/29/why/",
+     "/2021/01/27/shame/",
+     "/2021/01/25/time-travel/",
+     "/2021/01/24/payment/",
+     "/2021/01/22/extension/",
+     "/2021/01/21/pistachio/",
+     "/2021/01/20/double/",
+     "/2021/01/19/fine/"
+    ]
+   }
+  ]
+ },
+ "/about/": {
+  "snapshot": "20230204230816",
+  "sections": [
+   {
+    "heading": "עוד על העמותה",
+    "block_class": "wp-block-newspack-blocks-homepage-articles alignfull is-style-borders wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-borders has-text-align-left",
+    "posts": [
+     "/2023/01/01/סיום-הפעלת-אתר-תולעת-המשפט/",
+     "/2022/08/24/cyber/",
+     "/2022/07/14/court_technology_department/",
+     "/2022/07/07/id-3/",
+     "/2022/06/28/hefetz_filber/",
+     "/2022/05/10/safra-5-10-22/",
+     "/2022/04/03/guy_halevi/",
+     "/2022/03/12/rss_tl8/",
+     "/2022/02/28/liatyoussim/",
+     "/2022/02/05/trust/",
+     "/2021/12/20/appeals_unit/",
+     "/2021/12/11/api-2/",
+     "/2021/12/08/icx/",
+     "/2021/09/19/rss-2/",
+     "/2021/07/26/krispin/",
+     "/2021/06/07/foi2021/",
+     "/2021/04/18/ocr/",
+     "/2021/03/21/karmin/",
+     "/2021/02/07/ico-1/",
+     "/2021/02/04/tl8/",
+     "/2020/12/11/api/",
+     "/2020/11/02/zomer/",
+     "/2020/06/23/clinicfcsclp/",
+     "/2020/06/20/האיש-שנאבק-על-שקיפות-מערכת-המשפט-מבטיח/",
+     "/2019/09/01/legalactivity/",
+     "/2017/09/15/odata_new/",
+     "/2017/07/26/odata/",
+     "/2017/02/16/example-post/"
+    ]
+   }
+  ]
+ },
+ "/image-library/": null,
+ "/bugs/": {
+  "snapshot": "20230204230717",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha show-image image-alignright ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2022/11/16/id-5/",
+     "/2022/07/28/תקלה-בנט-28-7-22/",
+     "/2022/07/11/תקלה-בנט-11-7-22/",
+     "/2022/06/29/תקלה-בנט-29-6-22/",
+     "/2022/06/19/תקלה-בנט-19-6-22/",
+     "/2022/05/17/תקלה-בנט-17-5-22/",
+     "/2022/05/16/תקלה-בנט-16-5-22/",
+     "/2022/04/13/תקלה-בנט-13-4-22/",
+     "/2022/03/30/תקלה-בנט-30-3-22/",
+     "/2022/03/23/תקלה-בנט-23-3-22/",
+     "/2022/03/04/סוף-תקלה-בנט-4-3-22/",
+     "/2022/03/01/תקלה-בנט-1-3-22/",
+     "/2022/02/27/27-2-22/",
+     "/2022/02/27/תקלה-בנט-27-2-22/",
+     "/2022/02/23/תקלה-בנט-23-2-22/",
+     "/2022/02/16/תקלה-בנט-16-2-22/",
+     "/2022/01/25/תקלה-בנט-26-1-22/",
+     "/2022/01/19/תקלה-בנט-19-1-22/",
+     "/2021/12/22/תקלה-בנט-22-12-21/",
+     "/2021/12/15/15-12-21/",
+     "/2021/12/01/1-12-21/",
+     "/2021/11/25/25-11-21/",
+     "/2021/11/24/24-11-21/",
+     "/2021/10/13/13-10-21/",
+     "/2021/09/13/13-9-21/",
+     "/2021/08/18/18-8-21/",
+     "/2021/07/27/29-7-21/",
+     "/2021/02/03/3-2-21/",
+     "/2020/11/04/4-11-20/",
+     "/2020/04/23/23-4-20/"
+    ]
+   }
+  ]
+ },
+ "/allowed/": {
+  "snapshot": "20230204230743",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles wpnbha is-grid columns-2 colgap-3 show-image image-aligntop ts-4 is-3 is-landscape has-text-align-left",
+    "posts": [
+     "/2022/08/11/uri-ehrenreich/",
+     "/2022/04/12/yoav-habot/",
+     "/2022/02/23/raz-iluz/",
+     "/2022/02/21/yuval-shaar/",
+     "/2021/11/07/ronen-shich/",
+     "/2021/07/16/eliyahu-nimni/",
+     "/2021/01/03/idan-hochman/",
+     "/2020/07/12/oren-oziel/"
+    ]
+   }
+  ]
+ },
+ "/contact/": null,
+ "/sausage/": {
+  "snapshot": "20230204222759",
+  "sections": [
+   {
+    "heading": null,
+    "block_class": "wp-block-newspack-blocks-homepage-articles is-style-default wpnbha is-grid columns-3 colgap-3 show-image image-aligntop ts-4 is-3 is-uncropped is-style-default has-text-align-left",
+    "posts": [
+     "/2022/08/19/19-08-22-14/",
+     "/2022/07/29/11-21-29-11-21/",
+     "/2022/07/28/28-07-22-06-22/",
+     "/2022/07/28/31-07-22-06-22/",
+     "/2022/07/27/27-07-22-12/",
+     "/2022/07/26/26-07-22-12-20/",
+     "/2022/07/25/06-22-25-07-22/",
+     "/2022/07/25/25-07-22-07-22/",
+     "/2022/07/19/05-22-19-7-22/",
+     "/2022/07/18/16-03-2022-01-20/",
+     "/2022/07/14/court_technology_department/",
+     "/2022/07/07/id-3/",
+     "/2022/05/20/20-05-22-05-21/",
+     "/2022/05/12/id-2/",
+     "/2022/05/12/05-21-12-05-21/",
+     "/2022/04/18/18-04-22-03-15/",
+     "/2022/03/23/23-03-22-04-21/",
+     "/2022/02/14/14-02-22-02-22/",
+     "/2022/01/17/12-21-17-1-22/",
+     "/2021/12/22/1-21-22-12-21/",
+     "/2021/12/21/3-15-21-12-21/",
+     "/2021/12/20/nevo_takdin/",
+     "/2021/12/12/8-20-12-12-21/",
+     "/2021/12/11/01-17-07-12-2021/",
+     "/2021/12/09/10-15-9-12-21/",
+     "/2021/11/29/10-17-29-11-21/",
+     "/2021/11/23/12-20-23-11-2021/",
+     "/2021/11/18/10-18-18-11-2021/",
+     "/2021/11/17/12-18-17-11-2021/",
+     "/2021/10/17/07-20-17-10-21/",
+     "/2021/09/12/07-17-12-9-21/",
+     "/2021/09/01/18-1-9-21/",
+     "/2021/08/29/pardon/",
+     "/2021/08/23/7-17-23-8-21/",
+     "/2021/08/10/15-10-8-21/",
+     "/2021/07/28/05-17-28-7-21/",
+     "/2021/03/21/1-21-21-3-21/",
+     "/2021/03/02/1-21-2-3-21/",
+     "/2021/01/26/9-18-26-1-21/",
+     "/2018/07/08/3-18-8-7-18/"
+    ]
+   }
+  ]
+ }
+}

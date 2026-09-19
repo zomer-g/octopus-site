@@ -1,0 +1,63 @@
+{
+ "id": 5074,
+ "type": "post",
+ "url": "https://octopus.org.il/2022/04/18/linkedin-scraping/",
+ "path": "/2022/04/18/linkedin-scraping/",
+ "title": "גירוד נתוני לינקדאין",
+ "date": "2022-04-18T11:18:00+03:00",
+ "modified": "2022-04-21T11:21:59+03:00",
+ "description": "רוח גבית לגירוד נתונים בית המשפט לערערורים בארה״ב פסק בשנית לטובת סטארט אפ שהמודל העסקי שלו מבוסס על גירוד פרופילים פומביים מהרשת החברתית לינקדאין. בפעם",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2022/04/Screenshot-2022-04-21-111957.png?fit=769%2C390&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2022/04/Screenshot-2022-04-21-111957.png",
+ "categories": [
+  {
+   "name": "חוץ",
+   "slug": "cabinet/foreign-affairs"
+  },
+  {
+   "name": "עדכונים במרחב",
+   "slug": "עדכונים-במרחב"
+  }
+ ],
+ "tags": [
+  {
+   "name": "Law.co.il",
+   "slug": "law-co-il"
+  },
+  {
+   "name": "scraping",
+   "slug": "scraping"
+  },
+  {
+   "name": "techcrunch",
+   "slug": "techcrunch"
+  },
+  {
+   "name": "בית המשפט העליון של ארה\"ב",
+   "slug": "בית-המשפט-העליון-של-ארהב"
+  },
+  {
+   "name": "גירוד",
+   "slug": "גירוד"
+  },
+  {
+   "name": "דה מרקר",
+   "slug": "דה-מרקר"
+  },
+  {
+   "name": "לינקדאין",
+   "slug": "לינקדאין"
+  },
+  {
+   "name": "רותי לוי",
+   "slug": "רותי-לוי"
+  },
+  {
+   "name": "רשת חברתית",
+   "slug": "רשת-חברתית"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">רוח גבית לגירוד נתונים</p>\n<p class=\"wp-block-paragraph\">בית המשפט לערערורים בארה״ב פסק בשנית לטובת סטארט אפ שהמודל העסקי שלו מבוסס על גירוד פרופילים פומביים מהרשת החברתית לינקדאין. בפעם הקודמת שערכאה זו פסקה כך, לינקדאין הגישה ערעור לבית המשפט העליון. העליון סירב להתערב בעצמו, אך הורה לערכאה הנמוכה לבחון בשנית את פסק הדין שלה, לאור תקדים חדש שניתן. עתה, כאמור, הערכאה הנמוכה פסקה שוב בניגוד לעמדת לינקדאין, שכבר הודיעה ששוקלת לערער פעם נוספת לבית המשפט העליון. בין השיקולים שהובילו את בית המשפט לפסוק כך: לא ניתן לומר שפעולה בוצעה בניגוד להרשאה, כאשר ממילא מדובר באתר פומבי ללא הזדהות. </p>\n<p class=\"wp-block-paragraph\"><img alt=\"????\" decoding=\"async\" height=\"16\" src=\"https://static.xx.fbcdn.net/images/emoji.php/v9/t4c/1/16/1f642.png\" width=\"16\"/>לכתבה <a href=\"https://techcrunch.com/2022/04/18/web-scraping-legal-court/?fbclid=IwAR1xwtFyrYLvHFbnoXP6ansSu_dkeJStD5atY47ofbLRtQr2v6lZHHdbD9g\" rel=\"noreferrer noopener\" target=\"_blank\">בטרקרנאנץ׳ </a>(באנגלית)</p>\n<p class=\"wp-block-paragraph\">לכבתה באתר <a href=\"https://www.themarker.com/technation/.premium-1.10750721\" rel=\"noreferrer noopener\" target=\"_blank\">דה מרקר </a></p>\n<p class=\"wp-block-paragraph\">לכתבה באתר <a href=\"https://www.law.co.il/news/2022/04/19/ninth-circuit-reaffirms-ban-against-linkedin-scrape-block/\" rel=\"noreferrer noopener\" target=\"_blank\">law.co.il</a></p>\n",
+ "content_missing": false,
+ "key": "b2b143182124"
+}

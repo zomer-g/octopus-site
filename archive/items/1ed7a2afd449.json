@@ -1,0 +1,17 @@
+{
+ "id": 4508,
+ "type": "page",
+ "url": "https://octopus.org.il/podcast/",
+ "path": "/podcast/",
+ "title": "פינת הפודקאסטים המומלצים של התמנון",
+ "date": null,
+ "modified": "2022-01-07T12:30:16+00:00",
+ "description": null,
+ "og_image": null,
+ "featured_image": null,
+ "categories": [],
+ "tags": [],
+ "content_html": "\n<p><iframe allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" height=\"380\" src=\"https://open.spotify.com/embed/playlist/2l6VUoa08k2nlUuKr5TNfh?utm_source=generator\" width=\"100%\"></iframe></p>\n",
+ "content_missing": false,
+ "key": "1ed7a2afd449"
+}

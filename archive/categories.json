@@ -1,0 +1,257 @@
+[
+ {
+  "slug": "ספריית-התמנון/search-console",
+  "name": "Search Console",
+  "description": ""
+ },
+ {
+  "slug": "uncategorized",
+  "name": "Uncategorized",
+  "description": ""
+ },
+ {
+  "slug": "אבטחת-מידע",
+  "name": "אבטחת מידע",
+  "description": ""
+ },
+ {
+  "slug": "events",
+  "name": "אירועים",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/public-security",
+  "name": "אכיפה וביטחון אישי",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/energy-and-environment",
+  "name": "אנרגיה וסביבה",
+  "description": ""
+ },
+ {
+  "slug": "academy",
+  "name": "אקדמיה",
+  "description": ""
+ },
+ {
+  "slug": "בלוגים",
+  "name": "בלוגים",
+  "description": ""
+ },
+ {
+  "slug": "בקשה-לפתיחת-דלתות",
+  "name": "בקשה לפתיחת דלתות",
+  "description": ""
+ },
+ {
+  "slug": "חופש-מידע/בקשת-מידע",
+  "name": "בקשת מידע",
+  "description": ""
+ },
+ {
+  "slug": "בקשת-עיון",
+  "name": "בקשת עיון",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/health",
+  "name": "בריאות",
+  "description": ""
+ },
+ {
+  "slug": "גופי-תקשורת",
+  "name": "גופי תקשורת",
+  "description": ""
+ },
+ {
+  "slug": "חופש-מידע/דוח-שנתי",
+  "name": "דוח שנתי",
+  "description": ""
+ },
+ {
+  "slug": "פרויקטים/הותר-לפרסום",
+  "name": "הותר לפרסום",
+  "description": ""
+ },
+ {
+  "slug": "hotdog",
+  "name": "החלטת חיסוי",
+  "description": ""
+ },
+ {
+  "slug": "htl",
+  "name": "הצלחת התמנון",
+  "description": ""
+ },
+ {
+  "slug": "זרועות-התמנון",
+  "name": "זרועות התמנון",
+  "description": ""
+ },
+ {
+  "slug": "חברה-אזרחית",
+  "name": "חברה אזרחית",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/society-and-welfare",
+  "name": "חברה ורווחה",
+  "description": ""
+ },
+ {
+  "slug": "news",
+  "name": "חדשות",
+  "description": ""
+ },
+ {
+  "slug": "חופש-מידע",
+  "name": "חופש מידע",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/foreign-affairs",
+  "name": "חוץ",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/education",
+  "name": "חינוך",
+  "description": ""
+ },
+ {
+  "slug": "ספריית-התמנון/חקיקה",
+  "name": "חקיקה",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/economy-and-finance",
+  "name": "כלכלה",
+  "description": ""
+ },
+ {
+  "slug": "מדיניות-וקשרי-ממשל",
+  "name": "מדיניות וקשרי ממשל",
+  "description": ""
+ },
+ {
+  "slug": "פרויקטים/מדריך-פומביות-הדיון",
+  "name": "מדריך פומביות הדיון",
+  "description": ""
+ },
+ {
+  "slug": "מידע-שנמסר",
+  "name": "מידע שנמסר",
+  "description": ""
+ },
+ {
+  "slug": "תולעת-המשפט/מכתבי-איום-והתראה",
+  "name": "מכתבי איום והתראה",
+  "description": ""
+ },
+ {
+  "slug": "מכתבים-למערכת",
+  "name": "מכתבים למערכת",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/purity",
+  "name": "ממשל ומנהל תקין",
+  "description": ""
+ },
+ {
+  "slug": "ספריית-התמנון/מצגות-הדרכה",
+  "name": "מצגות הדרכה",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/law",
+  "name": "משפט",
+  "description": ""
+ },
+ {
+  "slug": "ספריית-התמנון",
+  "name": "ספריית התמנון",
+  "description": ""
+ },
+ {
+  "slug": "עדכונים-במרחב",
+  "name": "עדכונים במרחב",
+  "description": ""
+ },
+ {
+  "slug": "על-העמותה",
+  "name": "על העמותה",
+  "description": ""
+ },
+ {
+  "slug": "עתירה",
+  "name": "עתירה",
+  "description": ""
+ },
+ {
+  "slug": "חופש-מידע/עתירות-העמותה",
+  "name": "עתירות העמותה",
+  "description": ""
+ },
+ {
+  "slug": "חופש-מידע/עתירת-חופש-מידע",
+  "name": "עתירת חופש מידע",
+  "description": ""
+ },
+ {
+  "slug": "cabinet/law/judgments",
+  "name": "פסיקה",
+  "description": ""
+ },
+ {
+  "slug": "ספריית-התמנון/פסיקה",
+  "name": "פסיקה",
+  "description": ""
+ },
+ {
+  "slug": "פרויקטים/פרויקט-החפרפרת",
+  "name": "פרויקט החפרפרת",
+  "description": ""
+ },
+ {
+  "slug": "פרויקטים",
+  "name": "פרויקטים",
+  "description": ""
+ },
+ {
+  "slug": "cabinet",
+  "name": "קבינט התמנון",
+  "description": "קבינט עמותת התמנון"
+ },
+ {
+  "slug": "פרויקטים/רשתות-חברתיות",
+  "name": "רשתות חברתיות",
+  "description": ""
+ },
+ {
+  "slug": "שותפים-לדרך",
+  "name": "שותפים לדרך",
+  "description": ""
+ },
+ {
+  "slug": "פרויקטים/שירים",
+  "name": "שירים",
+  "description": ""
+ },
+ {
+  "slug": "פרויקטים/תובענות-ייצוגיות",
+  "name": "תובענות ייצוגיות",
+  "description": ""
+ },
+ {
+  "slug": "תולעת-המשפט",
+  "name": "תולעת המשפט",
+  "description": ""
+ },
+ {
+  "slug": "פרויקטים/net_bugs",
+  "name": "תקלות בנט המשפט",
+  "description": ""
+ }
+]

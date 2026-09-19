@@ -1,0 +1,34 @@
+---
+import Base from "../../layouts/Base.astro";
+import YearList from "../../components/YearList.astro";
+import { categories, childCategories, categoryName, categoryUrl, postsInCategory, postCardsHtml } from "../../lib/site";
+
+export async function getStaticPaths() {
+  return categories.map((c) => ({ params: { slug: c.slug }, props: { cat: c } }));
+}
+const { cat } = Astro.props;
+const posts = await postsInCategory(cat.slug);
+const children = childCategories(cat.slug);
+---
+<Base title={cat.name} description={cat.description || `פרסומים בנושא ${cat.name}`}>
+  <div class="page-head">
+    <div class="breadcrumbs">
+      <a href="/categories/">נושאים</a>
+      {cat.parent && <> / <a href={categoryUrl(cat.parent)}>{categoryName(cat.parent)}</a></>}
+    </div>
+    <h1>{cat.name}</h1>
+    {cat.description && <p>{cat.description}</p>}
+    <p>{posts.length} פרסומים</p>
+    {children.length > 0 && (
+      <ul class="pills">{children.map((c) => <li><a href={categoryUrl(c.slug)}>{c.name}</a></li>)}</ul>
+    )}
+  </div>
+  {posts.length > 12 ? (
+    <>
+      <Fragment set:html={postCardsHtml(posts.slice(0, 6))} />
+      <YearList posts={posts} />
+    </>
+  ) : (
+    <Fragment set:html={postCardsHtml(posts)} />
+  )}
+</Base>

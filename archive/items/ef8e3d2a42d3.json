@@ -1,0 +1,67 @@
+{
+ "id": 2093,
+ "type": "post",
+ "url": "https://octopus.org.il/2020/06/11/%d7%9e%d7%94%d7%99-%d7%a8%d7%9e%d7%aa-%d7%94%d7%a4%d7%a9%d7%99%d7%a2%d7%94-%d7%91%d7%a2%d7%99%d7%a8-%d7%a9%d7%9c%d7%9b%d7%9d-%d7%94%d7%a0%d7%aa%d7%95%d7%a0%d7%99%d7%9d-%d7%a0%d7%97%d7%a9%d7%a4%d7%99/",
+ "path": "/2020/06/11/מהי-רמת-הפשיעה-בעיר-שלכם-הנתונים-נחשפי/",
+ "title": "מהי רמת הפשיעה בעיר שלכם? הנתונים נחשפים",
+ "date": "2020-06-11T14:53:00+03:00",
+ "modified": "2021-02-07T14:54:22+02:00",
+ "description": "פרויקט משותף לתנועה לחופש המידע שביקשה וקיבלה את המידע, עמותת התמנון שעיבדה והנגישה את המידע ואתר Ynet שפרסם על כך. נתוני הפשיעה ברמת היישוב לפי",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/02/Capture-6.png?fit=514%2C538&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/02/Capture-6.png",
+ "categories": [
+  {
+   "name": "אכיפה וביטחון אישי",
+   "slug": "cabinet/public-security"
+  },
+  {
+   "name": "חופש מידע",
+   "slug": "חופש-מידע"
+  },
+  {
+   "name": "עדכונים במרחב",
+   "slug": "עדכונים-במרחב"
+  },
+  {
+   "name": "שותפים לדרך",
+   "slug": "שותפים-לדרך"
+  }
+ ],
+ "tags": [
+  {
+   "name": "Ynet",
+   "slug": "ynet"
+  },
+  {
+   "name": "גלעד כהן",
+   "slug": "גלעד-כהן"
+  },
+  {
+   "name": "התנועה לחופש המידע",
+   "slug": "התנועה-לחופש-המידע"
+  },
+  {
+   "name": "חופש המידע",
+   "slug": "חופש-המידע"
+  },
+  {
+   "name": "לוח מחוונים",
+   "slug": "לוח-מחוונים"
+  },
+  {
+   "name": "משטרת ישראל",
+   "slug": "משטרת-ישראל"
+  },
+  {
+   "name": "פשיעה",
+   "slug": "פשיעה"
+  },
+  {
+   "name": "צחי שדה",
+   "slug": "צחי-שדה"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">פרויקט משותף לתנועה לחופש המידע שביקשה וקיבלה את המידע, עמותת התמנון שעיבדה והנגישה את המידע ואתר Ynet שפרסם על כך. </p>\n<p class=\"wp-block-paragraph\">נתוני הפשיעה ברמת היישוב לפי קבוצות עבירה ושנה. בלחיצת כפתור תוכלו לדעת את רמת הפשיעה ביישוב שלכם אל מול הממוצע הארצי בכל קבוצת עבירות או שנה</p>\n<p class=\"wp-block-paragraph\">ללוח המחוונים המוצג באתר Ynet</p>\n<p><iframe allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"1200\" src=\"https://datastudio.google.com/embed/reporting/fe9a69cb-66c4-4bae-9814-a31a80aab945/page/0BqEB\" style=\"border: 0;\" width=\"490\"></iframe></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.meida.org.il/?p=10259\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר התנועה לחופש המידע</a></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.odata.org.il/dataset/a68797c1-4310-45fd-bfe1-8be8dfaa70c7\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר מידע לעם בו מתפרסמים הנתונים עצמם</a></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.ynet.co.il/articles/0,7340,L-5682378,00.html\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר Ynet</a></p>\n",
+ "content_missing": false,
+ "key": "ef8e3d2a42d3"
+}

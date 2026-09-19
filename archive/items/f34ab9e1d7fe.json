@@ -1,0 +1,27 @@
+{
+ "id": 3588,
+ "type": "post",
+ "url": "https://octopus.org.il/2019/09/22/netunim/",
+ "path": "/2019/09/22/netunim/",
+ "title": "בלוג נתונים",
+ "date": "2019-09-22T19:56:00+03:00",
+ "modified": "2021-11-22T20:02:54+02:00",
+ "description": "המטרה של הבלוג הזה היא להנגיש נתונים רלוונטיים לחיינו כאן על ידי הצגתם בקונטקסט רחב, ובפרט הצגה גרפית ברורה ככל האפשר ונתונים מחתך זמן ארוך ככל",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/07/24900506462b-3.jpg?fit=600%2C845&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/07/24900506462b-3.jpg",
+ "categories": [
+  {
+   "name": "בלוגים",
+   "slug": "בלוגים"
+  }
+ ],
+ "tags": [
+  {
+   "name": "בלוג נתונים",
+   "slug": "בלוג-נתונים"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">המטרה של הבלוג הזה היא להנגיש נתונים רלוונטיים לחיינו כאן על ידי הצגתם בקונטקסט רחב, ובפרט הצגה גרפית ברורה ככל האפשר ונתונים מחתך זמן ארוך ככל האפשר.</p>\n<p class=\"wp-block-paragraph\"><a href=\"https://netunim.wordpress.com/\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר הבלוג</a></p>\n",
+ "content_missing": false,
+ "key": "f34ab9e1d7fe"
+}

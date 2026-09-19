@@ -1,0 +1,63 @@
+{
+ "id": 2198,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/02/14/foi-dashborad/",
+ "path": "/2021/02/14/foi-dashborad/",
+ "title": "לוח מחווני חופש המידע",
+ "date": "2021-02-14T16:20:37+02:00",
+ "modified": "2021-11-23T19:33:10+02:00",
+ "description": "עמותת התמנון פועלת להנגיש את המידע הציבורי, ונעזרת בין היתר בחופש המידע. לפיכך אך טבעי עיסוקנו בעתירות חופש מידע, מעצם היזום שלהן דרך המעקב הרוחבי",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/02/Capture-11-e1614077089769.png?fit=512%2C386&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/02/Capture-11-e1614077089769.png",
+ "categories": [
+  {
+   "name": "חופש מידע",
+   "slug": "חופש-מידע"
+  },
+  {
+   "name": "מדיניות וקשרי ממשל",
+   "slug": "מדיניות-וקשרי-ממשל"
+  },
+  {
+   "name": "משפט",
+   "slug": "cabinet/law"
+  },
+  {
+   "name": "עתירה",
+   "slug": "עתירה"
+  },
+  {
+   "name": "עתירת חופש מידע",
+   "slug": "חופש-מידע/עתירת-חופש-מידע"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "tags": [
+  {
+   "name": "חופש המידע",
+   "slug": "חופש-המידע"
+  },
+  {
+   "name": "לוח מחוונים",
+   "slug": "לוח-מחוונים"
+  },
+  {
+   "name": "משפט",
+   "slug": "משפט"
+  },
+  {
+   "name": "עתירת חופש מידע",
+   "slug": "עתירת-חופש-מידע"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "content_html": "\n<p class=\"has-text-align-justify wp-block-paragraph\">עמותת התמנון פועלת להנגיש את המידע הציבורי, ונעזרת בין היתר בחופש המידע. לפיכך אך טבעי עיסוקנו בעתירות חופש מידע, מעצם היזום שלהן דרך המעקב הרוחבי אחריהן. לכן, הקמנו לוח מחוונים יעודי שמאפשר בזמן אמת לעקוב אחרי ההליכים המגוונים שמתנהלים בבתי המשפט בישראל בנושאי חופש מידע.</p>\n<p class=\"wp-block-paragraph\"><a href=\"https://datastudio.google.com/s/qtO_r_XGIXU\" rel=\"noreferrer noopener\" target=\"_blank\">ללוח המחוונים בגרסה למחשב נייח</a></p>\n<p><iframe allowfullscreen=\"\" frameborder=\"0\" height=\"915\" src=\"https://datastudio.google.com/embed/reporting/96bea302-f406-4eba-ae38-d154be5e7874/page/qlD\" style=\"border:0\" width=\"600\"></iframe></p>\n<p><iframe allowfullscreen=\"\" frameborder=\"0\" height=\"915\" src=\"https://datastudio.google.com/embed/reporting/96bea302-f406-4eba-ae38-d154be5e7874/page/GyJ1B\" style=\"border:0\" width=\"600\"></iframe></p>\n<p class=\"has-text-align-justify wp-block-paragraph\">טבלה מעובדת של הנתונים אפשר למצוא <a href=\"https://docs.google.com/spreadsheets/d/1ipEJEBuHzPA7bUWxDDNqtOzJ28J6RWhXCp2e3Sm10LQ/edit?usp=sharing\" rel=\"noreferrer noopener\" target=\"_blank\">כאן</a>. זמן טוב להזכיר כמו בכל עיבוד של נתונים, שתמיד יכולות להיות טעויות. מצאתם/ן טעות, נשמח שתעדכנו אותנו, נברר ונתקן. </p>\n<p class=\"has-text-align-justify wp-block-paragraph\">באמצעות לוח המחוונים אפשר לראות את התפלגות תיקי חופש המידע בין המחוזות השונים. את העליה הגדולה במספר עתירות חופש המידע נגד רשויות מקומיות בשנים האחרונות. גם תמונת מצב של ארגונים גדולים ופעילים בחופש המידע ניתן למצוא. אם רמת בית המשפט לא ממצה, כמובן המידע זמין גם ברמת שופט. </p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\">עוד מידע על הפעילות המשפטית של העמותה אפשר למצוא <a href=\"https://octopus.org.il/legal/\">פה</a></p>\n<p class=\"wp-block-paragraph\">ללוח מחוונים אחרים מוזמנים/ות להיכנס <a href=\"https://octopus.org.il/tag/%d7%9c%d7%95%d7%97-%d7%9e%d7%97%d7%95%d7%95%d7%a0%d7%99%d7%9d/\">לכאן</a></p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "a18ae75e9118"
+}

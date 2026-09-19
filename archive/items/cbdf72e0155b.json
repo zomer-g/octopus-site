@@ -1,0 +1,31 @@
+{
+ "id": 4282,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/12/15/15-12-21/",
+ "path": "/2021/12/15/15-12-21/",
+ "title": "תקלה בנט 15/12/21",
+ "date": "2021-12-15T22:52:00+02:00",
+ "modified": "2021-12-15T20:37:52+02:00",
+ "description": null,
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-14-225113.png?fit=271%2C156&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/12/Screenshot-2021-12-14-225113.png",
+ "categories": [
+  {
+   "name": "תקלות בנט המשפט",
+   "slug": "פרויקטים/net_bugs"
+  }
+ ],
+ "tags": [
+  {
+   "name": "נט המשפט",
+   "slug": "נט-המשפט"
+  },
+  {
+   "name": "תקלות",
+   "slug": "תקלות"
+  }
+ ],
+ "content_html": "\n",
+ "content_missing": false,
+ "key": "cbdf72e0155b"
+}

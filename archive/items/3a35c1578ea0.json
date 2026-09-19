@@ -1,0 +1,55 @@
+{
+ "id": 3560,
+ "type": "post",
+ "url": "https://octopus.org.il/2020/09/22/single-defendant/",
+ "path": "/2020/09/22/single-defendant/",
+ "title": "דוח נאשמים יחידים",
+ "date": "2020-09-22T19:23:00+03:00",
+ "modified": "2021-11-22T19:29:39+02:00",
+ "description": "בקשת מידע שהוגשה לפרקליטות המדינה חשפה לראשונה את רשימת התיקים הפליליים שנפתחו בשנת 2017 והיו בהם נאשם יחיד (כך שיש חפיפה בין התיק לנאשם). המידע",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/09/Screenshot-2021-11-22-192734.png?fit=1209%2C792&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/09/Screenshot-2021-11-22-192734.png",
+ "categories": [
+  {
+   "name": "בקשת מידע",
+   "slug": "חופש-מידע/בקשת-מידע"
+  },
+  {
+   "name": "חופש מידע",
+   "slug": "חופש-מידע"
+  },
+  {
+   "name": "מידע שנמסר",
+   "slug": "מידע-שנמסר"
+  },
+  {
+   "name": "משפט",
+   "slug": "cabinet/law"
+  }
+ ],
+ "tags": [
+  {
+   "name": "2017",
+   "slug": "2017"
+  },
+  {
+   "name": "הליכים פליליים",
+   "slug": "הליכים-פליליים"
+  },
+  {
+   "name": "לוח מחוונים",
+   "slug": "לוח-מחוונים"
+  },
+  {
+   "name": "נאשמים",
+   "slug": "נאשמים"
+  },
+  {
+   "name": "פרקליטות המדינה",
+   "slug": "פרקליטות-המדינה"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">בקשת מידע שהוגשה לפרקליטות המדינה חשפה לראשונה את רשימת התיקים הפליליים שנפתחו בשנת 2017 והיו בהם נאשם יחיד (כך שיש חפיפה בין התיק לנאשם). המידע כולל את סעיפי האישום ופירוט רכיבי ומשך הענישה שהוטלה, לרבות פרמטר האם נערך הסדר טיעון או לא. על בסיס מידע זה הצגנו שתי גרסאות של ניתוח הנתונים. </p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.odata.org.il/dataset/49d99a95-f1bc-4cd4-b9d8-9e01efc0f104\" rel=\"noreferrer noopener\" target=\"_blank\">למידע הגולמי באתר מידע לעם</a></p>\n<p class=\"wp-block-paragraph\"></p>\n<p><iframe allowfullscreen=\"\" frameborder=\"0\" height=\"460\" src=\"https://datastudio.google.com/embed/reporting/22450530-3ca6-4589-a814-3e488b54b055/page/ha8jB\" style=\"border:0\" width=\"600\"></iframe></p>\n<p class=\"wp-block-paragraph\">כגע</p>\n<p><iframe allowfullscreen=\"\" frameborder=\"0\" height=\"460\" src=\"https://datastudio.google.com/embed/reporting/3f7b0774-a7f0-4c2e-bd9f-6bc02468866e/page/wBChB\" style=\"border:0\" width=\"600\"></iframe></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "3a35c1578ea0"
+}

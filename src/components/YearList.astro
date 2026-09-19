@@ -1,0 +1,19 @@
+---
+import { formatDate, type Post } from "../lib/site";
+interface Props { posts: Post[] }
+const groups = new Map<number, Post[]>();
+for (const p of Astro.props.posts) {
+  const y = p.data.date.getFullYear();
+  groups.set(y, [...(groups.get(y) ?? []), p]);
+}
+---
+{[...groups].map(([year, list]) => (
+  <section class="year-group">
+    <h2 id={`y${year}`}>{year} <small>({list.length})</small></h2>
+    <ul class="compact">
+      {list.map((p) => (
+        <li><time datetime={p.data.date.toISOString()}>{formatDate(p.data.date)}</time><a href={p.data.permalink}>{p.data.title}</a></li>
+      ))}
+    </ul>
+  </section>
+))}

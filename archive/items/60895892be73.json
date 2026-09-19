@@ -1,0 +1,31 @@
+{
+ "id": 3871,
+ "type": "post",
+ "url": "https://octopus.org.il/2020/04/23/23-4-20/",
+ "path": "/2020/04/23/23-4-20/",
+ "title": "תקלה בנט 23/4/20",
+ "date": "2020-04-23T12:24:00+03:00",
+ "modified": "2021-12-01T10:26:51+02:00",
+ "description": null,
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/11/93865580_2553039301633682_3166543189632876544_n.jpg?fit=584%2C558&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/11/93865580_2553039301633682_3166543189632876544_n.jpg",
+ "categories": [
+  {
+   "name": "תקלות בנט המשפט",
+   "slug": "פרויקטים/net_bugs"
+  }
+ ],
+ "tags": [
+  {
+   "name": "נט המשפט",
+   "slug": "נט-המשפט"
+  },
+  {
+   "name": "תקלות",
+   "slug": "תקלות"
+  }
+ ],
+ "content_html": "\n",
+ "content_missing": false,
+ "key": "60895892be73"
+}

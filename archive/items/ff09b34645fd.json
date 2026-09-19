@@ -1,0 +1,71 @@
+{
+ "id": 2168,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/02/11/gamzo/",
+ "path": "/2021/02/11/gamzo/",
+ "title": "יומני גמזו 2020",
+ "date": "2021-02-11T16:54:00+02:00",
+ "modified": "2021-11-23T09:23:06+02:00",
+ "description": "יומן פרויקטור הקורונה, רוני גמזו, לשנת 2020",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/02/Capture-8.png?fit=591%2C611&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/02/Capture-8.png",
+ "categories": [
+  {
+   "name": "בריאות",
+   "slug": "cabinet/health"
+  },
+  {
+   "name": "חופש מידע",
+   "slug": "חופש-מידע"
+  },
+  {
+   "name": "מידע שנמסר",
+   "slug": "מידע-שנמסר"
+  },
+  {
+   "name": "עתירה",
+   "slug": "עתירה"
+  },
+  {
+   "name": "עתירות העמותה",
+   "slug": "חופש-מידע/עתירות-העמותה"
+  },
+  {
+   "name": "עתירת חופש מידע",
+   "slug": "חופש-מידע/עתירת-חופש-מידע"
+  }
+ ],
+ "tags": [
+  {
+   "name": "19631-01-21",
+   "slug": "19631-01-21"
+  },
+  {
+   "name": "בריאות",
+   "slug": "בריאות"
+  },
+  {
+   "name": "גיא זומר",
+   "slug": "גיא-זומר"
+  },
+  {
+   "name": "משרד הבריאות",
+   "slug": "משרד-הבריאות"
+  },
+  {
+   "name": "עתירת חופש מידע",
+   "slug": "עתירת-חופש-מידע"
+  },
+  {
+   "name": "קורונה",
+   "slug": "קורונה"
+  },
+  {
+   "name": "רוני גמזו",
+   "slug": "רוני-גמזו"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">אומנם משרד הבריאות בגישה פטרנליסטית מחליט מה לפרסם ומה לא, איך ומתי. אומנם כל בקשה שלנו מחייבת הגשת עתירה לבית המשפט. בכל זאת, יומנו של פרויקט הקורונה נחשף. מאוגוסט ועד אוקטובר, יומן עמוס לעייפה, כ-300 שעות עבודה בחודש רק בפגישות. </p>\n<p class=\"wp-block-paragraph\">היומן נמסר ב-3 חלקים שונים, שבינהם גם יש כפילות. מוזמנים לעיין בקבצים המקוריים כפי שנמסרו באתר <a href=\"https://www.odata.org.il/dataset/17f4faa4-d67e-42d2-a26a-678ce4868dfe\" rel=\"noreferrer noopener\" target=\"_blank\">מידע לעם</a>. בנוסף, אפשר לעיין <a href=\"https://docs.google.com/spreadsheets/d/15_9PqJzYJk-ndyXKBV9b-oDdznZrt3aAO2BFrCDjajI/edit?usp=sharing\" rel=\"noreferrer noopener\" target=\"_blank\">בקובץ מעובד</a> שמצד אחד מציג קטגוריות של מידע ומנוקה מאירועים כפולים, מצד שני בהחלט ייתכנו בו שגיאות וטעויות. </p>\n<p class=\"wp-block-paragraph\">בין היתר אפשר למצוא תיעוד לישיבות הערכות המצב של הפרויקטור. ישיבות בנושא חרדים, איכוני השב\"כ או פשוט תקשורת. מהיומן כבר אפשר ללמוד על היקף הערכות המצב והדיונים מול שרים ממשלת ישראל. </p>\n<p class=\"wp-block-paragraph\"><a href=\"https://octopus.org.il/health/\">למדור בריאות</a> של עמותת התמנון ולמידע נוסף על הקורונה</p>\n<div class=\"wp-block-jetpack-google-calendar\"><iframe frameborder=\"0\" height=\"600\" sandbox=\"allow-scripts allow-same-origin allow-popups\" scrolling=\"no\" src=\"https://calendar.google.com/calendar/embed?height=1200&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FJerusalem&amp;showTz=0&amp;showCalendars=1&amp;showTabs=1&amp;showDate=1&amp;mode=WEEK&amp;hl=iw&amp;src=Y19lb2VncXEyZ2g1cmtqbWNwdWNkNzdscnJoa0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%239E69AF\" style=\"border:0\" width=\"100%\"></iframe></div> ",
+ "content_missing": false,
+ "key": "ff09b34645fd"
+}

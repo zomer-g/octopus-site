@@ -1,0 +1,21 @@
+/* styles inside the TinyMCE editing area (approximates the public site) */
+body { font-family: "Assistant", "Segoe UI", Arial, sans-serif; font-size: 17px; line-height: 1.7; color: #1f1a24; direction: rtl; margin: 16px; }
+img { max-width: 100%; height: auto; }
+h2, h3, h4 { line-height: 1.3; }
+blockquote { border-right: 4px solid #aa03c3; margin: 1em 0; padding: 4px 16px; background: #faf6fb; }
+table { border-collapse: collapse; }
+td, th { border: 1px solid #ddd; padding: 4px 8px; }
+figure { margin: 1em 0; }
+figcaption { font-size: .9em; color: #6b6473; text-align: center; }
+.wp-block-file { background: #f7ecf9; padding: 8px 12px; border-radius: 8px; }
+.wp-block-file__embed { display: none; }
+.wp-block-columns { display: flex; gap: 16px; }
+.wp-block-column { flex: 1; }
+/* automatic post list marker */
+div[data-post-list] {
+  border: 2px dashed #aa03c3; border-radius: 8px; padding: 10px; margin: 10px 0; background: #fbf5fc;
+  color: #7a0290; font-weight: 700; min-height: 20px;
+}
+div[data-post-list]::before { content: "📋 כאן תופיע רשימת פוסטים אוטומטית: " attr(data-post-list); }
+/* WordPress dynamic blocks, kept as-is and shown as a placeholder */
+.wp-dyn { border: 2px dashed #aa03c3; border-radius: 8px; padding: 10px 14px; margin: 10px 0; background: #fbf5fc; color: #7a0290; font-weight: 700; cursor: default; }

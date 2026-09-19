@@ -1,0 +1,43 @@
+{
+ "id": 3995,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/11/27/socialproject/",
+ "path": "/2021/11/27/socialproject/",
+ "title": "רשתות חברתיות",
+ "date": "2021-11-27T15:51:27+02:00",
+ "modified": "2021-11-27T15:51:39+02:00",
+ "description": "אוסף של דפים מתעדכנים על בסיס תכנים ברשתות החברתיות",
+ "og_image": null,
+ "featured_image": null,
+ "categories": [
+  {
+   "name": "רשתות חברתיות",
+   "slug": "פרויקטים/רשתות-חברתיות"
+  }
+ ],
+ "tags": [
+  {
+   "name": "אור כרמי",
+   "slug": "אור-כרמי"
+  },
+  {
+   "name": "טוויטר",
+   "slug": "טוויטר"
+  },
+  {
+   "name": "טלגרם",
+   "slug": "טלגרם"
+  },
+  {
+   "name": "פייסבוק",
+   "slug": "פייסבוק"
+  },
+  {
+   "name": "רשתות חברתיות",
+   "slug": "רשתות-חברתיות"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">אוסף של דפים מתעדכנים על בסיס תכנים ברשתות החברתיות</p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "3b66791ab0d8"
+}

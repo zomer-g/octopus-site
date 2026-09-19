@@ -1,0 +1,47 @@
+{
+ "id": 3958,
+ "type": "post",
+ "url": "https://octopus.org.il/2021/11/27/social/",
+ "path": "/2021/11/27/social/",
+ "title": "פיד רשתות חברתיות",
+ "date": "2021-11-27T13:39:25+02:00",
+ "modified": "2021-11-27T15:54:50+02:00",
+ "description": null,
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/11/Screenshot-2021-11-27-155432.png?fit=737%2C432&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/11/Screenshot-2021-11-27-155432.png",
+ "categories": [
+  {
+   "name": "רשתות חברתיות",
+   "slug": "פרויקטים/רשתות-חברתיות"
+  }
+ ],
+ "tags": [
+  {
+   "name": "Law.co.il",
+   "slug": "law-co-il"
+  },
+  {
+   "name": "אבישי גרינצייג",
+   "slug": "אבישי-גרינצייג"
+  },
+  {
+   "name": "אברהם בלוך",
+   "slug": "אברהם-בלוך"
+  },
+  {
+   "name": "טוויטר",
+   "slug": "טוויטר"
+  },
+  {
+   "name": "טלגרם",
+   "slug": "טלגרם"
+  },
+  {
+   "name": "משרד המשפטים",
+   "slug": "משרד-המשפטים"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\"></p>\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><iframe id=\"preview\" src=\"https://xn--r1a.website/s/justiceil\" style=\"border:0px;height:500px;width:350px;margin:5px;box-shadow: 0 0 16px 3px rgba(0,0,0,.2);\"></iframe></p>\n<p class=\"wp-block-paragraph\"><iframe id=\"preview\" src=\"https://xn--r1a.website/s/cyberlaw1\" style=\"border:0px;height:500px;width:350px;margin:5px;box-shadow: 0 0 16px 3px rgba(0,0,0,.2);\"></iframe></p>\n<p class=\"wp-block-paragraph\"><iframe id=\"preview\" src=\"https://xn--r1a.website/s/grinzaig\" style=\"border:0px;height:500px;width:350px;margin:5px;box-shadow: 0 0 16px 3px rgba(0,0,0,.2);\"></iframe></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"><iframe id=\"preview\" src=\"https://xn--r1a.website/s/IsraelBarLaw\" style=\"border:0px;height:500px;width:350px;margin:5px;box-shadow: 0 0 16px 3px rgba(0,0,0,.2);\"></iframe></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"><iframe id=\"preview\" src=\"https://xn--r1a.website/s/avrib\" style=\"border:0px;height:500px;width:350px;margin:5px;box-shadow: 0 0 16px 3px rgba(0,0,0,.2);\"></iframe></p>\n</div>\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<figure class=\"wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter\"><div class=\"wp-block-embed__wrapper\">\n<a class=\"twitter-timeline\" data-dnt=\"true\" data-height=\"960\" data-width=\"640\" href=\"https://twitter.com/Octopus_RA/lists/list-10098?ref_src=twsrc%5Etfw\">A Twitter List by Octopus_RA</a><script async=\"\" charset=\"utf-8\" src=\"https://platform.twitter.com/widgets.js\"></script>\n</div></figure>\n<figure class=\"wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter\"><div class=\"wp-block-embed__wrapper\">\n<a class=\"twitter-timeline\" data-dnt=\"true\" data-height=\"960\" data-width=\"640\" href=\"https://twitter.com/Octopus_RA/lists/1437767914678099968?ref_src=twsrc%5Etfw\">A Twitter List by Octopus_RA</a><script async=\"\" charset=\"utf-8\" src=\"https://platform.twitter.com/widgets.js\"></script>\n</div></figure>\n<p class=\"wp-block-paragraph\"></p>\n</div>\n<p class=\"wp-block-paragraph\"></p>\n</div>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "71be59d07bad"
+}

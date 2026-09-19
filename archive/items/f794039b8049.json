@@ -1,0 +1,27 @@
+{
+ "id": 3662,
+ "type": "post",
+ "url": "https://octopus.org.il/2019/09/23/walla/",
+ "path": "/2019/09/23/walla/",
+ "title": "וואלה!",
+ "date": "2019-09-23T10:22:00+03:00",
+ "modified": "2021-11-23T10:25:12+02:00",
+ "description": "וואלה! הוא אתר חדשות ישראלי, המופעל על ידי חברת \"וואלה! תקשורת\". לאתר וואלה",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2021/11/200px-סמליל_וואלה.svg_.png?fit=200%2C56&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2021/11/200px-סמליל_וואלה.svg_.png",
+ "categories": [
+  {
+   "name": "גופי תקשורת",
+   "slug": "גופי-תקשורת"
+  }
+ ],
+ "tags": [
+  {
+   "name": "וואלה",
+   "slug": "וואלה"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">וואלה! הוא אתר חדשות ישראלי, המופעל על ידי חברת \"וואלה! תקשורת\".</p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.the7eye.org.il/\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר וואלה</a></p>\n",
+ "content_missing": false,
+ "key": "f794039b8049"
+}

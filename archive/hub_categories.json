@@ -1,0 +1,342 @@
+{
+ "/": [
+  {
+   "heading": "זרועות התמנון",
+   "category": "זרועות-התמנון",
+   "covered": 3,
+   "listed": 3,
+   "shown": 3,
+   "limit": 6
+  },
+  {
+   "heading": "תמצית הדברים שהיו לאחרונה",
+   "category": "*",
+   "covered": 3,
+   "listed": 3,
+   "shown": 3,
+   "limit": 6
+  }
+ ],
+ "/partners/": [
+  {
+   "heading": "חדשות מגופים וארגונים אחרים, שעיקרם הנגשת מידע ציבורי",
+   "category": "עדכונים-במרחב",
+   "covered": 15,
+   "listed": 15,
+   "shown": 15,
+   "limit": 15
+  }
+ ],
+ "/class_action/": [
+  {
+   "heading": null,
+   "category": "פרויקטים/תובענות-ייצוגיות",
+   "covered": 7,
+   "listed": 7,
+   "shown": 7,
+   "limit": null
+  }
+ ],
+ "/state-comptroller/": [
+  {
+   "heading": null,
+   "category": "cabinet/purity",
+   "covered": 45,
+   "listed": 45,
+   "shown": 45,
+   "limit": null
+  }
+ ],
+ "/health/": [
+  {
+   "heading": null,
+   "category": "cabinet/health",
+   "covered": 8,
+   "listed": 8,
+   "shown": 8,
+   "limit": null
+  }
+ ],
+ "/law/": [
+  {
+   "heading": null,
+   "category": "cabinet/law",
+   "covered": 79,
+   "listed": 79,
+   "shown": 79,
+   "limit": null
+  }
+ ],
+ "/library/": [
+  {
+   "heading": null,
+   "category": "ספריית-התמנון/מצגות-הדרכה",
+   "covered": 6,
+   "listed": 6,
+   "shown": 6,
+   "limit": null
+  },
+  {
+   "heading": "פסיקה שהוספנו לאחרונה",
+   "category": "ספריית-התמנון/פסיקה",
+   "covered": 13,
+   "listed": 13,
+   "shown": 13,
+   "limit": null
+  }
+ ],
+ "/public-security/": [
+  {
+   "heading": null,
+   "category": "cabinet/public-security",
+   "covered": 11,
+   "listed": 11,
+   "shown": 11,
+   "limit": null
+  }
+ ],
+ "/foreign-affairs/": [
+  {
+   "heading": null,
+   "category": "cabinet/foreign-affairs",
+   "covered": 14,
+   "listed": 14,
+   "shown": 14,
+   "limit": null
+  }
+ ],
+ "/academy/": [
+  {
+   "heading": "אזכורים מהאקדמיה לפרויקטים של עמותת התמנון",
+   "category": "academy",
+   "covered": 11,
+   "listed": 11,
+   "shown": 11,
+   "limit": null
+  }
+ ],
+ "/legal/": [
+  {
+   "heading": "עתירות חופש מידע",
+   "category": "חופש-מידע/עתירות-העמותה",
+   "covered": 10,
+   "listed": 10,
+   "shown": 10,
+   "limit": null
+  },
+  {
+   "heading": "בקשות עיון בתיקים",
+   "category": "בקשת-עיון",
+   "covered": 7,
+   "listed": 7,
+   "shown": 7,
+   "limit": null
+  },
+  {
+   "heading": "בקשות לפתיחת דלתות",
+   "category": "בקשה-לפתיחת-דלתות",
+   "covered": 3,
+   "listed": 3,
+   "shown": 3,
+   "limit": 6
+  }
+ ],
+ "/events/": [
+  {
+   "heading": "ליין המסיבות של עמותת התמנון או בקיצור כנסים ואירועים",
+   "category": "events",
+   "covered": 8,
+   "listed": 8,
+   "shown": 8,
+   "limit": null
+  }
+ ],
+ "/htl/": [
+  {
+   "heading": "הפרויקטים המשותפים של עמותת הצלחה – לקידום חברה הוגנת ועמותת התמנון – מידע ציבורי לכל",
+   "category": "htl",
+   "covered": 13,
+   "listed": 13,
+   "shown": 13,
+   "limit": null
+  }
+ ],
+ "/court-publicity/": [
+  {
+   "heading": null,
+   "category": "פרויקטים/מדריך-פומביות-הדיון",
+   "covered": 7,
+   "listed": 7,
+   "shown": 7,
+   "limit": null
+  }
+ ],
+ "/papers/": [
+  {
+   "heading": "ניירות עמדה, מדיריכים ומכתבים בנושא שקיפות ומנהל תקין",
+   "category": "מדיניות-וקשרי-ממשל",
+   "covered": 52,
+   "listed": 52,
+   "shown": 52,
+   "limit": null
+  }
+ ],
+ "/dashboard/": [
+  {
+   "heading": null,
+   "category": "tag:לוח-מחוונים",
+   "covered": 10,
+   "listed": 10,
+   "shown": 10,
+   "limit": null
+  }
+ ],
+ "/octopusnews/": [
+  {
+   "heading": null,
+   "category": "news",
+   "covered": 51,
+   "listed": 51,
+   "shown": 51,
+   "limit": null
+  }
+ ],
+ "/proceedingsexpenses/": [
+  {
+   "heading": null,
+   "category": "tag:הוצאות-משפט",
+   "covered": 27,
+   "listed": 27,
+   "shown": 27,
+   "limit": null
+  }
+ ],
+ "/mole/": [
+  {
+   "heading": null,
+   "category": "פרויקטים/פרויקט-החפרפרת",
+   "covered": 6,
+   "listed": 6,
+   "shown": 6,
+   "limit": null
+  }
+ ],
+ "/search-console/": [
+  {
+   "heading": null,
+   "category": "ספריית-התמנון/search-console",
+   "covered": 12,
+   "listed": 12,
+   "shown": 12,
+   "limit": null
+  }
+ ],
+ "/letters/": [
+  {
+   "heading": "דרישות להסרת תכנים מאתר תולעת המשפט",
+   "category": "תולעת-המשפט/מכתבי-איום-והתראה",
+   "covered": 27,
+   "listed": 27,
+   "shown": 27,
+   "limit": null
+  },
+  {
+   "heading": "מכתבים אחרים",
+   "category": "מכתבים-למערכת",
+   "covered": 5,
+   "listed": 5,
+   "shown": 5,
+   "limit": 6
+  }
+ ],
+ "/the_archive/": [],
+ "/projects/": [],
+ "/podcast/": [
+  {
+   "heading": null,
+   "category": "עדכונים-במרחב",
+   "covered": 3,
+   "listed": 3,
+   "shown": 3,
+   "limit": 6
+  }
+ ],
+ "/recommendations/": [
+  {
+   "heading": "חברה אזרחית, בלוגים ואתרי תוכן",
+   "category": "cats:בלוגים,חברה-אזרחית",
+   "covered": 11,
+   "listed": 11,
+   "shown": 11,
+   "limit": null
+  },
+  {
+   "heading": "גופי תקשורת",
+   "category": "גופי-תקשורת",
+   "covered": 11,
+   "listed": 11,
+   "shown": 11,
+   "limit": null
+  }
+ ],
+ "/security/": [
+  {
+   "heading": null,
+   "category": "אבטחת-מידע",
+   "covered": 30,
+   "listed": 30,
+   "shown": 30,
+   "limit": null
+  }
+ ],
+ "/soul/": [
+  {
+   "heading": "במסגרת ניסיון לקרב את עולם הרוח לעולם צנרת הביוב של הזכות למידע המכונה התהליך הסזיפי לקבלת מידע לפי חוק חופש המידע בישראל, אנו משיקים את פרויקט רוח ונפש.",
+   "category": "פרויקטים/שירים",
+   "covered": 11,
+   "listed": 11,
+   "shown": 11,
+   "limit": null
+  }
+ ],
+ "/about/": [
+  {
+   "heading": "עוד על העמותה",
+   "category": "על-העמותה",
+   "covered": 28,
+   "listed": 28,
+   "shown": 28,
+   "limit": null
+  }
+ ],
+ "/bugs/": [
+  {
+   "heading": null,
+   "category": "פרויקטים/net_bugs",
+   "covered": 30,
+   "listed": 30,
+   "shown": 30,
+   "limit": null
+  }
+ ],
+ "/allowed/": [
+  {
+   "heading": null,
+   "category": "פרויקטים/הותר-לפרסום",
+   "covered": 8,
+   "listed": 8,
+   "shown": 8,
+   "limit": null
+  }
+ ],
+ "/sausage/": [
+  {
+   "heading": null,
+   "category": "hotdog",
+   "covered": 40,
+   "listed": 40,
+   "shown": 40,
+   "limit": null
+  }
+ ]
+}

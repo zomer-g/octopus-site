@@ -1,0 +1,43 @@
+{
+ "id": 1202,
+ "type": "post",
+ "url": "https://octopus.org.il/2020/12/11/api/",
+ "path": "/2020/12/11/api/",
+ "title": "API לתולעת המשפט",
+ "date": "2020-12-11T16:01:02+02:00",
+ "modified": "2021-11-28T18:52:55+02:00",
+ "description": "[תולעת המשפט גאה להשיק API מהיום אפשר להתחיל לצרוך באופן מתעדכן וחי את הנתונים דרך API ולא רק בעיון פרטני באתר או בגוגל הקרוב. כרגע עולות",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/12/130774102_2748674462070164_8874683742927548820_o-1.jpg?fit=1280%2C960&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/12/130774102_2748674462070164_8874683742927548820_o-1.jpg",
+ "categories": [
+  {
+   "name": "חופש מידע",
+   "slug": "חופש-מידע"
+  },
+  {
+   "name": "על העמותה",
+   "slug": "על-העמותה"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "tags": [
+  {
+   "name": "API",
+   "slug": "api"
+  },
+  {
+   "name": "ממשק מפתחים",
+   "slug": "ממשק-מפתחים"
+  },
+  {
+   "name": "תובענות ייצוגיות",
+   "slug": "תובענות-ייצוגיות"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">[<br/>תולעת המשפט גאה להשיק API</p>\n<p class=\"has-text-align-justify wp-block-paragraph\">מהיום אפשר להתחיל לצרוך באופן מתעדכן וחי את הנתונים דרך API ולא רק בעיון פרטני באתר או בגוגל הקרוב. כרגע עולות לשם רק תובענות ייצוגיות בחתך של תיקים ושמות הצדדים בתיקים בפורמט CSV או אקסל. הצפי לעדכון הנתונים כרגע הוא בערך אחת לשבוע או שבועיים, ובתקופה הקרובה נתחיל לשחרר ככה עוד ועוד מנתוני נט המשפט. אם המדינה לא רוצה ליישם את החלטת הממשלה על פתיחת המאגרים, אנחנו נפתח את זה במקום.</p>\n<p class=\"wp-block-paragraph\">קישורים:<br/>למסמך התיעוד:<br/>https://docs.google.com/document/d/1erulQYARL8ujZVVyqXUOwpWKX8k9K-_7SDjFBsuxzC8/edit?usp=sharing</p>\n<p class=\"wp-block-paragraph\">לקבוצת שאלות ותמיכה:<br/>https://www.facebook.com/groups/tolaatdata</p>\n<p class=\"wp-block-paragraph\">לא צריך להרשם, לא צריך להזדהות, הכל פתוח</p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\">תמונה: עיבוד על בסיס תמונה מויקיפדיה</p>\n",
+ "content_missing": false,
+ "key": "a1bb9e6eafc7"
+}

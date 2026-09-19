@@ -1,0 +1,31 @@
+{
+ "id": 5381,
+ "type": "post",
+ "url": "https://octopus.org.il/2022/02/27/%d7%aa%d7%a7%d7%9c%d7%94-%d7%91%d7%a0%d7%98-27-2-22/",
+ "path": "/2022/02/27/תקלה-בנט-27-2-22/",
+ "title": "תקלה בנט 27/2/22",
+ "date": "2022-02-27T09:23:00+02:00",
+ "modified": "2022-08-01T09:31:16+03:00",
+ "description": "נט המשפט באחת התקלות הגדולות והממושכות ביותר, קושי בפתיחה של מסמכים לאורך ימים",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2022/08/FMmXu5gXIAYx8Pv.png?fit=293%2C211&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2022/08/FMmXu5gXIAYx8Pv.png",
+ "categories": [
+  {
+   "name": "תקלות בנט המשפט",
+   "slug": "פרויקטים/net_bugs"
+  }
+ ],
+ "tags": [
+  {
+   "name": "נט המשפט",
+   "slug": "נט-המשפט"
+  },
+  {
+   "name": "תקלות",
+   "slug": "תקלות"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">נט המשפט באחת התקלות הגדולות והממושכות ביותר, קושי בפתיחה של מסמכים לאורך ימים</p>\n",
+ "content_missing": false,
+ "key": "ab21e1cf70ac"
+}

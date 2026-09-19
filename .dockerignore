@@ -1,0 +1,13 @@
+node_modules
+dist
+.build
+.builds
+.uploads
+.pglite
+.deploy
+.astro
+.git
+.claude
+archive/html
+*.log
+.env.local

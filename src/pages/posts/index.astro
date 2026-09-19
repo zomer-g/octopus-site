@@ -1,0 +1,18 @@
+---
+import Base from "../../layouts/Base.astro";
+import YearList from "../../components/YearList.astro";
+import { allPosts, postCardsHtml } from "../../lib/site";
+const posts = await allPosts();
+---
+<Base title="כל הפרסומים" description="ארכיון כל הפרסומים של עמותת התמנון">
+  <div class="page-head">
+    <h1>כל הפרסומים</h1>
+    <p>
+      {posts.length} פרסומים, {posts.at(-1)!.data.date.getFullYear()}–{posts[0].data.date.getFullYear()}.
+      אפשר גם <a href="/categories/">לעיין לפי נושא</a> או <a href="/search/">לחפש</a>.
+    </p>
+  </div>
+  <h2>האחרונים</h2>
+  <Fragment set:html={postCardsHtml(posts.slice(0, 6))} />
+  <YearList posts={posts} />
+</Base>

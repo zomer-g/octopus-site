@@ -1,0 +1,14 @@
+---
+import { render, type CollectionEntry } from "astro:content";
+import { expandPostLists } from "../lib/site";
+
+interface Props { entry: CollectionEntry<"posts"> | CollectionEntry<"pages"> }
+const { entry } = Astro.props;
+// archived WordPress markup is rendered as-is; new posts can be written in Markdown
+const isHtml = entry.data.format === "html";
+const html = isHtml ? await expandPostLists(entry.body ?? "") : "";
+const Content = isHtml ? null : (await render(entry)).Content;
+---
+<div class="content">
+  {isHtml ? <Fragment set:html={html} /> : Content && <Content />}
+</div>

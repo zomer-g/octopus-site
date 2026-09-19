@@ -1,0 +1,27 @@
+{
+ "id": 3642,
+ "type": "post",
+ "url": "https://octopus.org.il/2019/09/23/globes/",
+ "path": "/2019/09/23/globes/",
+ "title": "גלובס",
+ "date": "2019-09-23T09:37:00+03:00",
+ "modified": "2021-11-23T09:51:16+02:00",
+ "description": "גלובס הוא עיתון יומי כלכלי ישראלי ואתר חדשות כלכלי. לאתר גלובס",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2019/09/Screenshot-2021-11-23-094104.png?fit=333%2C104&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2019/09/Screenshot-2021-11-23-094104.png",
+ "categories": [
+  {
+   "name": "גופי תקשורת",
+   "slug": "גופי-תקשורת"
+  }
+ ],
+ "tags": [
+  {
+   "name": "העין השביעית",
+   "slug": "העין-השביעית"
+  }
+ ],
+ "content_html": "\n<p class=\"wp-block-paragraph\">גלובס הוא עיתון יומי כלכלי ישראלי ואתר חדשות כלכלי.</p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"><a href=\"https://www.globes.co.il/\" rel=\"noreferrer noopener\" target=\"_blank\">לאתר גלובס</a></p>\n",
+ "content_missing": false,
+ "key": "89c8e3333b7e"
+}

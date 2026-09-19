@@ -1,0 +1,59 @@
+{
+ "id": 1217,
+ "type": "post",
+ "url": "https://octopus.org.il/2020/12/13/saker/",
+ "path": "/2020/12/13/saker/",
+ "title": "אילנה סקר",
+ "date": "2020-12-13T18:24:13+02:00",
+ "modified": "2021-02-06T10:46:19+02:00",
+ "description": "בזכות נתוני תולעת המשפט נחשפו מעל 1,000 תיקים בבתי המשפט השונים בהם רשומים כבאי כח אילנה סקר ואנשי משרדה, כך נחשף בכתבה שפורסמה במגזין סוף",
+ "og_image": "https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/12/capture-2.png?fit=829%2C852&ssl=1",
+ "featured_image": "https://octopus.org.il/wp-content/uploads/2020/12/capture-2.png",
+ "categories": [
+  {
+   "name": "חדשות",
+   "slug": "news"
+  },
+  {
+   "name": "ממשל ומנהל תקין",
+   "slug": "cabinet/purity"
+  },
+  {
+   "name": "משפט",
+   "slug": "cabinet/law"
+  },
+  {
+   "name": "תולעת המשפט",
+   "slug": "תולעת-המשפט"
+  }
+ ],
+ "tags": [
+  {
+   "name": "אורה הולט",
+   "slug": "אורה-הולט"
+  },
+  {
+   "name": "אילנה סקר",
+   "slug": "אילנה-סקר"
+  },
+  {
+   "name": "אפי סקר",
+   "slug": "אפי-סקר"
+  },
+  {
+   "name": "כלכליסט",
+   "slug": "כלכליסט"
+  },
+  {
+   "name": "נט המשפט",
+   "slug": "נט-המשפט"
+  },
+  {
+   "name": "ענת רואה",
+   "slug": "ענת-רואה"
+  }
+ ],
+ "content_html": "\n<p class=\"has-text-align-justify wp-block-paragraph\">בזכות נתוני תולעת המשפט נחשפו מעל 1,000 תיקים בבתי המשפט השונים בהם רשומים כבאי כח אילנה סקר ואנשי משרדה, כך נחשף בכתבה שפורסמה במגזין סוף השבוע של עיתון כלכליסט. יש לציין כי סקר מכהנת כחברת הועדה לבחירת שופטים ומתוקף כך נאסר עליה לייצג בפני שופטים שלא בבית המשפט העליון וזאת מחשש להטיית הדין מול שופטים שקידומם תלוי בוועדה בה חברה סקר כמובן. </p>\n<p class=\"has-text-align-justify wp-block-paragraph\">אף שמדובר בנתונים גלויים באתר נט המשפט, שכל אזרח יכול להיכנס ולעיין בכל אחד מהתיקים, עמדו אנשי הנהלת בתי המשפט שלא למסור את את רשימת התיקים המשוייכת לסקר. נציין כי גם פניות דומות שהגיעו אלינו חשפו כי בהנהלת בתי המשפט מסרבים בעיקשות למסור את המידע שהם עצמם מפרסמים, בשלל טענות החל מפרטיות ועד סודות מסחריים. </p>\n<p class=\"has-text-align-justify wp-block-paragraph\">סופו של יום שהנהלת בתי המשפט לא מצליחה לקשור בין פרסום דאטהבייס באתר אינטרנט לבין מסירת הדאטהבייס, ולתפישתה הדברים אינם שקולים. בפועל, כל מה שתולעת המשפט  עשתה היא להוסיף יכולת מחקר ואנליזה למידע הקיים ממילא. </p>\n<figure class=\"wp-block-image size-large\"><img alt=\"\" class=\"wp-image-1223\" decoding=\"async\" height=\"758\" sizes=\"(max-width: 640px) 100vw, 640px\" src=\"/wp-content/uploads/2020/12/image-1.png?w=947\" srcset=\"https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/12/image-1.png?w=947&amp;ssl=1 947w, https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/12/image-1.png?resize=300%2C240&amp;ssl=1 300w, https://i0.wp.com/octopus.org.il/wp-content/uploads/2020/12/image-1.png?resize=768%2C615&amp;ssl=1 768w\" width=\"947\"/></figure>\n<p class=\"wp-block-paragraph\"><a href=\"https://newmedia.calcalist.co.il/magazine-10-12-20/m02.html\" rel=\"noreferrer noopener\" target=\"_blank\">לאייטם המלא</a></p>\n<p class=\"wp-block-paragraph\"></p>\n<p class=\"wp-block-paragraph\"></p>\n",
+ "content_missing": false,
+ "key": "2e9062d8ac50"
+}

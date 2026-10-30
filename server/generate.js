@@ -81,7 +81,10 @@ export function indexSite(site, opts = {}) {
     }
     return null;
   };
-  const isPublic = (i) => (i.post_type === "post" || i.post_type === "page") && i.status === "publish" && !i.post_password;
+  // removedPaths: published pages the site no longer shows; their address redirects to the home page
+  const removed = new Set(opts.removedPaths ?? []);
+  const isPublic = (i) =>
+    (i.post_type === "post" || i.post_type === "page") && i.status === "publish" && !i.post_password && !removed.has(permalink(i));
   const permalinkById = new Map(site.items.filter(isPublic).map((i) => [i.post_id, permalink(i)]));
 
   return {
@@ -140,8 +143,8 @@ export function buildMenu(site, idx, opts) {
   });
 }
 
-function redirects(site, idx, extra) {
-  const out = { ...(extra ?? {}) };
+function redirects(site, idx, extra, removedPaths) {
+  const out = { ...Object.fromEntries((removedPaths ?? []).map((p) => [p, "/"])), ...(extra ?? {}) };
   const taken = new Set(idx.permalinkById.values());
   for (const item of site.items) {
     if (!idx.isPublic(item) || item.post_type !== "post") continue;
@@ -178,7 +181,7 @@ const plain = (html, n = 300) => html.replace(/<[^>]+>/g, " ").replace(/\s+/g, "
 
 /**
  * Write the Astro inputs for `site` under `root`.
- * opts: { frontPageId, primaryMenu, extraRedirects, renderCache, baseUrls }
+ * opts: { frontPageId, primaryMenu, extraRedirects, removedPaths, renderCache, baseUrls }
  */
 export function generate(site, root, opts = {}) {
   const idx = indexSite(site, opts);
@@ -248,7 +251,7 @@ export function generate(site, root, opts = {}) {
   writeFileSync(join(dataDir, "menu.json"), JSON.stringify(buildMenu(site, idx, opts), null, 1));
 
   const routes = {
-    redirects: redirects(site, idx, opts.extraRedirects),
+    redirects: redirects(site, idx, opts.extraRedirects, opts.removedPaths),
     ids: Object.fromEntries([...idx.permalinkById].filter(([, p]) => p)),
   };
   writeFileSync(join(dataDir, "routes.json"), JSON.stringify(routes));

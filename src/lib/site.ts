@@ -73,8 +73,8 @@ export function postCardsHtml(posts: Post[], opts: { moreUrl?: string; limit?: n
         .map((c) => `<a href="${escapeHtml(categoryUrl(c))}">${escapeHtml(categoryName(c))}</a>`)
         .join("");
       const notice = noticeFor(p.data.permalink);
-      const badge = notice ? `<span class="badge-inactive">${escapeHtml(notice.label)}</span>` : "";
-      return `<article class="card${notice ? " inactive" : ""}">${img}<div class="card-body"><div class="card-cats">${badge}${cats}</div><h3><a href="${escapeHtml(p.data.permalink)}">${escapeHtml(p.data.title)}</a></h3>${p.data.date && p.data.categories ? `<time datetime="${p.data.date.toISOString()}">${formatDate(p.data.date)}</time>` : ""}<p>${escapeHtml(notice ? notice.text : excerpt(p))}</p></div></article>`;
+      const badge = notice ? `<span class="badge-notice">${escapeHtml(notice.label)}</span>` : "";
+      return `<article class="card">${img}<div class="card-body"><div class="card-cats">${badge}${cats}</div><h3><a href="${escapeHtml(p.data.permalink)}">${escapeHtml(p.data.title)}</a></h3>${p.data.date && p.data.categories ? `<time datetime="${p.data.date.toISOString()}">${formatDate(p.data.date)}</time>` : ""}<p>${escapeHtml(notice ? notice.text : excerpt(p))}</p></div></article>`;
     })
     .join("");
   const more =

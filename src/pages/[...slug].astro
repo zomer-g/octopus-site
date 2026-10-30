@@ -44,7 +44,7 @@ const showFeatured = post && d.image && !(entry.body ?? "").includes(d.image);
       </div>
     )}
     {notice && (
-      <aside class="notice-inactive" role="note">
+      <aside class="notice-box" role="note">
         <strong>{notice.label}</strong>
         <p>{notice.text}{notice.link && <> <a href={notice.link}>{notice.linkLabel ?? "פרטים נוספים"}</a></>}</p>
       </aside>

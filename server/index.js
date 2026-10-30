@@ -12,6 +12,7 @@ import { initBuilder, currentDir, isBuilding, onSwap, requestBuild, siteOptions 
 import { initStorage, putFile, getFile, deleteFile } from "./storage.js";
 import { initMedia, localMediaPath, storageKey, syncMedia, mediaSyncState, mirrorUploads, mirrorState, loadManifest } from "./media.js";
 import { parseWxr, serializeWxr } from "./wxr.js";
+import { readZip } from "./zip.js";
 import { decode, indexSite, metaValue, wpSlug, attachmentFile, isReserved, isSafeUploadPath } from "./generate.js";
 import { buildMenuTree, saveMenuTree } from "./menu.js";
 import * as store from "./store.js";
@@ -483,6 +484,11 @@ api.post("/publish", wrap(async (req, res) => {
 // --- media library (WordPress attachments) ---
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 60 * 1024 * 1024 } });
 // what WordPress allows by default for non-admins (no html/svg/php/js)
+const UPLOAD_MIME = {
+  ".pdf": "application/pdf", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".gif": "image/gif", ".webp": "image/webp",
+  ".doc": "application/msword", ".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  ".mp3": "audio/mpeg", ".m4a": "audio/mp4", ".mp4": "video/mp4", ".txt": "text/plain; charset=utf-8",
+};
 const UPLOAD_TYPES = /^\.(jpe?g|png|gif|webp|avif|ico|heic|pdf|docx?|xlsx?|pptx?|odt|ods|odp|rtf|txt|csv|zip|mp3|m4a|ogg|wav|mp4|m4v|mov|webm|ogv|key|pages|numbers)$/;
 api.post("/upload", upload.single("file"), wrap(async (req, res) => {
   if (!req.file) throw httpError(400, "לא התקבל קובץ");
@@ -550,22 +556,42 @@ api.get("/export", wrap(async (req, res) => {
   res.send(serializeWxr(site));
 }));
 
-const importUpload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 200 * 1024 * 1024 } });
+const importUpload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 500 * 1024 * 1024 } });
 const pendingImports = new Map(); // token -> { site, at }
 
 api.post("/import/preview", importUpload.single("file"), wrap(async (req, res) => {
   if (!req.file) throw httpError(400, "לא התקבל קובץ");
   const mode = req.body.mode === "replace" ? "replace" : "append";
+  // a ZIP package holds one WXR file and the files it uses, under wp-content/uploads/
+  let xml = req.file.buffer;
+  let files = [];
+  if (req.file.buffer.subarray(0, 2).toString() === "PK") {
+    let entries;
+    try {
+      entries = readZip(req.file.buffer);
+    } catch (e) {
+      throw httpError(400, e.message);
+    }
+    const xmls = entries.filter((e) => /\.xml$/i.test(e.name) && !e.name.includes("wp-content/uploads/"));
+    if (xmls.length !== 1) throw httpError(400, "בקובץ ה-ZIP צריך להיות קובץ XML אחד של וורדפרס");
+    xml = xmls[0].data;
+    for (const e of entries) {
+      const file = e.name.split("wp-content/uploads/")[1];
+      if (!file) continue;
+      if (!isSafeUploadPath(file) || !UPLOAD_TYPES.test(extname(file).toLowerCase())) throw httpError(400, `הקובץ ${e.name} אינו מותר להעלאה`);
+      files.push({ file, data: e.data });
+    }
+  }
   let site;
   try {
-    site = parseWxr(req.file.buffer.toString("utf-8"));
+    site = parseWxr(xml.toString("utf-8"));
   } catch (e) {
     throw httpError(400, /^(הקובץ|חסר)/.test(e.message) ? e.message : `הקובץ אינו קובץ XML תקין: ${e.message}`);
   }
   for (const [k, v] of pendingImports) if (Date.now() - v.at > 3600e3) pendingImports.delete(k);
   const token = randomUUID();
-  pendingImports.set(token, { site, at: Date.now() });
-  res.json({ token, title: site.meta.title, plan: await store.planImport(site, mode, await siteUrl()) });
+  pendingImports.set(token, { site, files, at: Date.now() });
+  res.json({ token, title: site.meta.title, files: files.length, plan: await store.planImport(site, mode, await siteUrl()) });
 }));
 
 api.post("/import/run", wrap(async (req, res) => {
@@ -581,6 +607,7 @@ api.post("/import/run", wrap(async (req, res) => {
     const list = (await db.getSetting("backups")) ?? [];
     await db.setSetting("backups", [{ key, at: new Date().toISOString(), by: req.user.email }, ...list].slice(0, 50));
   }
+  for (const f of pending.files ?? []) await putFile(storageKey(f.file), f.data, UPLOAD_MIME[extname(f.file).toLowerCase()]);
   const result = await store.runImport(pending.site, mode, req.user.email, await siteUrl());
   pendingImports.delete(req.body.token);
   if (req.body.downloadMedia !== false) syncMedia([req.headers.host]).catch((e) => console.error("media sync", e));

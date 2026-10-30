@@ -801,7 +801,7 @@ async function transferView() {
     </div>
     <div class="panel">
       <h3>ייבוא</h3>
-      <div class="field"><label>קובץ ייצוא של וורדפרס (XML)</label><input type="file" id="imp-file" accept=".xml,application/xml,text/xml" /></div>
+      <div class="field"><label>קובץ ייצוא של וורדפרס (XML), או קובץ ZIP עם קובץ XML והקבצים שלו בתיקייה wp-content/uploads/</label><input type="file" id="imp-file" accept=".xml,.zip,application/xml,text/xml,application/zip" /></div>
       <div class="field">
         <label class="checkbox"><input type="radio" name="mode" value="append" checked /> <span><b>הוספה (APPEND)</b> – רק מה שעוד לא קיים באתר מתווסף. שום דבר קיים לא משתנה.</span></label>
         <label class="checkbox"><input type="radio" name="mode" value="replace" /> <span><b>החלפה (REPLACE)</b> – כל התוכן באתר מוחלף בתוכן הקובץ. לפני ההחלפה נשמר גיבוי מלא.</span></label>
@@ -860,7 +860,7 @@ async function transferView() {
     fd.append("mode", mode);
     $("#imp-result").innerHTML = `<p class="muted">בודק את הקובץ…</p>`;
     try {
-      const { token, plan, title } = await api("/import/preview", { method: "POST", body: fd });
+      const { token, plan, title, files } = await api("/import/preview", { method: "POST", body: fd });
       $("#imp-result").innerHTML = `
         <div class="panel" style="margin-top:12px;background:#faf8fb">
           <p><b>${esc(title)}</b> ${plan.source ? `<span class="muted" dir="ltr">(${esc(plan.source)})</span>` : ""}</p>
@@ -871,6 +871,7 @@ async function transferView() {
                <div class="field"><label>להמשך הקלידו: החלפה</label><input id="imp-confirm" /></div>`
               : `<p>יתווספו: ${countsText(plan.add)}${plan.terms ? ` · ${plan.terms} קטגוריות/תגיות חדשות` : ""}</p><p class="muted">כבר קיימים ולא ישתנו: ${countsText(plan.skip)}</p>`
           }
+          ${files ? `<p>יועלו ${Number(files)} קבצים מתוך ה-ZIP.</p>` : ""}
           ${plan.foreign ? `<p class="hint">הקובץ מאתר אחר: קישורי המדיה שלו יועברו לאתר הזה והקבצים יורדו מהאתר המקורי.</p>` : ""}
           <div class="actions"><button class="primary" id="imp-run">ביצוע הייבוא</button></div>
         </div>`;

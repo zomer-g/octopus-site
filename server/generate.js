@@ -1,6 +1,6 @@
 // site (WordPress-shaped data) -> Astro inputs:
 //   <root>/src/content/posts/<id>.md, <root>/src/content/pages/<id>.md
-//   <root>/src/data/{categories,tags,menu}.json
+//   <root>/src/data/{categories,tags,menu,notices}.json
 // and the routing tables the server uses: redirects.json and ids.json.
 import { createHash } from "node:crypto";
 import { mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } from "node:fs";
@@ -181,7 +181,7 @@ const plain = (html, n = 300) => html.replace(/<[^>]+>/g, " ").replace(/\s+/g, "
 
 /**
  * Write the Astro inputs for `site` under `root`.
- * opts: { frontPageId, primaryMenu, extraRedirects, removedPaths, renderCache, baseUrls }
+ * opts: { frontPageId, primaryMenu, extraRedirects, removedPaths, notices, renderCache, baseUrls }
  */
 export function generate(site, root, opts = {}) {
   const idx = indexSite(site, opts);
@@ -249,6 +249,7 @@ export function generate(site, root, opts = {}) {
   const tags = site.terms.filter((t) => t.taxonomy === "post_tag").map((t) => ({ id: t.term_id, slug: decode(t.slug), name: t.name }));
   writeFileSync(join(dataDir, "tags.json"), JSON.stringify(tags, null, 1));
   writeFileSync(join(dataDir, "menu.json"), JSON.stringify(buildMenu(site, idx, opts), null, 1));
+  writeFileSync(join(dataDir, "notices.json"), JSON.stringify(opts.notices ?? {}, null, 1));
 
   const routes = {
     redirects: redirects(site, idx, opts.extraRedirects, opts.removedPaths),

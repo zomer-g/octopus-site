@@ -1,7 +1,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import categoriesData from "../data/categories.json";
 import tagsData from "../data/tags.json";
-import siteConfig from "../../site.config.json";
+import noticesData from "../data/notices.json";
 
 export type Post = CollectionEntry<"posts">;
 export type Category = { slug: string; name: string; description: string; parent: string | null };
@@ -15,8 +15,8 @@ export const SITE = {
 };
 
 export type Notice = { label: string; text: string; link?: string; linkLabel?: string };
-/** Status notes from site.config.json, such as a project that no longer runs. */
-const notices = ((siteConfig as { notices?: Record<string, Notice> }).notices ?? {});
+/** Status notes ("notices" in site.config.json), such as a project the association no longer runs. */
+const notices = noticesData as Record<string, Notice>;
 export const noticeFor = (permalink: string): Notice | undefined => notices[permalink];
 
 export const categories = categoriesData as Category[];

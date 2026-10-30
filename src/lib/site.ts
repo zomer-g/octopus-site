@@ -1,6 +1,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import categoriesData from "../data/categories.json";
 import tagsData from "../data/tags.json";
+import siteConfig from "../../site.config.json";
 
 export type Post = CollectionEntry<"posts">;
 export type Category = { slug: string; name: string; description: string; parent: string | null };
@@ -12,6 +13,11 @@ export const SITE = {
   fullName: "התמנון – מידע ציבורי לכל (ע\"ר)",
   logo: "/wp-content/uploads/2020/07/cropped-octopus-4.png",
 };
+
+export type Notice = { label: string; text: string; link?: string; linkLabel?: string };
+/** Status notes from site.config.json, such as a project that no longer runs. */
+const notices = ((siteConfig as { notices?: Record<string, Notice> }).notices ?? {});
+export const noticeFor = (permalink: string): Notice | undefined => notices[permalink];
 
 export const categories = categoriesData as Category[];
 export const tags = tagsData as Tag[];
@@ -66,7 +72,9 @@ export function postCardsHtml(posts: Post[], opts: { moreUrl?: string; limit?: n
         .slice(0, 2)
         .map((c) => `<a href="${escapeHtml(categoryUrl(c))}">${escapeHtml(categoryName(c))}</a>`)
         .join("");
-      return `<article class="card">${img}<div class="card-body"><div class="card-cats">${cats}</div><h3><a href="${escapeHtml(p.data.permalink)}">${escapeHtml(p.data.title)}</a></h3>${p.data.date && p.data.categories ? `<time datetime="${p.data.date.toISOString()}">${formatDate(p.data.date)}</time>` : ""}<p>${escapeHtml(excerpt(p))}</p></div></article>`;
+      const notice = noticeFor(p.data.permalink);
+      const badge = notice ? `<span class="badge-inactive">${escapeHtml(notice.label)}</span>` : "";
+      return `<article class="card${notice ? " inactive" : ""}">${img}<div class="card-body"><div class="card-cats">${badge}${cats}</div><h3><a href="${escapeHtml(p.data.permalink)}">${escapeHtml(p.data.title)}</a></h3>${p.data.date && p.data.categories ? `<time datetime="${p.data.date.toISOString()}">${formatDate(p.data.date)}</time>` : ""}<p>${escapeHtml(notice ? notice.text : excerpt(p))}</p></div></article>`;
     })
     .join("");
   const more =

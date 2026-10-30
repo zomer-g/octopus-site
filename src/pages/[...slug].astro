@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import Entry from "../components/Entry.astro";
 import menu from "../data/menu.json";
-import { allPosts, categoryName, categoryUrl, formatDate, tagName, tagUrl, type Post } from "../lib/site";
+import { allPosts, categoryName, categoryUrl, formatDate, noticeFor, tagName, tagUrl, type Post } from "../lib/site";
 
 export async function getStaticPaths() {
   const posts = await allPosts();
@@ -24,6 +24,7 @@ const { entry, post, newer, older } = Astro.props as {
 const d = entry.data;
 // section pages (projects, archive…) list their sub-pages, like the old carousel did
 const subPages = post ? [] : (menu.find((m) => m.href === d.permalink)?.children ?? []);
+const notice = noticeFor(d.permalink);
 const showFeatured = post && d.image && !(entry.body ?? "").includes(d.image);
 ---
 <Base title={d.title} description={d.description} image={d.image} type={post ? "article" : "website"}>
@@ -41,6 +42,12 @@ const showFeatured = post && d.image && !(entry.body ?? "").includes(d.image);
           {post.data.categories.map((c) => <li><a href={categoryUrl(c)} data-pagefind-filter="נושא">{categoryName(c)}</a></li>)}
         </ul>
       </div>
+    )}
+    {notice && (
+      <aside class="notice-box" role="note">
+        <strong>{notice.label}</strong>
+        <p>{notice.text}{notice.link && <> <a href={notice.link}>{notice.linkLabel ?? "פרטים נוספים"}</a></>}</p>
+      </aside>
     )}
     {showFeatured && <figure class="featured"><img src={d.image} alt="" /></figure>}
     <Entry entry={entry} />

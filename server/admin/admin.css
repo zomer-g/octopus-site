@@ -97,6 +97,9 @@ button.media-item:hover { border-color: var(--accent); }
 .media-item .thumb { aspect-ratio: 4/3; background: var(--bg); border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: 2rem; }
 .media-item .thumb img { width: 100%; height: 100%; object-fit: cover; }
 .media-item .name { word-break: break-all; direction: ltr; text-align: left; }
+.media-item .vis { display: flex; align-items: center; gap: 6px; }
+.media-item .vis .badge { margin: 0; }
+.media-item .vis select { flex: 1; min-width: 0; font-size: .8rem; padding: 3px 4px; }
 .dropzone { border: 2px dashed var(--line); border-radius: 10px; padding: 24px; text-align: center; background: #fff; margin-bottom: 16px; }
 .dropzone.over { border-color: var(--accent); background: var(--accent-soft); }
 

@@ -18,6 +18,7 @@ import { buildMenuTree, saveMenuTree } from "./menu.js";
 import * as store from "./store.js";
 import { loadPublicData, mcp, publicApi } from "./public-api.js";
 import { createToken, listTokens, MAX_HOURS, revokeToken, userForToken } from "./tokens.js";
+import { fileStatus, isPublicFile, refreshVisibility, setFileMode, visibilityReady } from "./visibility.js";
 
 const ROOT = process.cwd();
 const PORT = Number(process.env.XHOST_HTTP_PORT || process.env.PORT || 3000);
@@ -73,10 +74,12 @@ const siteStatic = (dir) =>
 let serveSite = siteStatic(currentDir());
 loadRoutes(currentDir());
 loadPublicData(currentDir());
-onSwap((dir) => {
+refreshVisibility(currentDir(), await siteOptions());
+onSwap(async (dir) => {
   serveSite = siteStatic(dir);
   loadRoutes(dir);
   loadPublicData(dir);
+  refreshVisibility(dir, await siteOptions());
 });
 
 // WordPress-style addresses: /?p=123, /?page_id=123 and renamed posts
@@ -108,16 +111,24 @@ app.use("/mcp", mcp);
 // so an uploaded or imported file can never act with an editor's session
 // full-site export/backup files that ended up in the old uploads folder: kept in
 // storage as part of the copy, never served (they hold unpublished data and e-mails)
+// a file the published site does not use is private (visibility.js): editors only, never cached
 const PRIVATE_UPLOADS = /(^|\/)(wordpress\.\d{4}-\d{2}-\d{2}[^/]*\.xml[^/]*|[^/]*\.wordpress\.com-\d{4}-\d{2}-\d{2}[^/]*)$/i;
 const ACTIVE_TYPES = /\.(svg|svgz|html?|xhtml|xml|xsl)$/i;
 app.get("/wp-content/uploads/{*file}", async (req, res, next) => {
   const file = [].concat(req.params.file).join("/");
   if (!isSafeUploadPath(file) || PRIVATE_UPLOADS.test(file)) return next();
+  const visible = await isPublicFile(file);
+  if (!visible) {
+    const user = await currentUser(req);
+    if (!user || !(await isEditor(user.email))) return next();
+  }
+  // short public caching, so a file made private stops being served soon after
+  const cacheControl = visible ? "public, max-age=3600" : "private, no-store";
   if (ACTIVE_TYPES.test(file)) res.setHeader("Content-Security-Policy", "default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; sandbox");
   const send = async (f) => {
     const local = localMediaPath(f);
     if (local) {
-      res.setHeader("Cache-Control", "public, max-age=604800");
+      res.setHeader("Cache-Control", cacheControl);
       res.sendFile(local);
       return true;
     }
@@ -125,7 +136,7 @@ app.get("/wp-content/uploads/{*file}", async (req, res, next) => {
     if (!obj) return false;
     res.type(obj.contentType || extname(f) || "application/octet-stream");
     if (obj.length) res.setHeader("Content-Length", obj.length);
-    res.setHeader("Cache-Control", "public, max-age=604800");
+    res.setHeader("Cache-Control", cacheControl);
     obj.stream.pipe(res);
     return true;
   };
@@ -566,13 +577,21 @@ api.get("/uploads", wrap(async (req, res) => {
     [Math.min(Number(req.query.limit) || 60, 200), Number(req.query.offset) || 0, q],
   );
   const total = await db.one("SELECT count(*) AS n FROM wp_items WHERE post_type = 'attachment'");
+  await visibilityReady();
   res.json({
     total: Number(total.n),
     items: rows.map((r) => {
       const file = r.meta?.find((m) => m.key === "_wp_attached_file")?.value;
-      return { id: Number(r.post_id), title: r.title, date: r.date, file, url: file ? `/wp-content/uploads/${file}` : null };
+      return { id: Number(r.post_id), title: r.title, date: r.date, file, url: file ? `/wp-content/uploads/${file}` : null, visibility: file ? fileStatus(file) : null };
     }),
   });
+}));
+
+// a file's visibility: auto (public when the published site uses it), or pinned public / private
+api.put("/uploads/visibility", wrap(async (req, res) => {
+  const file = String(req.body.file ?? "");
+  if (!file || !isSafeUploadPath(file)) throw httpError(400, "קובץ לא תקין");
+  res.json(await setFileMode(file, String(req.body.mode), req.user.email));
 }));
 
 api.delete("/uploads", wrap(async (req, res) => {

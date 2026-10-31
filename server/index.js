@@ -686,7 +686,6 @@ api.post("/media-sync", (req, res) => {
   res.json({ ok: true });
 });
 
-// --- editors ---
 // --- API tokens (signed-in editors only: a token cannot manage tokens) ---
 api.get("/tokens", wrap(async (req, res) => res.json({ tokens: await listTokens(), maxHours: MAX_HOURS })));
 api.post("/tokens", wrap(async (req, res) => {
@@ -698,6 +697,7 @@ api.delete("/tokens", wrap(async (req, res) => {
   res.json({ ok: true });
 }));
 
+// --- editors ---
 api.get("/editors", wrap(async (req, res) => {
   const env = (process.env.ADMIN_EMAILS || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
   res.json({ fixed: env, editors: await db.all("SELECT email, added_at, added_by FROM editors ORDER BY added_at") });

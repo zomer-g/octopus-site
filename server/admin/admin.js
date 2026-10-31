@@ -598,6 +598,19 @@ async function initEditor(selector, onChange) {
 }
 
 // ---------- media ----------
+// who may open a file: automatic (public while the published site uses it), or pinned
+const VIS_REASON = { attached: "משויך לפוסט או לעמוד שפורסם", linked: "מופיע בתוכן שפורסם" };
+function visibilityControl(file, v) {
+  const auto = `אוטומטי (${v.reason ? "גלוי" : "חסוי"})`;
+  const why = v.mode !== "auto" ? "נקבע ידנית" : v.reason ? VIS_REASON[v.reason] : "לא בשימוש בתוכן שפורסם";
+  return `<div class="vis"><span class="badge ${v.public ? "new" : "deleted"}" title="${esc(why)}">${v.public ? "גלוי" : "חסוי"}</span>
+    <select class="mini" data-vis="${esc(file)}" title="מי יכול לפתוח את הקובץ: ${esc(why)}">
+      <option value="auto"${v.mode === "auto" ? " selected" : ""}>${esc(auto)}</option>
+      <option value="private"${v.mode === "private" ? " selected" : ""}>חסוי תמיד</option>
+      <option value="public"${v.mode === "public" ? " selected" : ""}>גלוי תמיד</option>
+    </select></div>`;
+}
+
 async function mediaView() {
   let offset = 0;
   const per = 60;
@@ -618,10 +631,22 @@ async function mediaView() {
         <a class="thumb" href="${esc(a.url)}" target="_blank">${isImage(a.file) ? `<img src="${esc(a.url)}" loading="lazy" alt="">` : "📄"}</a>
         <div class="name">${esc(a.file)}</div>
         <div class="muted">${fmtDate(a.date)}</div>
+        ${a.visibility ? visibilityControl(a.file, a.visibility) : ""}
         <div class="actions"><button class="mini" data-copy="${esc(a.url)}">העתקת קישור</button><button class="mini danger" data-del="${a.id}">מחיקה</button></div>
       </div>`,
       )
       .join("");
+    view.querySelectorAll("[data-vis]").forEach((s) =>
+      s.addEventListener("change", async () => {
+        try {
+          const v = await api("/uploads/visibility", { method: "PUT", body: { file: s.dataset.vis, mode: s.value } });
+          toast(v.public ? "הקובץ גלוי לכולם" : "הקובץ חסוי: רק עורכים מחוברים יכולים לפתוח אותו");
+          load();
+        } catch (e) {
+          toast(e.message, true);
+        }
+      }),
+    );
     view.querySelectorAll("[data-copy]").forEach((b) =>
       b.addEventListener("click", async () => {
         await navigator.clipboard.writeText(location.origin + b.dataset.copy);

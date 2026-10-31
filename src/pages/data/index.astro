@@ -1,0 +1,35 @@
+---
+import Base from "../../layouts/Base.astro";
+import { categories, categoryUrl, SITE } from "../../lib/site";
+
+const site = Astro.site!.href.replace(/\/$/, "");
+const top = categories.filter((c) => !c.parent);
+---
+<Base title="מידע פתוח" description={`גישה פתוחה לארכיון ${SITE.name}: RSS, API ושרת MCP`}>
+  <article class="article">
+    <h1>מידע פתוח</h1>
+    <p>כל מה שמתפרסם באתר זמין גם לשימוש חוזר: למינויים, לאפליקציות ולסוכני AI. הכול חינם, בלי הרשמה ובלי מפתח. רק תוכן שפורסם זמין כך, וכשמשתמשים בו מבקשים לציין את המקור ולקשר לפרסום המקורי.</p>
+
+    <h2>RSS</h2>
+    <ul>
+      <li>כל הפרסומים: <a href="/rss.xml" dir="ltr">{site}/rss.xml</a></li>
+      <li>לפי נושא: <span dir="ltr">{site}/category/&lt;נושא&gt;/rss.xml</span>, למשל {top.slice(0, 4).map((c, i) => <>{i > 0 && ", "}<a href={`${categoryUrl(c.slug)}rss.xml`}>{c.name}</a></>)}.</li>
+    </ul>
+
+    <h2>API</h2>
+    <p>JSON, לקריאה בלבד. תיאור של כל הכתובות: <a href="/api/public/" dir="ltr">{site}/api/public/</a></p>
+    <ul dir="ltr" style="text-align:left">
+      <li><code>GET /api/public/posts?q=&amp;category=&amp;tag=&amp;from=&amp;to=&amp;limit=&amp;offset=</code></li>
+      <li><code>GET /api/public/posts/&lt;id&gt;</code></li>
+      <li><code>GET /api/public/lookup?url=&lt;address&gt;</code></li>
+      <li><code>GET /api/public/categories</code>, <code>/api/public/tags</code>, <code>/api/public/pages</code></li>
+    </ul>
+    <p>כל הארכיון בקובץ אחד: <a href="/data/content.json" dir="ltr">{site}/data/content.json</a></p>
+
+    <h2>MCP</h2>
+    <p>שרת MCP פתוח, שדרכו סוכני AI (כמו Claude) יכולים לחפש בארכיון ולקרוא פרסומים. כתובת השרת (Streamable HTTP):</p>
+    <pre dir="ltr">{site}/mcp</pre>
+    <p>הכלים: <code>search_posts</code>, <code>get_post</code>, <code>list_categories</code>, <code>list_pages</code>. למשל, ב-Claude Code:</p>
+    <pre dir="ltr">claude mcp add --transport http octopus {site}/mcp</pre>
+  </article>
+</Base>

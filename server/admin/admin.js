@@ -113,6 +113,7 @@ const routes = {
   menu: () => menuView(),
   transfer: () => transferView(),
   users: () => usersView(),
+  tokens: () => tokensView(),
 };
 async function route() {
   if (window.tinymce) tinymce.remove();
@@ -920,6 +921,67 @@ async function usersView() {
       if (!confirm(`להסיר את ${b.dataset.del}?`)) return;
       await api(`/editors?email=${encodeURIComponent(b.dataset.del)}`, { method: "DELETE" });
       usersView();
+    }),
+  );
+}
+
+// ---------- API tokens ----------
+async function tokensView() {
+  const { tokens, maxHours } = await api("/tokens");
+  const when = (d) => (d ? new Date(d).toLocaleString("he-IL") : "—");
+  view.innerHTML = `
+    <h1>טוקנים ל-API</h1>
+    <p class="hint">טוקן זמני מאפשר לסוכן או לסקריפט להוסיף לאתר <b>טיוטות</b> וקבצים, בלי להתחבר עם Google: יצירה ועריכה של טיוטות, העלאת קבצים, הוספת קטגוריה, וייבוא בהוספה (ZIP או XML) של טיוטות בלבד.
+    הוא לא יכול לפרסם, למחוק, לשנות פריטים שפורסמו, לשנות תפריט, עורכים או טוקנים, או לייצא.</p>
+    <div class="panel">
+      <h3>טוקן חדש</h3>
+      <div class="toolbar">
+        <input id="tk-name" placeholder="שם, למשל: סשן הליכים משפטיים" style="max-width:300px" />
+        <select id="tk-hours">
+          <option value="1">שעה</option><option value="8">8 שעות</option><option value="24" selected>יום</option>
+          <option value="72">3 ימים</option><option value="168">שבוע</option><option value="${maxHours}">30 יום</option>
+        </select>
+        <button class="primary" id="tk-create">יצירה</button>
+      </div>
+      <div id="tk-new"></div>
+    </div>
+    <table class="list"><thead><tr><th>שם</th><th>נוצר</th><th>תוקף עד</th><th>שימוש אחרון</th><th></th></tr></thead><tbody>
+      ${tokens
+        .map(
+          (t) => `<tr><td>${esc(t.name)}<br><small class="muted">${esc(t.created_by)}</small></td><td class="nowrap">${when(t.created_at)}</td><td class="nowrap">${when(t.expires_at)}</td><td class="nowrap">${when(t.last_used_at)}</td>
+          <td>${t.active ? `<button class="mini danger" data-revoke="${t.id}">ביטול</button>` : `<span class="badge deleted">${t.revoked_at ? "בוטל" : "פג תוקף"}</span>`}</td></tr>`,
+        )
+        .join("") || `<tr><td colspan="5" class="muted">עוד אין טוקנים.</td></tr>`}
+    </tbody></table>
+    <div class="panel" style="margin-top:16px">
+      <h3>איך משתמשים</h3>
+      <p>שולחים את הטוקן בכותרת <span dir="ltr">Authorization: Bearer oct_…</span> לכתובות שתחת <span dir="ltr">${esc(location.origin)}/api/</span>. למשל, ייבוא חבילת ZIP של טיוטות:</p>
+      <pre class="log" dir="ltr">curl -H "Authorization: Bearer $OCTOPUS_TOKEN" -F mode=append -F file=@drafts.zip ${esc(location.origin)}/api/import/preview
+curl -H "Authorization: Bearer $OCTOPUS_TOKEN" -H "content-type: application/json" \\
+  -d '{"token":"&lt;token מהתשובה הקודמת&gt;","mode":"append","downloadMedia":false}' ${esc(location.origin)}/api/import/run</pre>
+      <p class="hint">התיעוד המלא נמצא ב-README של הריפו, בפרק "API פנימי".</p>
+    </div>`;
+  $("#tk-create").addEventListener("click", async () => {
+    try {
+      const t = await api("/tokens", { method: "POST", body: { name: $("#tk-name").value, hours: Number($("#tk-hours").value) } });
+      $("#tk-new").innerHTML = `<div class="panel" style="margin-top:12px;background:#fffaeb">
+        <p><b>הטוקן מוצג רק עכשיו.</b> העתיקו אותו למקום בטוח. תוקף עד ${when(t.expires_at)}.</p>
+        <pre class="log" dir="ltr" id="tk-value">${esc(t.token)}</pre>
+        <div class="actions"><button id="tk-copy">העתקה</button><button id="tk-done">סיימתי</button></div></div>`;
+      $("#tk-copy").addEventListener("click", async () => {
+        await navigator.clipboard.writeText(t.token);
+        toast("הטוקן הועתק");
+      });
+      $("#tk-done").addEventListener("click", () => tokensView());
+    } catch (e) {
+      toast(e.message, true);
+    }
+  });
+  view.querySelectorAll("[data-revoke]").forEach((b) =>
+    b.addEventListener("click", async () => {
+      if (!confirm("לבטל את הטוקן? מי שמשתמש בו יאבד גישה מיד.")) return;
+      await api(`/tokens?id=${b.dataset.revoke}`, { method: "DELETE" });
+      tokensView();
     }),
   );
 }

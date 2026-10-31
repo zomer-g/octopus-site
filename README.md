@@ -23,6 +23,31 @@
   - **חבילת ZIP**: קובץ XML אחד וקבצים בתיקייה `wp-content/uploads/YYYY/MM/`. הקבצים נשמרים באחסון בנתיב שלהם, והפריטים מיובאים כרגיל. כך מעלים טיוטות עם מסמכים מצורפים: כל פוסט בסטטוס `draft`, וכל קובץ כפריט `attachment` עם `_wp_attached_file` ו-`attachment_url` בכתובת `https://octopus.org.il/wp-content/uploads/...`.
 - **פרסום**: האתר נבנה מחדש בשרת (בערך דקה) ומוחלף רק אם הבנייה הצליחה.
 
+## מידע פתוח: RSS, API ו-MCP
+
+כל אלה פתוחים לכולם, בלי הרשמה, ומציגים רק תוכן שפורסם. הם נקראים מהבנייה שמוגשת (`data/content.json`), כך שהם תמיד תואמים לאתר. ההסבר לציבור נמצא בעמוד `/data/`.
+
+- **RSS**: `/rss.xml` (30 הפרסומים האחרונים), ו-`/category/<נושא>/rss.xml`. הכתובות הישנות של וורדפרס (`/feed/`, `/category/<נושא>/feed/`) מפנות אליהם.
+- **קובץ מלא**: `/data/content.json`. כל הפוסטים והעמודים (HTML וטקסט), הקטגוריות והתגיות.
+- **API** (`server/public-api.js`): `GET /api/public/` מתאר את כל הכתובות: `posts` (עם `q`, `category`, `tag`, `from`, `to`, `limit`, `offset`), `posts/<id>`, `pages`, `pages/<id>`, `lookup?url=`, `categories` ו-`tags`. כולל CORS פתוח.
+- **MCP**: `POST /mcp`, שרת Streamable HTTP בלי sessions. הכלים: `search_posts`, `get_post`, `list_categories` ו-`list_pages`.
+
+## API פנימי וטוקנים זמניים
+
+ממשק הניהול עובד מול `/api`. דפדפן מתחבר עם Google. סוכן או סקריפט משתמשים ב**טוקן זמני**, שעורך יוצר במסך "טוקנים ל-API" ב-`/admin`.
+
+- הטוקן נשלח בכותרת `Authorization: Bearer oct_...`. התוקף נע בין שעה ל-30 יום, ואפשר לבטל אותו בכל רגע. במסד נשמר רק ה-SHA-256 שלו (`api_tokens`), והוא מוצג פעם אחת בלבד.
+- הטוקן פועל בשם העורך שיצר אותו, ומפסיק לעבוד אם העורך הוסר.
+- **מותר לטוקן**: לקרוא (`/me`, `/meta`, `/items`, `/item`, `/uploads`, `/status`, `/history`), ליצור ולערוך טיוטות (`POST/PUT /item` עם `status` של `draft` או `pending`, ועריכה רק של פריט שהוא עדיין טיוטה), להעלות קובץ (`POST /upload`), להוסיף קטגוריה (`POST /categories`), ולייבא בהוספה (`/import/preview` ו-`/import/run`, `mode=append`). בייבוא יכולים להיות רק פוסטים ועמודים בטיוטה, וקבצים.
+- **אסור לטוקן**: לפרסם, למחוק, לערוך פריט שפורסם, לשנות תפריט, עורכים או טוקנים, לייצא, ולייבא בהחלפה.
+- ייבוא אף פעם לא דורס קובץ שכבר קיים באתר.
+
+```bash
+curl -H "Authorization: Bearer $OCTOPUS_TOKEN" -F mode=append -F file=@drafts.zip https://octopus.org.il/api/import/preview
+curl -H "Authorization: Bearer $OCTOPUS_TOKEN" -H "content-type: application/json" \
+  -d '{"token":"<מהתשובה הקודמת>","mode":"append","downloadMedia":false}' https://octopus.org.il/api/import/run
+```
+
 ## איך זה בנוי
 
 | מקום | מה יש בו |
@@ -38,6 +63,8 @@
 | `server/generate.js`, `server/render.js` | הפיכת הנתונים לדפי האתר: כתובות, קטגוריות, תפריט, הפניות, ורינדור תוכן וורדפרס |
 | `server/builder.js` | בנייה מחדש ברקע והחלפת האתר המוגש |
 | `server/admin/` | ממשק הניהול |
+| `server/public-api.js` | ה-API הפומבי ושרת ה-MCP |
+| `server/tokens.js` | טוקנים זמניים ל-API הפנימי |
 | `site.config.json` | הגדרות האתר: קובץ הבסיס, כתובת האתר, עמוד הבית, תפריט ראשי |
 
 `src/content` ו-`src/data` נוצרים אוטומטית, ולא נשמרים ב-git.

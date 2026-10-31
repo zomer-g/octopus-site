@@ -10,12 +10,14 @@ import { db } from "./db.js";
 import { currentUser, isEditor, loginUrl } from "./auth.js";
 import { initBuilder, currentDir, isBuilding, onSwap, requestBuild, siteOptions } from "./builder.js";
 import { initStorage, putFile, getFile, deleteFile } from "./storage.js";
-import { initMedia, localMediaPath, storageKey, syncMedia, mediaSyncState, mirrorUploads, mirrorState, loadManifest } from "./media.js";
+import { initMedia, hasMedia, localMediaPath, storageKey, syncMedia, mediaSyncState, mirrorUploads, mirrorState, loadManifest } from "./media.js";
 import { parseWxr, serializeWxr } from "./wxr.js";
 import { readZip } from "./zip.js";
 import { decode, indexSite, metaValue, wpSlug, attachmentFile, isReserved, isSafeUploadPath } from "./generate.js";
 import { buildMenuTree, saveMenuTree } from "./menu.js";
 import * as store from "./store.js";
+import { loadPublicData, mcp, publicApi } from "./public-api.js";
+import { createToken, listTokens, MAX_HOURS, revokeToken, userForToken } from "./tokens.js";
 
 const ROOT = process.cwd();
 const PORT = Number(process.env.XHOST_HTTP_PORT || process.env.PORT || 3000);
@@ -70,9 +72,11 @@ const siteStatic = (dir) =>
   });
 let serveSite = siteStatic(currentDir());
 loadRoutes(currentDir());
+loadPublicData(currentDir());
 onSwap((dir) => {
   serveSite = siteStatic(dir);
   loadRoutes(dir);
+  loadPublicData(dir);
 });
 
 // WordPress-style addresses: /?p=123, /?page_id=123 and renamed posts
@@ -88,8 +92,15 @@ app.use((req, res, next) => {
   }
   const to = routes.redirects[path] || routes.redirects[path.endsWith("/") ? path : path + "/"];
   if (to) return res.redirect(301, encodeURI(to));
+  // WordPress feed addresses that readers may still be subscribed to
+  const feed = path.match(/^(\/|\/category\/.+\/)feed\/?$/);
+  if (feed) return res.redirect(301, encodeURI(`${feed[1]}rss.xml`));
   next();
 });
+
+// public, read-only: JSON API and MCP server over the published archive
+app.use("/api/public", publicApi);
+app.use("/mcp", mcp);
 
 // uploads: the archive in the image, then the object store, then (for a
 // WordPress resized copy like name-300x200.jpg that we never stored) the original
@@ -126,8 +137,18 @@ app.get("/wp-content/uploads/{*file}", async (req, res, next) => {
 
 // ---------- admin ----------
 async function requireEditor(req, res, next) {
-  const user = await currentUser(req);
   const isApi = req.baseUrl.startsWith("/api");
+  // an API token (Authorization: Bearer oct_...) works on /api only, never on the admin pages
+  const bearer = (req.get("authorization") || "").match(/^Bearer\s+(\S+)$/i)?.[1];
+  if (bearer) {
+    if (!isApi) return res.status(400).send("tokens work on /api only");
+    const tokenUser = await userForToken(bearer);
+    if (!tokenUser) return res.status(401).json({ error: "הטוקן אינו בתוקף" });
+    if (!(await isEditor(tokenUser.email))) return res.status(403).json({ error: "מי שיצר את הטוקן כבר אינו עורך" });
+    req.user = tokenUser;
+    return next();
+  }
+  const user = await currentUser(req);
   if (!user) {
     if (isApi) return res.status(401).json({ error: "not signed in", login: loginUrl() });
     return res.redirect(loginUrl(req.originalUrl));
@@ -157,7 +178,24 @@ api.use(requireEditor);
 api.use(express.json({ limit: "10mb" }));
 api.use((req, res, next) => {
   // a custom header cannot be sent by a cross-site form: CSRF guard for writes
-  if (req.method !== "GET" && req.get("x-octopus-admin") !== "1") return res.status(403).json({ error: "missing header" });
+  // (a token request carries no cookie, so it needs none)
+  if (req.method !== "GET" && !req.user.token && req.get("x-octopus-admin") !== "1") return res.status(403).json({ error: "missing header" });
+  next();
+});
+// a token may read, add drafts and files, and edit drafts. Publishing, deleting,
+// menus, editors and tokens stay with signed-in editors.
+const TOKEN_ROUTES = new Set([
+  "GET /me", "GET /meta", "GET /items", "GET /item", "GET /uploads", "GET /status", "GET /history",
+  "POST /item", "PUT /item", "POST /upload", "POST /categories", "POST /import/preview", "POST /import/run",
+]);
+const DRAFT_STATUSES = ["draft", "pending"];
+api.use((req, res, next) => {
+  if (!req.user.token) return next();
+  if (!TOKEN_ROUTES.has(`${req.method} ${req.path}`)) return res.status(403).json({ error: "הפעולה הזו אינה מותרת בטוקן" });
+  if ((req.path === "/item" && req.method !== "GET") && !DRAFT_STATUSES.includes(req.body?.status ?? "draft"))
+    return res.status(403).json({ error: "בטוקן אפשר לשמור רק טיוטה (draft) או ממתין לאישור (pending)" });
+  if (req.path === "/categories" && req.body?.id) return res.status(403).json({ error: "בטוקן אפשר רק להוסיף קטגוריה" });
+  if (req.path.startsWith("/import/") && req.body?.mode === "replace") return res.status(403).json({ error: "בטוקן אפשר לייבא רק בהוספה (append)" });
   next();
 });
 const wrap = (fn) => (req, res, next) => fn(req, res, next).catch(next);
@@ -398,6 +436,7 @@ api.put("/item", wrap(async (req, res) => {
   const { site, idx } = await siteIndex();
   const current = idx.itemById.get(Number(req.query.id));
   if (!current || !["post", "page"].includes(current.post_type)) throw httpError(404, "לא נמצא");
+  if (req.user.token && !DRAFT_STATUSES.includes(current.status)) throw httpError(403, "בטוקן אפשר לערוך רק טיוטות");
   const doc = await applyEdit(structuredClone(current), req.body, idx, site, req.user, false);
   await store.saveItem(doc, req.user.email);
   res.json({ id: doc.post_id });
@@ -588,15 +627,23 @@ api.post("/import/preview", importUpload.single("file"), wrap(async (req, res) =
   } catch (e) {
     throw httpError(400, /^(הקובץ|חסר)/.test(e.message) ? e.message : `הקובץ אינו קובץ XML תקין: ${e.message}`);
   }
+  if (req.user.token) {
+    if (mode !== "append") throw httpError(403, "בטוקן אפשר לייבא רק בהוספה (append)");
+    const visible = site.items.filter((i) => ["post", "page"].includes(i.post_type) && !DRAFT_STATUSES.includes(i.status));
+    if (visible.length) throw httpError(403, `בטוקן אפשר לייבא רק טיוטות. לא בטיוטה: ${visible.slice(0, 5).map((i) => i.title).join(", ")}`);
+    const other = site.items.find((i) => !["post", "page", "attachment"].includes(i.post_type));
+    if (other) throw httpError(403, `בטוקן אפשר לייבא רק פוסטים, עמודים וקבצים (נמצא: ${other.post_type})`);
+  }
   for (const [k, v] of pendingImports) if (Date.now() - v.at > 3600e3) pendingImports.delete(k);
   const token = randomUUID();
-  pendingImports.set(token, { site, files, at: Date.now() });
+  pendingImports.set(token, { site, files, at: Date.now(), by: req.user.sub });
   res.json({ token, title: site.meta.title, files: files.length, plan: await store.planImport(site, mode, await siteUrl()) });
 }));
 
 api.post("/import/run", wrap(async (req, res) => {
   const pending = pendingImports.get(req.body.token);
   if (!pending) throw httpError(410, "תוקף הקובץ פג – העלו אותו שוב");
+  if (req.user.token && pending.by !== req.user.sub) throw httpError(403, "הייבוא הזה הוכן בהרשאה אחרת");
   const mode = req.body.mode === "replace" ? "replace" : "append";
   // a replace first keeps a full backup of what it overwrites
   if (mode === "replace" && (await store.itemCount()) > 0) {
@@ -607,7 +654,8 @@ api.post("/import/run", wrap(async (req, res) => {
     const list = (await db.getSetting("backups")) ?? [];
     await db.setSetting("backups", [{ key, at: new Date().toISOString(), by: req.user.email }, ...list].slice(0, 50));
   }
-  for (const f of pending.files ?? []) await putFile(storageKey(f.file), f.data, UPLOAD_MIME[extname(f.file).toLowerCase()]);
+  // files already on the site are never overwritten by an import
+  for (const f of pending.files ?? []) if (!(await hasMedia(f.file))) await putFile(storageKey(f.file), f.data, UPLOAD_MIME[extname(f.file).toLowerCase()]);
   const result = await store.runImport(pending.site, mode, req.user.email, await siteUrl());
   pendingImports.delete(req.body.token);
   if (req.body.downloadMedia !== false) syncMedia([req.headers.host]).catch((e) => console.error("media sync", e));
@@ -639,6 +687,17 @@ api.post("/media-sync", (req, res) => {
 });
 
 // --- editors ---
+// --- API tokens (signed-in editors only: a token cannot manage tokens) ---
+api.get("/tokens", wrap(async (req, res) => res.json({ tokens: await listTokens(), maxHours: MAX_HOURS })));
+api.post("/tokens", wrap(async (req, res) => {
+  const t = await createToken({ name: req.body.name, hours: req.body.hours, createdBy: req.user.email });
+  res.status(201).json(t);
+}));
+api.delete("/tokens", wrap(async (req, res) => {
+  await revokeToken(Number(req.query.id));
+  res.json({ ok: true });
+}));
+
 api.get("/editors", wrap(async (req, res) => {
   const env = (process.env.ADMIN_EMAILS || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
   res.json({ fixed: env, editors: await db.all("SELECT email, added_at, added_by FROM editors ORDER BY added_at") });

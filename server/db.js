@@ -2,6 +2,7 @@
 // For local testing without Postgres, LOCAL_PGLITE=<dir> uses an embedded PGlite.
 import pg from "pg";
 import { SCHEMA as CONTENT_SCHEMA } from "./store.js";
+import { SCHEMA as TOKEN_SCHEMA } from "./tokens.js";
 
 let impl;
 
@@ -35,7 +36,7 @@ async function init() {
   } else {
     throw new Error("DATABASE_URL is not set (set LOCAL_PGLITE=.pglite for local testing)");
   }
-  for (const stmt of [...SCHEMA, ...CONTENT_SCHEMA]) await impl.query(stmt);
+  for (const stmt of [...SCHEMA, ...CONTENT_SCHEMA, ...TOKEN_SCHEMA]) await impl.query(stmt);
 }
 
 const SCHEMA = [

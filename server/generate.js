@@ -44,7 +44,7 @@ export function wpSlug(text) {
 }
 
 // addresses the site itself owns; a page may not take them
-const RESERVED = [/^\/(news|posts|search|categories)\/$/, /^\/(category|tag|admin|api|media|wp-content|_astro|pagefind)\//];
+const RESERVED = [/^\/(news|posts|search|categories|feed|mcp)\/$/, /^\/(category|tag|admin|api|media|wp-content|_astro|pagefind|data)\//];
 export const isReserved = (p) => RESERVED.some((r) => r.test(p));
 
 export const metaValue = (item, key) => item.meta?.find((m) => m.key === key)?.value;
